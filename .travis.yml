@@ -20,7 +20,6 @@ addons:
     - latexmk
 script:
 - pip install -r requirements.txt
-- ./get-code-examples.sh
 - BOOK_VERSION=$(./get-current-version.sh) travis-sphinx build -s source
 - BOOK_VERSION=$(./get-current-version.sh) make latexpdf
 after_success:
