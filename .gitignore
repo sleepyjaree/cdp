@@ -33,3 +33,4 @@ rst/*.zip
 test/
 rst3/
 rst/images/lab-edit/old
+_build/
