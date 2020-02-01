@@ -1,2 +1,0 @@
-
-..	|test| replace:: this is a test!
