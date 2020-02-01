@@ -19,7 +19,7 @@
 
 Textbook
 ++++++++
-There is no required textbook for this course. Reading material will be posted online as needed.
+There is no required textbook for this course. Reading material will be posted online as needed. It is recommended that you get an old copy (6th or 7th edition of Richard Johnsonbaugh's *Discrete Mathematics*).
 
 
 Grading scheme
