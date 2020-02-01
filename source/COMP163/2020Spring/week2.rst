@@ -49,3 +49,47 @@ Set intersection
 ----------------
 
 The intersection of two sets is a set that contains only the elements that are common to both sets. For example, if :math:`V=\{0,1,2,3,4\}` and :math:`X=\{0,1\}`, their intersection :math:`V\cap X` is the set :math:`\{0,1\}`.
+
+Cartesian product
+-----------------
+
+The Cartesian product of two sets is a set that contains ordered pairs of all combinations of elements from the first set with elements of the second set. For example, if :math:`Y=\{a,b\}` and :math:`Z=\{c,d\}`, their Cartesian product is:
+
+.. math::
+   Y\times Z = \{ (a,c), (a,d), (b,c), (b,d) \}
+   
+Cartesian products contain ordered pairs (in case of a two sets product) or ordered tuples (in case of a three or more sets product). An ordered pair is a collection of two items whose order is significant, i.e., the pair :math:`(a,b)` is not the same as the pair :math:`(b,a)`. 
+
+Cardinalities for union, intersection, and Cartesian product
+------------------------------------------------------------
+
+Given two sets :math:`R` and :math:`W`, the following rule (known as the *inclusion-exclusion* principle) applies:
+
+.. math::
+   |R\cup W| = |R| + |W| - |R\cap W|
+   
+The cardinality of their (Cartesian) product is: :math:`|R\times W|=|R|\cdot |W|`.
+
+Operations with three or more sets
+----------------------------------
+
+The operations above can be generalized to three or more sets. For example, :math:`A\cup B\cup C` is the union of three sets, i.e., a set that contains all the elements of sets :math:`A, B` and :math:`C`. Similarly, :math:`A\cap B\cap C` is the set that contains only elements that are common on all three sets. And :math:`A\times B\times C` is a set that contains ordered triplets with all possible combinations of elements from :math:`A`, with elements from :math:`B`, with elements from :math:`C`. For example, if
+
+.. math::
+
+   A & = \{i,j\} \\
+   B & = \{m,n\} \\
+   C & = \{x,y\} \\
+
+then
+
+.. math::
+
+   A\times B\times C = \{ &(i,m,x), (i,m,y), \\
+                          &(i,n,x), (i,n,y), \\
+						  &(j,m,x), (j,m,y), \\
+						  &(j,n,x), (j,n,y) \}
+						  
+						  
+In general we can expect that :math:`A\times B\times C = (A\times B)\times C = A\times (B\times C)`; :math:`A\cup B\cup C=(A\cup B)\cup C=A\cup (B\cup C)`, etc.
+   

@@ -28,7 +28,7 @@ with a simple observation. When he was asked by a teacher to calculate the sum f
 
 But deriving a formula is not the same as proving it. We can claim that the formula :math:`1+2+\ldots+n = n(n+1)/2` works for :math:`n=3` or 4 or 5 or even 10, but that doesn't mean that it works for every natural number. We need a more rigorous tool to prove this property. The rigor, in this case, comes from the axiomatic foundation of natural numbers.
 
-In 1889, Giuseppe Peano, an Italian mathematician, put together a few fundamental statements about natural numbers. These statements, known as Peano's Axioms, are the building blocks of the natural numbers set :math:`\mathbb{N}`. An axiom is a statement that we accept as true. Peano stated nine axioms. The last one is the rigorous tool we need to prove :math:`1+2+\ldots+n = n(n+1)/2`. It is worth, however, to review all five axioms first. 
+In 1889, Giuseppe Peano, an Italian mathematician, put together a few fundamental statements about natural numbers. These statements, known as Peano's Axioms, are the building blocks of the natural numbers set :math:`\mathbb{N}`. An axiom is a statement that we accept as true. Peano stated five axioms. The last one is the rigorous tool we need to prove :math:`1+2+\ldots+n = n(n+1)/2`. It is worth, however, to review all five axioms first. 
 
 Before stating his axioms, Peano defined a *successor function,* i.e., a function that takes a natural number as input and returns the next successive natural number:
 
