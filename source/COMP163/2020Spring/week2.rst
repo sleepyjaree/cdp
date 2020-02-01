@@ -23,6 +23,6 @@ A very important property of a set is its *cardinality*. The cardinality is the 
 We also talked about set operations, focusing on the following three.
 
 Set union
-=========
+---------
 
-The union of two sets is a set that contains all their elements. For example, if :math:`S=\{1,3,5\}` and :math:`T=\{2,4\}`, their union :math:`S\cup T` is the set :math:`\{1,2,3,4,5\}`
+The union of two sets is a set that contains all their elements. For example, if :math:`S=\{1,3,5\}` and :math:`T=\{2,4\}`, their union :math:`S\cup T` is the set :math:`\{1,2,3,4,5\}`. 
