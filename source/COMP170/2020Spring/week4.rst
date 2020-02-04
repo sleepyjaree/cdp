@@ -64,4 +64,9 @@ The difference between the while-loop and the do-loop is best illustrated by the
    A compeling presentation of the difference between the while-loop and the do-loop.
    Source unknown; most verifiable citation: `Reddit, 2019 <https://www.reddit.com/r/ProgrammerHumor/comments/a5mghb/the_importance_of_knowing_how_to_correctly_use/>`_.
 
-xx
+Loop demos
+----------
+
+The following code is a small demonstration of loop techniques applied on Strings. `The code is made available, for now, as bytecode <https://github.com/lgreco/cdp/raw/master/source/COMP170/codeExamples/loopExamples.class>`_, i.e., an executable that you can run on any JVM. 
+
+To run the bytecode open the Terminal application in macOS or the command prompt on Windows, go to the folder where you've downloaded the bytecode, and enter the command: ``java loopExamples``.
