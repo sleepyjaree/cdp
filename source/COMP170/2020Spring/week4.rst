@@ -61,7 +61,7 @@ The difference between the while-loop and the do-loop is best illustrated by the
 
 .. figure:: images/coyote.jpg
    
-   A compeling presentation of the difference between the while-loop and the do-loop.
+   A compelling presentation of the difference between the while-loop and the do-loop.
    Source unknown; most verifiable citation: `Reddit, 2019 <https://www.reddit.com/r/ProgrammerHumor/comments/a5mghb/the_importance_of_knowing_how_to_correctly_use/>`_.
 
 Loop demos
