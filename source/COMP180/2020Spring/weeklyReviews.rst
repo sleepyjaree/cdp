@@ -5,3 +5,5 @@ Weekly Reviews - Spring 2020
 	:maxdepth: 2
 	
 	week2
+	week3
+	week4
