@@ -70,3 +70,13 @@ Loop demos
 The following code is a small demonstration of loop techniques applied on Strings. `The code is made available, for now, as bytecode <https://github.com/lgreco/cdp/raw/master/source/COMP170/codeExamples/loopExamples.class>`_, i.e., an executable that you can run on any JVM. 
 
 To run the bytecode open the Terminal application in macOS or the command prompt on Windows, go to the folder where you've downloaded the bytecode, and enter the command: ``java loopExamples``.
+
+Loops in mathematical iterations
+--------------------------------
+
+Loops are very useful when we write programs to perform numerical computations that are iterative in nature. Consider, for example, the Newton method for finding the square root of a number, :math:`n`. Its square root, :math:`\sqrt{n}` is approximated by the sequence :math:`x_{k+1}`:
+
+.. math::
+   x_{k+1} = \frac{1}{2}(x_k+\frac{n}{x_k}) \\
+   
+with :math:`x_0=1`.

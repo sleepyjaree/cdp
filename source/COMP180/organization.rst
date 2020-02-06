@@ -59,6 +59,10 @@ Course performance is determined using weekly homework, a take-home midterm, and
 
 .. include:: ../shared/deadlines.rst
 
+Teaching Assistant
+++++++++++++++++++
+`Asbel Assefa <aassefa@luc.edu>`_
+
 Exam dates
 ++++++++++
 The final exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on Monday 4/##/20 (subject to change).
