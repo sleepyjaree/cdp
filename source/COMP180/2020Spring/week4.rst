@@ -44,3 +44,44 @@ As we look at the data, we notice that the set compounds the information about y
   measles.drop("week", axis = 1, inplace = True)  
 
 By inspecting the data set, we note that the first four characters of the field ``week`` represent the actual year while the remaining two, a week in that year. Thus we use the Python function ``str`` to cleave the first four characters (via the ``[0:4]`` reference, and return that value as an ``int`` number into a new column within the dataframe, that we label ``year``).
+
+Aggregation
+-----------
+
+Now that our data are clean and in the proper format, we need to think about aggradation. Aggregration means the abilkity to summarize data based on some common property. For example, pull together all the records for a given state, and add up all the measles cases: that will give us the total of measles in that state from 1928 to 2002. Or, pull together all the records for each state for each year, and add up the number of cases: this will give us the total number of cases per state, per year.
+
+Using dataframes in the ``pandas`` library, we can use the ``groupby`` method to achieve the desired aggregation.
+
+.. code-block:: python
+  :linenos:
+  
+
+  def aggregate(thisDataframe, byThisColumn):
+    
+      groupedByThisColumn = thisDataframe.groupby(by = byThisColumn)
+      # aggregate sum(cases), avg(cases), avg(incidence)
+      sumOfCases = pd.DataFrame(groupedByThisColumn["cases"].sum()).reset_index()
+      avgOfCases = pd.DataFrame(groupedByThisColumn["cases"].mean()).reset_index()
+      avgIncidenceYear = pd.DataFrame(groupedByThisColumn["incidence_per_capita"].mean()).reset_index()
+      # rename columns 
+      avgIncidenceYear = avgIncidenceYear.rename(columns = {"incidence_per_capita": "weekly average incidence"})
+      sumOfCases = sumOfCases.rename(columns = {"cases": "yearly sum"})
+      avgOfCases = avgOfCases.rename(columns = {"cases": "weekly average"})
+      # put dataframes together
+      measlesCases = pd.merge(avgOfCases, sumOfCases)
+      newDataframe = pd.merge(avgIncidenceYear, measlesCases)
+      return newDataframe
+	  
+The function above performs creates new dataframes and loads them with aggregate data of our choice.
+
+Loading 
+-------
+
+.. code-block:: python
+  :linenos:
+  
+
+  measles_yearly_data = aggregate(measles, byThisColumn = ["year", "state_name"])
+  measlesByYear = aggregate(measles, byThisColumn=["year"])
+  
+  
