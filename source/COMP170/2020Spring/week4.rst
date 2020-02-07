@@ -81,7 +81,7 @@ Loops are very useful when we write programs to perform numerical computations t
    
 with :math:`x_0=1`.
 
-The formula above generates a sequence :math:`x_0, x_1, \ldots, x_k, x_{k+1}` that converges to :math:`\sqrt{n}`. Each member of the sequence is generated using the value of the previous member, so really we only need two variables to compute the sequence: one variable for the current value and one for the next value.
+The formula above generates a sequence :math:`x_0, x_1, \ldots, x_k, x_{k+1}, \ldots` that converges to :math:`\sqrt{n}`. Each member of the sequence is generated using the value of the previous member, so really we only need two variables to compute the sequence: one variable for the current value and one for the next value.
 
 .. code-block:: java
 
