@@ -127,13 +127,13 @@ Notice that after 5-6 iterations the sequence converges to the value 3.16227766,
 
 .. code-block:: java
    
-   epsilon = 0.00001;
+   EPSILON = 0.00001;
    xCurrent = 0;
    keepGoing = true;
    do {
      xNext = 0.5 * ( xCurrent + n/xCurrent );
      delta = Math.abs( xNext-xCurrent );
-     if ( delta < epsilon )
+     if ( delta < EPSILON )
        keepGoing = false;
    } while ( keepGoing );
    
