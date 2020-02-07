@@ -77,7 +77,7 @@ The function above performs creates new dataframes and loads them with aggregate
 Loading 
 -------
 
-With the aggregate function in place, we can beging the loading stage of our analysis. This stage creates new dataframes that answer specific queries. For example, the dataframe ``measles_yearly_data`` below answers the query: how many measles cases were there in each state, for each year in our dataset? The dataframe ``measlesByYear`` answers the query, how many measles cases per year.
+With the aggregate function in place, we can begin the loading stage of our analysis. This stage creates new dataframes that answer specific queries. For example, the dataframe ``measles_yearly_data`` below answers the query: how many measles cases were there in each state, for each year in our dataset? The dataframe ``measlesByYear`` answers the query, how many measles cases per year.
 
 .. code-block:: python
   :linenos:
