@@ -80,3 +80,115 @@ Loops are very useful when we write programs to perform numerical computations t
    x_{k+1} = \frac{1}{2}(x_k+\frac{n}{x_k}) \\
    
 with :math:`x_0=1`.
+
+The formula above generates a sequence :math:`x_0, x_1, \ldots, x_k, x_{k+1}` that converges to :math:`\sqrt{n}`. Each member of the sequence is generated using the value of the previous member, so really we only need two variables to compute the sequence: one variable for the current value and one for the next value.
+
+.. code-block:: java
+
+   xNext = 0.5 * ( xCurrent + n/xCurrent );
+   
+We need to wrap this formula in a loop:
+
+.. code-block:: java
+   
+   xCurrent = 0;
+   keepGoing = true;
+   do {
+     xNext = 0.5 * ( xCurrent + n/xCurrent );
+	 // need to make a decision to continue or stop
+   } while (keepGoing);
+
+The next step is to determine how and when to exit the loop. If we looked at the sequence for :math:`n=10`, we notice the following progression:
+
++--------------------------------+----------------------+-----------------------+
+| **Term**                       | **Value**            | :math:`\delta`        |
++================================+======================+=======================+
+| :math:`x_0`                    | 1                    | :math:`|x_{k+1}-x_k|` |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_1=(x_0+n/x_0)/2`      | 5.5                  | 4.5                   |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_2=(x_1+n/x_1)/2``     | 3.659090909          | 1.840909091           |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_3=(x_2+n/x_2)/2``     | 3.196005082          | 0.4630858272          |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_4=(x_3+n/x_3)/2``     | 3.162455623          | 0.03354945907         |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_5=(x_4+n/x_4)/2``     | 3.162277665          | 0.0001779576282       |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_6=(x_5+n/x_5)/2``     | 3.16227766           | 0.000000005007295911  |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_7=(x_6+n/x_6)/2``     | 3.16227766           | 0                     |
++--------------------------------+----------------------+-----------------------+
+
+
+
+Notice that after 5-6 iterations the sequence converges to the value 3.16227766, that happens to be the square root of 10. As the sequence converges, the difference between successive values becomes smaller and smaller. Eventually, at convergence, the difference :math:`\delta` becomes 0 or very close to it. This could be our mechanism for exiting the loop:
+
+
+.. code-block:: java
+   
+   epsilon = 0.00001;
+   xCurrent = 0;
+   keepGoing = true;
+   do {
+     xNext = 0.5 * ( xCurrent + n/xCurrent );
+     delta = Math.abs( xNext-xCurrent );
+     if ( delta < epsilon )
+       keepGoing = false;
+   } while ( keepGoing );
+   
+Finally, we put everything together. We declare two final variables, ``EPSILON`` AND ``RUNAWAY`` that control when and how the program ends. ``EPSILON`` is our tolerance for convergence: how close we wish the successive valued of :math:`x_{k+1}` and :math:`x_k` to get, before we accept the approximate square root? ``RUNAWAY`` is the number of iterations we allow our program to perform before we end without result, to avoid an infinite loop.
+
+.. code-block:: java
+   :linenos:
+   
+   import java.util.Scanner;
+
+   public class sqrt { 
+     public static final double EPSILON = 0.00001;
+     public static final int RUNAWAY = 10000;
+	
+     public static void main(String[] args) { 
+	 
+       double n=0;
+       int counter=0;
+       double xCurrent = 1, xNext, delta;
+       boolean keepGoing = true;
+	  
+       Scanner keyboard = new Scanner(System.in);
+	  
+       while (n>=0) {
+	  
+         System.out.println("\n\nEnter a number to computer its square root.");
+         System.out.println("(Negative number will terminate the program)");
+         n = keyboard.nextDouble();
+	  
+         if ( n>=0 ) {
+		 
+           do { 
+		   
+             xNext = 0.5 * ( xCurrent + n/xCurrent ); 
+             delta = Math.abs( xNext-xCurrent ); 
+			
+             if ( delta < EPSILON ) {
+               keepGoing = false; 
+             } else {
+               xCurrent = xNext;
+             }
+			
+             if ( counter > RUNAWAY) {
+               keepGoing=false;
+             } else {
+               counter++;
+             }
+			
+           } while ( keepGoing ); 
+		  
+           System.out.println("Approximate square root of "+n+" is  "+xNext+"\n\t("+counter+" iterations)");
+		  
+         }
+        } 
+      }
+    }
+	
+x	
