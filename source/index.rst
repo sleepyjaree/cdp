@@ -13,15 +13,15 @@ This is a comprehensive site with material and information from the courses I te
    :maxdepth: 2
    :caption: Courses
    
-   COMP163/introduction
+   comp163/introduction
    
    
-   COMP170/introduction
+   comp170/introduction
    
    
-   COMP180/introduction
+   comp180/introduction
    
-   COMP271/introduction
+   comp271/introduction
    
   
    
