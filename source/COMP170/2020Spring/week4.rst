@@ -67,9 +67,11 @@ The difference between the while-loop and the do-loop is best illustrated by the
 Loop demos
 ----------
 
-The following code is a small demonstration of loop techniques applied on Strings. `The code is made available, for now, as bytecode <https://github.com/lgreco/cdp/raw/master/source/COMP170/codeExamples/loopExamples.class>`_, i.e., an executable that you can run on any JVM. 
+The following code is a small demonstration of loop techniques applied on Strings. `The code was made available, originally, as bytecode <https://github.com/lgreco/cdp/raw/master/source/COMP170/codeExamples/loopExamples.class>`_, i.e., an executable that you can run on any JVM. 
 
 To run the bytecode open the Terminal application in macOS or the command prompt on Windows, go to the folder where you've downloaded the bytecode, and enter the command: ``java loopExamples``.
+
+The source code is `available on Github <https://github.com/lgreco/cdp/blob/master/source/COMP170/codeExamples/loopExamples.java>`_.
 
 Loops in mathematical iterations
 --------------------------------
@@ -191,4 +193,3 @@ Finally, we put everything together. We declare two final variables, ``EPSILON``
       }
     }
 	
-x	
