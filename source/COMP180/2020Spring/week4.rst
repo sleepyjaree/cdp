@@ -3,7 +3,7 @@ Review of Week 4
 =======================================================
 
 
-We are exploring a `data set with information about measles cases <https://github.com/lgreco/cdp/blob/master/source/COMP180/code/measles.csv>`_ for each state and each week, from 1928 to 2002. To manipulate the measles data, we are developing `a notebook that allows us to transform and process the information in the data set <https://github.com/lgreco/cdp/blob/master/source/COMP180/code/US%20Measles%20analysis.ipynb>`_.
+We are exploring a `data set with information about measles cases <https://github.com/lgreco/cdp/blob/master/source/COMP180/code/measles.csv>`_ for each state and each week, from 1928 to 2002. To manipulate the measles data, we are developing `a notebook that allows us to transform and process the information in the data set <https://github.com/lgreco/cdp/blob/master/source/COMP180/code/eradication/US%20Measles%20analysis.ipynb>`_.
 
 The notebook contains the following components.
 
