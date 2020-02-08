@@ -8,6 +8,7 @@ Leo Irakliotis' Course Documentation Project
 ============================================
 
 This is a comprehensive site with material and information from the courses I teach.
+(clean build)
 
 .. toctree::
    :maxdepth: 2
