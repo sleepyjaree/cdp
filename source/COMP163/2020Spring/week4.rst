@@ -2,7 +2,7 @@
 Review of Week 4
 =================
 
-In week 4 we finished reviewing logic, propositions, conditional propositions, and necessary and sufficient conditions. For a change of pace we moved to discussing algorithms. Algorithms are groups of instructions that perform specific tasks, like solving problems. These groups of well defined instructions receive their name from `Muḥammad ibn Mūsā al-Khwārizmī <https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi>`_, a Persian scholar who lived in the 8th century and developed methods for problem solving that are considered the first algorithms.
+In week 4 we finished reviewing logic, propositions, conditional propositions, and necessary and sufficient conditions. For a change of pace we moved to discussing algorithms. Algorithms are groups of instructions that perform specific tasks, like solving problems. These groups of well defined instructions receive their name from `Muhammad ibn Musa al-Khwarizmi <https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi>`_, a Persian scholar who lived in the 8th century and developed methods for problem solving that are considered the first algorithms.
 
 Algorithms can be simple procedures, like the following one that finds the largest of two numbers::
 
