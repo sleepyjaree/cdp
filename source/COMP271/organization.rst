@@ -10,17 +10,9 @@ Course outline
 
 The course will cover the following topics.
 
-* Set theory
-* Logic
-* Proofs
-* Number theory
-* Trees and graphs
-* Algorithms
-* Counting and probabilities
-* Combinatorial circuits
-* Finite state machines
-* Languages and automata
+(tbd)
 
+ 
 Ground rules
 ------------
 
