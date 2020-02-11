@@ -24,6 +24,7 @@ In the context of this course, professionalism and essential skills are as follo
  
 * Be respectful of **your own time.**
 
+
 * Be organized and neat.
 
  - When turning in homework or other assignments, make sure that your writing is legible and the overall appearance reflects quality and care. Content is always the most critical aspect of your work; but appearance counts too.
