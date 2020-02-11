@@ -165,7 +165,7 @@ In some cases, when we are not that our algorithm will terminate after a finite 
   return x;
   } // if
 
-The algorithm above will terminate after 5000 iterations. But now we cannot guarantee its correctness. Because if we are computing a square root that might have required 5050 iterations, we stop the algorithm 50 iterations short of the answer. And we don't have a way to tell is the value of :math:`x` that the algorithm returns, is because we reached the iteration limit (set by ``RUNAWAY``) or because we met the convergence criterion. It is left as an exercise, to modify the algorithm above in such as way to inform us how it terminated: either successfully by meeting the convergence criterion (``diff<epsilon``) or abruptly because it exceeded the allowed number of iterations (``counter>RUNAWAY``).
+The algorithm above will terminate after 5000 iterations. But now we cannot guarantee its correctness. Because if we are computing a square root that might have required 5050 iterations, we stop the algorithm 50 iterations short of the answer. And we don't have a way to tell is the value of :math:`x` that the algorithm returns, is because we reached the iteration limit (set by ``RUNAWAY``) or because we met the convergence criterion. It is left as an exercise, to modify the algorithm above in such as way to inform us how it terminated: either successfully by meeting the convergence criterion (``diff<=epsilon``) or abruptly because it exceeded the allowed number of iterations (``counter>=RUNAWAY``).
 
 Sorting algorithms
 ------------------
