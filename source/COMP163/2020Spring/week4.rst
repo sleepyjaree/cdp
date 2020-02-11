@@ -42,7 +42,7 @@ Algorithms can be more complex, like the following one that finds the largest nu
   }
   return largest;
 
-Algorithms can be as complex as the problem they solve. Finding the largest of two numbers, or the largest of a sequence of numbers, are relatively easy problems to solve. And the problem complexity increases, our task is not just find any algorithm to solve it but the most efficient algorithm to do so. Consider, for example, the following algorithm that solves the quadratic equation. ::
+We devise algorithms to solve problems of various difficulty. Finding the largest of two numbers, or the largest of a sequence of numbers, are relatively easy problems to solve. As the problem difficulty increases, our task is not just find any algorithm to solve it but the most efficient algorithm to do so. Consider, for example, the following algorithm that solves the quadratic equation. ::
   
   solveQuadratic ( a,b,c )
   
@@ -77,7 +77,7 @@ Further optimization is possible: ::
       return "No real solutions";
     } else {
       e <-- -b/(2*a);
-      g <-- sqrt(d)/(2*a);
+      g <-- SQRT(d)/(2*a);
       x1 <-- e-g;
       x2 <-- e+g;
       return x1, x2;
@@ -93,13 +93,79 @@ One final optimization can be achieved by removing the duplicate operation invol
     } else {
       f <-- 2*a;
       e <-- -b/f;
-      g <-- sqrt(d)/f;
+      g <-- SQRT(d)/f;
       x1 <-- e-g;
       x2 <-- e+g;
       return x1, x2;
     } 
   
-Algorithms are characterized by their complexity, but also by their correctness, and their ability to terminate.
+Algorithms are characterized by their complexity, but also by their correctness, and their ability to terminate. The complexity tells us what resources the algorithm requires, e.g., how much time (or memory, or both) will it take to complete its tasks. The correctness assures us that the algorithm solves every variance of the problem it was designed for. And the ability to terminate (the finiteness) is a guarantee that the algorithm will not run for ever.
+
+Consider the following example of an algorithm that approximates the square root of a number. ::
+
+  squareRoot ( n, epsilon )
+  
+  if ( n>=0 ) {
+    x <-- 1;
+	while ( diff > epsilon ) {
+	  nextx <-- ( x + n/x ) / 2;
+	  diff <-- |x-nextx|;
+	  x <-- nextx;
+	} // while
+  return x;
+  } // if
+
+The parameter ``epsilon`` is a measure of conversion. As successive values of ``nextx`` are computed, we measure how close they are to each other. If they are sufficiently close, we consider the approximation good enough and we terminate the algorithm. Usually for values of epsilon around :math:`0.00001`, the algorithm above yields very accurate results. For example, the following table shows the progression as we try to compute :math:`\sqrt{10}`:
+
++--------------------------------+----------------------+-----------------------+
+| **Term**  (:math:`n=10`)       | **Value**            | ``diff``              |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_0`                    | 1                    | :math:`|x_{k+1}-x_k|` |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_1=(x_0+n/x_0)/2`      | 5.5                  | 4.5                   |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_2=(x_1+n/x_1)/2``     | 3.659090909          | 1.840909091           |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_3=(x_2+n/x_2)/2``     | 3.196005082          | 0.4630858272          |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_4=(x_3+n/x_3)/2``     | 3.162455623          | 0.03354945907         |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_5=(x_4+n/x_4)/2``     | 3.162277665          | 0.0001779576282       |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_6=(x_5+n/x_5)/2``     | 3.16227766           | 0.000000005007295911  |
++--------------------------------+----------------------+-----------------------+
+| :math:`x_7=(x_6+n/x_6)/2``     | 3.16227766           | 0                     |
++--------------------------------+----------------------+-----------------------+
+
+
+After only six iterations, the algorithm converges within less that one thousandth. 
+The difference between :math:`x-5` and :math:`x_4` is less than :math:`0.001`. 
+After two more iterations, the algorithm converges within 0, i.e., finds the actual value of :math:`\sqrt{10}`. 
+In fact, the algorithm works nicely for large numbers too. 
+For example, it takes 70 iterations to compute the following root with a convergence (``epsilon``) value of :math:`10^{-10}`
+
+.. math::
+   \sqrt{948923748327487287482785776826574129023}
+
+In some cases, when we are not that our algorithm will terminate after a finite number of steps, we introduce an artificial mechanism to stop it. For example, after a few experiments with the square root algorithm above, we may come to the conclusion that the algorithm stops after 500 iterations, i.e., it terminates successfully. So, if the algorithm takes more than 1000 iterations, it either works on a difficult number that we have not thought of, or there is an error that creates an infinite loop and the algorithm will not stop. To prevent such infinite loop, we modify the square root algorithm as follows: we introduce an iteration counter, and when that counter exceeds a large value, we force the algorithm to end.::
+
+  squareRoot ( n, epsilon )
+  
+  
+  if ( n>=0 ) {
+    RUNAWAY <-- 5000;
+    counter <-- 1;
+    x <-- 1;
+	while ( diff > epsilon AND counter < RUNAWAY ) {
+	  nextx <-- ( x + n/x ) / 2;
+	  diff <-- |x-nextx|;
+	  x <-- nextx;
+	  counter <-- counter+1;
+	} // while
+  return x;
+  } // if
+
+The algorithm above will terminate after 5000 iterations. But now we cannot guarantee its correctness. Because if we are computing a square root that might have required 5050 iterations, we stop the algorithm 50 iterations short of the answer. And we don't have a way to tell is the value of :math:`x` that the algorithm returns, is because we reached the iteration limit (set by ``RUNAWAY``) or because we met the convergence criterion. It is left as an exercise, to modify the algorithm above in such as way to inform us how it terminated: either successfully by meeting the convergence criterion (``diff<epsilon``) or abruptly because it exceeded the allowed number of iterations (``counter>RUNAWAY``).
 
 Sorting algorithms
 ------------------
