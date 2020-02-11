@@ -109,13 +109,13 @@ Consider the following example of an algorithm that approximates the square root
     x <-- 1;
 	while ( diff > epsilon ) {
 	  nextx <-- ( x + n/x ) / 2;
-	  diff <-- |x-nextx|;
+	  diff <-- absolute_value_of (x-nextx);
 	  x <-- nextx;
 	} // while
   return x;
   } // if
 
-The parameter ``epsilon`` is a measure of conversion. As successive values of ``nextx`` are computed, we measure how close they are to each other. If they are sufficiently close, we consider the approximation good enough and we terminate the algorithm. Usually for values of epsilon around :math:`0.00001`, the algorithm above yields very accurate results. For example, the following table shows the progression as we try to compute :math:`\sqrt{10}`:
+The parameter ``epsilon`` is a measure of convergence. As successive values of ``nextx`` are computed, we measure how close they are to each other. If they are sufficiently close, we consider the approximation good enough and we terminate the algorithm. Usually for values of epsilon around :math:`0.00001`, the algorithm above yields very accurate results. For example, the following table shows the progression as we try to compute :math:`\sqrt{10}`:
 
 +--------------------------------+----------------------+-----------------------+
 | **Term**  (:math:`n=10`)       | **Value**            | ``diff``              |
@@ -147,7 +147,7 @@ For example, it takes 70 iterations to compute the following root with a converg
 .. math::
    \sqrt{948923748327487287482785776826574129023}
 
-In some cases, when we are not that our algorithm will terminate after a finite number of steps, we introduce an artificial mechanism to stop it. For example, after a few experiments with the square root algorithm above, we may come to the conclusion that the algorithm stops after 500 iterations, i.e., it terminates successfully. So, if the algorithm takes more than 1000 iterations, it either works on a difficult number that we have not thought of, or there is an error that creates an infinite loop and the algorithm will not stop. To prevent such infinite loop, we modify the square root algorithm as follows: we introduce an iteration counter, and when that counter exceeds a large value, we force the algorithm to end.::
+In some cases, when we are not that our algorithm will terminate after a finite number of steps, we introduce an artificial mechanism to stop it. For example, after a few experiments with the square root algorithm above, we may come to the conclusion that the algorithm stops after 500 iterations, i.e., it terminates successfully. So, if the algorithm takes more than 1000 iterations, it either works on a difficult number that we have not thought of, or there is an error that creates an infinite loop and the algorithm will not stop. To prevent such infinite loop, we modify the square root algorithm as follows: we introduce an iteration counter, and when that counter exceeds a large value, we force the algorithm to end. ::
 
   squareRoot ( n, epsilon )
   
@@ -158,7 +158,7 @@ In some cases, when we are not that our algorithm will terminate after a finite 
     x <-- 1;
 	while ( diff > epsilon AND counter < RUNAWAY ) {
 	  nextx <-- ( x + n/x ) / 2;
-	  diff <-- |x-nextx|;
+	  diff <-- absolute_value_of (x-nextx);
 	  x <-- nextx;
 	  counter <-- counter+1;
 	} // while
