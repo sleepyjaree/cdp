@@ -32,3 +32,46 @@ Algorithms can be more complex, like the following one that finds the largest nu
   }
   return largest;
 
+Algorithms can be as complex as the problem they solve. Finding the largest of two numbers, or the largest of a sequence of numbers, are relatively easy problems to solve. And the problem complexity increases, our task is not just find any algorithm to solve it but the most efficient algorithm to do so. Consider, for example, the following algorithm that solves the quadratic equation. ::
+  
+  solveQuadratic ( a,b,c )
+  
+  if b*b-4*a*c<0 {
+    return "No real solutions";
+  } else {
+    x1 <-- (-b-SQRT(b*b-4*a*c))/(2*a);
+    x2 <-- (-b+SQRT(b*b-4*a*c))/(2*a);
+    return x1, x2;
+  } 
+  
+The algorithm does solve the problem, but it performs repetitive tasks. For example, the quantity :math:`b^2-4ac` is evaluated three times. The square root :math:`\sqrt{b^2-4ac}` is evaluated twice. These repetitions can be avoided as follows. ::
+  
+  solveQuadratic ( a,b,c )
+  
+  delta = b*b-4*a*c;
+  if delta<0 {
+    return "No real solutions";
+  } else {
+    sqrtDelta <-- SQRT(b*b-4*a*c);
+    x1 <-- (-b-sqrtDelta)/(2*a);
+    x2 <-- (-b+sqrtDelta)/(2*a);
+    return x1, x2;
+  } 
+  
+Further optimization is possible: ::
+  
+    solveQuadratic ( a,b,c )
+  
+    delta = b*b-4*a*c;
+    if delta<0 {
+      return "No real solutions";
+    } else {
+      a2 <-- 1/(2*a);
+      sqrtDelta <-- SQRT(b*b-4*a*c) * a2;
+      b2a <-- -b * a2;
+      x1 <-- b2a-sqrtDelta;
+      x2 <-- b2a+sqrtDelta;
+      return x1, x2;
+    } 
+  
+Algorithms are characterized by their complexity, but also by their correctness, and their ability to terminate.
