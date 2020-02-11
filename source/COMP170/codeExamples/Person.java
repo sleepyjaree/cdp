@@ -8,7 +8,6 @@ public class Person {
     /**
      * Prints a descriptive sentence about the person
      */
-
     public void describePerson() {
         System.out.println("\n"+firstName+" "+
             lastName+" was born in "
@@ -19,7 +18,6 @@ public class Person {
      * Shows the person's affinity for a study topic
      * @param topic to study
      */
-
     public void study(String topic) {
         System.out.println("\n"+firstName+
             " loves to study "+topic);
@@ -28,7 +26,6 @@ public class Person {
     /** 
      * Returns the age of the person
      */
-
     public int showAge() {
         int age = 2020-yearOfBirth;
         return age;
@@ -38,22 +35,18 @@ public class Person {
      * Causes a person to sleep and when called to respond with Zzzz
      * @param hours Hours of sleep; each hour shows a Zzz as a response
      */
-
     public void goSleep(int hours) {
         System.out.print("\nHey, "+firstName+"?");
         for (int i=1; i<=hours; i++) {
             System.out.print(" Zzzz ");
         }
         System.out.println("\n\t( Shhhhh! "+firstName+" is sleeping)");
-
     }
-
     
     /**
      * Causes a person to have a meal
      * @param food item to eat
      */
-
     public void eatSome(String food) {
         System.out.println("\n"+firstName+" is enjoying a bit of "+food);
     }

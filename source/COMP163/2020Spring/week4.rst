@@ -90,7 +90,7 @@ One final optimization can be achieved by removing the duplicate operation invol
     if delta<0 {
       return "No real solutions";
     } else {
-      f <-- 2*a
+      f <-- 2*a;
       e <-- -b/f;
       g <-- sqrt(d)/f;
       x1 <-- e-g;
