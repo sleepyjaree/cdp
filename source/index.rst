@@ -11,7 +11,7 @@ This is a comprehensive site with material and information from the courses I te
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Courses
    
    COMP163/introduction   
