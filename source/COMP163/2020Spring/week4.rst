@@ -1,8 +1,16 @@
 
-Review of Week 4
-=================
+Review of Weeks 4 and 5: Algorithms
+===================================
 
 In week 4 we finished reviewing logic, propositions, conditional propositions, and necessary and sufficient conditions. For a change of pace we moved to discussing algorithms. Algorithms are groups of instructions that perform specific tasks, like solving problems. These groups of well defined instructions receive their name from `Muhammad ibn Musa al-Khwarizmi <https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi>`_, a Persian scholar who lived in the 8th century and developed methods for problem solving that are considered the first algorithms.
+
+Reading material
+----------------
+
+* From the recommended textbook: Chapter 4.
+
+Recap of class meetings
+-----------------------
 
 Algorithms can be simple procedures, like the following one that finds the largest of two numbers::
 
@@ -66,11 +74,10 @@ Further optimization is possible: ::
     if delta<0 {
       return "No real solutions";
     } else {
-      a2 <-- 1/(2*a);
-      sqrtDelta <-- SQRT(b*b-4*a*c) * a2;
-      b2a <-- -b * a2;
-      x1 <-- b2a-sqrtDelta;
-      x2 <-- b2a+sqrtDelta;
+      e <-- -b/(2*a);
+      g <-- sqrt(d)/(2*a);
+      x1 <-- e-g;
+      x2 <-- e+g;
       return x1, x2;
     } 
   
