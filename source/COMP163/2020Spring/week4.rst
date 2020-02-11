@@ -8,6 +8,7 @@ Reading material
 ----------------
 
 * From the recommended textbook: Chapter 4.
+* `Asymptotic notation <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Aspnes-asymptotic.pdf>`_ from Aspnes' book. This material is related to the analysis of algorithms.
 
 Recap of class meetings
 -----------------------
@@ -82,3 +83,9 @@ Further optimization is possible: ::
     } 
   
 Algorithms are characterized by their complexity, but also by their correctness, and their ability to terminate.
+
+Sorting algorithms
+------------------
+
+Performance
+-----------
