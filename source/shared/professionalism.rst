@@ -24,6 +24,8 @@ In the context of this course, professionalism and essential skills are as follo
  
 * Be respectful of **your own time.**
 
+ - Try emailing a question instead of waiting for Student (office) Hours. If the question is related to programming, attach a copy of your code. In most cases you will get an answer within a few hours.
+
 
 * Be organized and neat.
 
