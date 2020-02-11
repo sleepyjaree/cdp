@@ -1,3 +1,6 @@
+Algorithms
+----------
+
 Algorithms are groups of instructions that perform specific tasks, like solving problems. These groups of well defined instructions receive their name from `Muhammad ibn Musa al-Khwarizmi <https://en.wikipedia.org/wiki/Muhammad_ibn_Musa_al-Khwarizmi>`_, a Persian scholar who lived in the 8th century and developed methods for problem solving that are considered the first algorithms.
 
 
@@ -157,7 +160,7 @@ The algorithm above will terminate after 5000 iterations. But now we cannot guar
 It is left as an exercise, to modify the algorithm above in such as way to inform us how it terminated: either successfully by meeting the convergence criterion (``diff<=epsilon``) or abruptly because it exceeded the allowed number of iterations (``counter>=RUNAWAY``).
 
 Sorting algorithms
-------------------
+++++++++++++++++++
 
 Performance
------------
++++++++++++

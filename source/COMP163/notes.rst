@@ -2,8 +2,10 @@ Leo's notes
 -----------
 
 ..	toctree::
-	:maxdepth: 2
+	:maxdepth: 1
 	
-	2020Spring/weeklyReviews
 	
+	Sets <notes/sets>
+	Algorithms <notes/algorithms>
 	Induction <notes/induction>
+	
