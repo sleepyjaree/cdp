@@ -82,6 +82,22 @@ Further optimization is possible: ::
       return x1, x2;
     } 
   
+One final optimization can be achieved by removing the duplicate operation involving :math:`2a`: ::
+  
+    solveQuadratic ( a,b,c )
+  
+    delta = b*b-4*a*c;
+    if delta<0 {
+      return "No real solutions";
+    } else {
+      f <-- 2*a
+      e <-- -b/f;
+      g <-- sqrt(d)/f;
+      x1 <-- e-g;
+      x2 <-- e+g;
+      return x1, x2;
+    } 
+  
 Algorithms are characterized by their complexity, but also by their correctness, and their ability to terminate.
 
 Sorting algorithms
