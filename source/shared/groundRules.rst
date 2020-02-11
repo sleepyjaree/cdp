@@ -3,7 +3,7 @@ Ground rules
 
 Be proactive
 ++++++++++++
-In my experience, the single most common cause of poor performance in any course is when students are not proactive. When you are proactive you can recognize and address any issues with your courses. And learning to be proactive is one of the most valuable skills you can aquire in college. 
+In my experience, the single most common cause of poor performance in any course is when students are not proactive. When you are proactive you can recognize and address any issues with your courses. And learning to be proactive is one of the most valuable skills you can acquire in college. 
 
 Here's how you can be proactive, so you can succeed in this coure.
 
@@ -14,3 +14,8 @@ Here's how you can be proactive, so you can succeed in this coure.
 * Come to class and take notes. Form or join a study group comprising fellow students.
 
 * If, for any reason, you need to be absent from class, let me know in advance. I don't need to know the reason, but I need to know about the duration of your absense.
+
+In-class assignments
+++++++++++++++++++++
+
+In some of my courses, I conduct weekly in-class assessment instead of homework assignments. For in-class assignments, students will have 20-30 minutes to complete them at the end of class session. For consistency, **in-class assignments will be held on the first day of the week the class meets.** There will be about 8 in-class assignments. Students will not be penalized for missing up to 2 of these assignments.
