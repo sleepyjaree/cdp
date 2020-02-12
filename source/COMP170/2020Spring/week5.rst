@@ -63,5 +63,5 @@ Notice that by making the fields of class Airplane private, we can no longer acc
     Airplane myFavAirplane = new Airplane();
 	myFavAirplane.tailNumber = "N4335K";
 
-This is not illegal, because the field tailNumber has been declared as private, and must be accessed only through class methods. That's why we defined the constructor method ``Airplane(String tailNumber, String make, String model)``.
+This is now illegal, because the field ``tailNumber`` has been declared as private, and must be accessed only through class methods. That's why we defined the constructor method ``Airplane(String tailNumber, String make, String model)``.
   
