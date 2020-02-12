@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Airplane
+comment1.params=
+comment1.target=Airplane()
+comment2.params=tailNumber\ make\ model
+comment2.target=Airplane(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment3.params=tailNumber
+comment3.target=void\ takeOff(java.lang.String)
+comment4.params=
+comment4.target=int\ sayAltitude()
+comment5.params=
+comment5.target=int\ sayAirspeed()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
