@@ -30,7 +30,7 @@ where :math:`\bar{x}=\frac{1}{k}\sum_{i=1}^k x_i`, and likewise for :math:`\bar{
 
 Luckily for us, this analysis is done within the ``seaborn`` package. This package is an extension (library) in Python, built on top of the ``mathplotlib`` library, to provide statistical analysis and visualization. 
 
-Useful informationa about the ``seaborn`` package
+Useful information about the ``seaborn`` package
 -------------------------------------------------
 
 * `The project's website <https://seaborn.pydata.org/index.html>`_.
