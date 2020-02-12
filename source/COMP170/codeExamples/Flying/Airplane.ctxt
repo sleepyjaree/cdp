@@ -10,6 +10,4 @@ comment4.params=
 comment4.target=int\ sayAltitude()
 comment5.params=
 comment5.target=int\ sayAirspeed()
-comment6.params=args
-comment6.target=void\ main(java.lang.String[])
-numComments=7
+numComments=6
