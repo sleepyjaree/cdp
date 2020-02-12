@@ -6,7 +6,7 @@ Our first formal introduction to Classes and objects is `available from the Gith
 
 We saw how to define a Person class in the example above. Next we worked on a more intricate example, defining a class for airplanes as follows:
 
-.. code-block::java
+.. code-block:: java
    :linenos:
    
    public class Airplane {
@@ -27,4 +27,19 @@ We saw how to define a Person class in the example above. Next we worked on a mo
 		airspeed = 0;
 		altitude = 0;
 	 } // standard constructor
+	 
+	 public void takeOff(String tailNumber) {
+	   airspeed = 100;
+	   altitude = 100;
+	 } // method takeOff
+	 
+	 public int sayAltitude(String tailNumber) {
+	   return altitude;
+	 }} // method sayAltitude (an accessor method)
+	 
+	 public int sayAirspeed(String tailNumber) {
+	   return airspeed;
+	 } // method sayAirspeed (an accessor method)
+	 
+	 
    }
