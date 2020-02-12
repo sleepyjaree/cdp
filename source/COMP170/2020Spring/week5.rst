@@ -57,7 +57,8 @@ Notice that by making the fields of class Airplane private, we can no longer acc
    Person myBestFriend = new Person();
    myBestFriend.firstName = "Jean Luc";
    myBestFriend.lastName = "Picard";
-   
+
+
  But in the case of an Airplane object, we can no longer assign a value to a field as casully:
  
  .. code-block:: java
