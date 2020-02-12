@@ -48,7 +48,7 @@ By inspecting the data set, we note that the first four characters of the field 
 Aggregation
 -----------
 
-Now that our data are clean and in the proper format, we need to think about aggradation. Aggregration means the abilkity to summarize data based on some common property. For example, pull together all the records for a given state, and add up all the measles cases: that will give us the total of measles in that state from 1928 to 2002. Or, pull together all the records for each state for each year, and add up the number of cases: this will give us the total number of cases per state, per year.
+Now that our data are clean and in the proper format, we need to think about aggradation. Aggregation means the ability to summarize data based on some common property. For example, pull together all the records for a given state, and add up all the measles cases: that will give us the total of measles in that state from 1928 to 2002. Or, pull together all the records for each state for each year, and add up the number of cases: this will give us the total number of cases per state, per year.
 
 Using dataframes in the ``pandas`` library, we can use the ``groupby`` method to achieve the desired aggregation.
 
