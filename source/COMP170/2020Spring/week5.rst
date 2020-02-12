@@ -48,5 +48,7 @@ We saw how to define a Person class in the example above. Next we worked on a mo
 
         System.out.println(myFavAirplane.sayAltitude());
     }
-  }
+   }
+
+
   
