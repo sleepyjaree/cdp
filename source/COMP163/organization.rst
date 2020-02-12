@@ -33,7 +33,7 @@ Course performance is determined using in-class assignments, weekly homework, a 
 
 Exam dates
 ++++++++++
-The final exam will be a take-home assignment. It will become available at 4:15 PM on 4/20/20 and due at 4:15 PM on Monday 4/27/20 (subject to change).
+The final exam will be a take-home assignment. It will become available at 4:15 PM on 4/20/20 and due at 6:15 PM on Monday 4/27/20 (subject to change).
 
 The midterm exam will be a take-home assignment. It will become available on Sakai at 4:15 PM on 2/21/20 and due at 4:15 PM on Friday 4/28/20 (subject to change).
 

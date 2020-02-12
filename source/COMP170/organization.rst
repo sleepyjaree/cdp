@@ -57,9 +57,9 @@ Course performance is determined using in-class assignments, weekly homework, a 
 
 Exam dates
 ++++++++++
-The final exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on Monday 4/##/20 (subject to change).
+The final exam will be a take-home assignment. It will become available on Sakai at 9 AM on 4/24/20 and due at 11 AM on  5/1/20 (subject to change).
 
-The midterm exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on Monday 4/##/20 (subject to change).
+The midterm exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on 4/##/20 (subject to change).
 
 
 .. include:: ../shared/studentHours.rst

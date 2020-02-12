@@ -65,7 +65,7 @@ Teaching Assistant
 
 Exam dates
 ++++++++++
-The final exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on Monday 4/##/20 (subject to change).
+The final exam will be a take-home assignment. It will become available on Sakai at 1 PM on 4/25/20 and due at 3 PM on Monday 5/2/20 (subject to change).
 
 The midterm exam will be a take-home assignment. It will become available on Sakai at 1 PM on 2/21/20 and due at 1 PM on Friday 2/28/20 (subject to change).
 
