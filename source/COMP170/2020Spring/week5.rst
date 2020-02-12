@@ -50,5 +50,18 @@ We saw how to define a Person class in the example above. Next we worked on a mo
     }
    }
 
+Notice that by making the fields of class Airplane private, we can no longer access them as casually as we did in the earlier example with class Person. In the example with class Person, we could set a person's first and last names quite casually:
 
+.. code-block:: java 
+   Person myBestFriend = new Person();
+   myBestFriend.firstName = "Jean Luc";
+   myBestFriend.lastName = "Picard";
+   
+ But in the case of an Airplane object, we can no longer assign a value to a field as casully:
+ 
+ .. code-block:: java
+    Airplane myFavAirplane = new Airplane();
+	myFavAirplane.tailNumber = "N4335K";
+
+This is not illegal, because the field tailNumber has been declared as private, and must be accessed only through class methods. That's why we defined the constructor method ``Airplane(String tailNumber, String make, String model)``.
   
