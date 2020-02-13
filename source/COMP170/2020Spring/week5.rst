@@ -64,7 +64,7 @@ But in the case of an Airplane object, we can no longer assign a value to a fiel
  .. code-block:: java
  
     Airplane myFavAirplane = new Airplane();
-	myFavAirplane.tailNumber = "N4335K";
+    myFavAirplane.tailNumber = "N4335K";
 
 This is now illegal, because the field ``tailNumber`` has been declared as private, and must be accessed only through class methods. That's why we defined the constructor method ``Airplane(String tailNumber, String make, String model)``.
   
