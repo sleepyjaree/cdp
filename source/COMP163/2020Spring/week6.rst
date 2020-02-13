@@ -1,5 +1,5 @@
 
-Review of Week 6
-=================
+Review of Week 6: Proofs
+========================
 
-tbd
+
