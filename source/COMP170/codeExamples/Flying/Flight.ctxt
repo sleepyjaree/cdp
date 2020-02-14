@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Flight
+comment1.params=fromAirport\ toAirport\ pilotInCommand\ airplane
+comment1.target=Flight(Airport,\ Airport,\ Pilot,\ Airplane)
+numComments=2

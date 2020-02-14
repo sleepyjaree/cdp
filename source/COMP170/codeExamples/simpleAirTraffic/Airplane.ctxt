@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Airplane
+comment0.text=\n\ Demo\ of\ Private\ fields\n
+comment1.params=tailNumber\ make\ model
+comment1.target=Airplane(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\n\ A\ method\ to\ identify\ an\ airplane\n\ @param\ tailNumber\ The\ registry\ number\ of\ the\ aircraft;\ must\ begin\ with\ N\n\ @param\ make\ The\ manufacturer\ of\ the\ airplane\n\ @param\ model\ The\ model\ of\ the\ airplane\n
+comment2.params=
+comment2.target=java.lang.String\ tn()
+comment2.text=\n\ A\ method\ to\ return\ a\ message\ containing\ the\ tailNumber\ of\ an\ Airplane\n\ @return\ tnMessage\ (String)\ message\ with\ the\ tailNumber\n
+comment3.params=
+comment3.target=java.lang.String\ describe()
+comment3.text=\n\ A\ method\ to\ return\ a\ terse\ description\ of\ the\ airplane\n\ @return\ description\ (String)\ showing\ tail\ number,\ make,\ and\ model\n
+comment4.params=
+comment4.target=void\ fly()
+comment4.text=\n\ a\ method\ to\ cause\ the\ airplane\ to\ fly\n
+numComments=5

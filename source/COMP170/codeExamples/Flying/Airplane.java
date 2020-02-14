@@ -29,7 +29,22 @@ public class Airplane {
 
     public int sayAirspeed() {
         return airspeed;
-    } // method sayAirspeed (an accessor method)
+    } // method sayAirspeed (an accessor method)   
+    
+    public String getMakeModel() {
+        String makeModel = make+" "+model;
+        return makeModel;
+    }
 
-   
+    public String registration() {
+        String registration = tailNumber;
+        return  registration;
+    }
+    
+    public void flightLevelChange(int toAltitude) {
+        System.out.println("Leaving "+altitude+" for "+toAltitude);
+        altitude = toAltitude;
+    } // method climb
+    
+        
 }
