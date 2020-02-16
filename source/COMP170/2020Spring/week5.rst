@@ -115,11 +115,10 @@ In using the String class, we follow its documentation. We create new String obj
 Unless we look into the source code of the String class we can never tell now the length of the string is computed. We simply trust that it is computed correctly.
 
 
-.. figure:: images/N866US.jpg
+.. image:: images/N866US.jpg
    :align: right
-   :figwidth: 50%
+   :width: 33%
    
-   N866US is a Diamond DA40 based at Schaumburg, Ill. (Photo by L. Irakliotis).
 
 When writing our own classes, we must separate our roles as Developers and as Users. To return to the airplane example above, we should never allow a User (even it that programmer is ourself) to access the class's fields directly. We must, as Developers, provide methods for users to interact with the class as needed. For example, in creating a new Airplane object we would like the user to pass the aircraft's specifics through a method, as follows:
 
