@@ -112,11 +112,18 @@ we apply the ``.lenght()`` method. When we look up the definition of ``length()`
 
 But unless we look into the source code of the String class we can never tell now the length of the string is computed. We simply trust that it is computed correctly.
 
+
+.. figure:: images/N866US.jpg
+   :align: right
+   :figwidth: 50%
+   
+   N866US is a Diamond DA40 based at Schaumburg, Ill. (Photo by L. Irakliotis).
+
 When writing our own classes we must strive to follow the same separation between our acting as Developers and our acting as Users. To return to the airplane example above, we should never allow a User (even it that programmer is ourself) to access the class's fields. We must, as Developers, provide methods for users to interact with the class as needed. For example, in creating a new Airplane object we would like the user to pass the aircraft's specifics through a method, as follows:
 
 .. code-block:: java
    
-   Airplane myFavAirplane = new Airplane("N966RR","Cessna","Skyhawk");
+   Airplane myFavAirplane = new Airplane("N866US","Diamond","DA40");
 
 To make that possible, we modify our initial Airplane class in the following manner: first, we make its fields inaccessible outside the class (no do direct access in the form ``object.field`` can take place), and second, we define a method to initialize a new object with specific information:
 
