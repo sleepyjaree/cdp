@@ -125,7 +125,7 @@ When writing our own classes we must strive to follow the same separation betwee
    
    Airplane myFavAirplane = new Airplane("N866US","Diamond","DA40");
 
-To make that possible, we modify our initial Airplane class in the following manner: first, we make its fields inaccessible outside the class (no do direct access in the form ``object.field`` can take place), and second, we define a method to initialize a new object with specific information:
+To make that possible, we modify our initial Airplane class in the following manner: first, we make its fields inaccessible outside the class (no do direct access in the form ``object.field`` can take place), and second, we define a method to initialize a new object with specific information. To make fields inaccessible outside the class we use the modifier ``private``, i.e., we declare these fields to be private items of the class, available only to methods within the class but not outside it.
 
 .. code-block:: java
 
@@ -148,7 +148,7 @@ To make that possible, we modify our initial Airplane class in the following man
      ...
    }
 
-Notice the comments prior to the method ``Airplane``. These comments are passed to the user of the class, and describe how the specific method is to be used. The comments follow specific syntax rules that are part of `the Javadoc tool <https://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html>`_. The user never touches the classes fields directly. Instead, users pass values to a class's fields through methods. This particular method above, i.e., a method that bears the same name as the class itself, and assigns values to the fields of a new object, is called a **constructor** method.
+Notice the comments prior to the method ``Airplane``. These comments are instructions passed to the user of the class, and describe how the specific method is to be used. The comments follow specific syntax rules that are part of `the Javadoc tool <https://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html>`_. The user never touches the classes fields directly. Instead, users pass values to a class's fields through methods. This particular method above, i.e., a method that bears the same name as the class itself, and assigns values to the fields of a new object, is called a **constructor** method.
 
 The constructor method above is fairly simplistic and it may cause us to ask what's the benefit of adding all that extra code to avoid direct access to a class's fields. Its usefulness becomes evident when we begin to apply logic that enforces specific rules. For example, airplane tail numbers for US-registed aircraft begin with the letter "N". If our application is meant for US-registered aircraft only, then constructor method above can enforce a rule for proper tail numbers:
 
