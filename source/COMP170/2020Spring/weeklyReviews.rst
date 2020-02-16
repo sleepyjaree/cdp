@@ -2,9 +2,9 @@ Weekly Reviews - Spring 2020
 ============================
 
 ..	toctree::
-	:maxdepth: 2
+    :maxdepth: 2
 	
-	week2
-	week3
-	week4
-        week5
+    week2
+    week3
+    week4
+    week5
