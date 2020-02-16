@@ -187,7 +187,7 @@ What happens when the constructor method above is invoked from a method outside 
    ...
    }
  
-The second half of the statement above, ``new Airplane("N866US",...)`` tells the Java Virtual Machine to allocate memory for a new Airplane object, and then initializes the new object's fields to the values provided as arguments, e.g. the tail number field will be set to ``N866US``. Once the initializations is done the new object is assigned a reference (a nickname if you wish) stored in variable ``myFavAirplane`` which is designated as a reference to an Airplane object by the first half of the statement above. Step by step, the process works as follows. ::
+The second half of the statement above, ``new Airplane("N866US",...)`` tells the Java Virtual Machine to allocate memory for a new Airplane object, and then initializes the new object's fields to the values provided as arguments, e.g. the tail number field will be set to ``N866US``, etc. Once the initialization is done, the new object is assigned a reference (a nickname if you wish) stored in variable ``myFavAirplane`` which is designated as a reference to an Airplane object by the first half of the statement above. Step by step, the process works as follows. ::
 
 
    create new object to be referenced as myFavAirplane
