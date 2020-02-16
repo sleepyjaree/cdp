@@ -59,7 +59,7 @@ Exam dates
 ++++++++++
 The final exam will be a take-home assignment. It will become available on Sakai at 9 AM on 4/24/20 and due at 11 AM on  5/1/20 (subject to change).
 
-The midterm exam will be a take-home assignment. It will become available on Sakai at #:## PM on 4/##/20 and due at #:## PM on 4/##/20 (subject to change).
+The midterm exam will be an in-class, open book, open notes, open web test. It will be conducted during class hours on Wednesday, February 26, 2020.
 
 
 .. include:: ../shared/studentHours.rst
