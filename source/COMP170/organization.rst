@@ -68,3 +68,6 @@ The final exam will be an in-class, open book, open notes, open web test. It wil
 .. include:: ../shared/professionalism.rst
 .. include:: ../shared/zoom.rst
 .. include:: ../shared/formalStuff.rst
+
+ Να κάνεις διαλειμματική νηστεία. Να προσέχεις λίγο τη διατροφή, περιορίζοντας πολύ τους υδατάνθρακες και την ζάχαρη. Και να έρχεται αυτό το κωλόπαιδο από την Αντιόχεια (του Ταύρου) να ανοίξει μαγαζί 2 τετράγωνα από το σπίτι σου
+
