@@ -11,43 +11,42 @@ We saw how to define a Person class in the example above. Next we worked on `a m
    
    public class Airplane {
 
-    private String tailNumber;
-    private String make;
-    private String model;
-    private int altitude, airspeed;
+     private String tailNumber;
+     private String make;
+     private String model;
+     private int altitude, airspeed;
 
-    public Airplane() {
-		airspeed = 0;
-		altitude=0;
-    } // default constructor
+     public Airplane() {
+       airspeed = 0;
+       altitude=0;
+     } // default constructor
 
-    public Airplane(String tailNumber, String make, String model) {
-		this.tailNumber = tailNumber;
-		this.make = make;
-		this.model = model;
-		airspeed = 0;
-		altitude = 0;
-    } // standard constructor
+     public Airplane(String tailNumber, String make, String model) {
+       this.tailNumber = tailNumber;
+       this.make = make;
+       this.model = model;
+       airspeed = 0;
+       altitude = 0;
+     } // standard constructor
 
-    public void takeOff(String tailNumber) {
-		airspeed = 100;
-		altitude = 100;
-    } // method takeOff
+     public void takeOff(String tailNumber) {
+       airspeed = 100;
+       altitude = 100;
+     } // method takeOff
 
-    public int sayAltitude() {
-		return altitude;
-    } // method sayAltitude (an accessor method)
+     public int sayAltitude() {
+       return altitude;
+     } // method sayAltitude (an accessor method)
 
-    public int sayAirspeed() {
-		return airspeed;
-    } // method sayAirspeed (an accessor method)
+     public int sayAirspeed() {
+       return airspeed;
+     } // method sayAirspeed (an accessor method)
 
-    public static void main(String[] args) {
-		Airplane myFavAirplane = new Airplane("N4335K", "Piper", "Archer");
-		Airplane myOtherFavAirplane = new Airplane("N866US", "Diamond", "Star");
-
-		System.out.println(myFavAirplane.sayAltitude());
-    }
+     public static void main(String[] args) {
+       Airplane myFavAirplane = new Airplane("N4335K", "Piper", "Archer");
+       Airplane myOtherFavAirplane = new Airplane("N866US", "Diamond", "Star");
+       System.out.println(myFavAirplane.sayAltitude());
+     }
    }
 
 Notice that by making the fields of class Airplane private, we can no longer access them as casually outside the class Airplane as we did in the earlier example with class Person. In the example with class Person, we could set a person's first and last names quite casually from any method outside the class, e.g. in the ``main`` method:
