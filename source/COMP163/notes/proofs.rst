@@ -112,8 +112,48 @@ To illustrate this method, let's look at the earlier example:
    n^2&=(2x+1)^2 \\
    &=4x^2+4x+1\\
    &=2(2x^2+2x)+1 \\
-   &=2z+1,\ \text{where}\ (z=2x^2+2x)\\
+   &=2z+1,\ (\text{where}\ z=2x^2+2x\\
    n^2&:\ \text{odd}\\
    \text{but}&:\ \text{we assumed}\ h\ (n^2\ \text{even})\\
    
+Example: if :math:`n^2` is odd then :math:`n` is odd
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+If we tried direct proof here, we'll end with the expression :math:`n=\sqrt{2x+1}` which is of inconclusive parity. Therefore, a proof by contradiction may be a better strategy. Our hypothesis is :math:`h:\ n^2\ \text{odd}`. Our conclusion is :math:`c:\ n\ \text{odd}`. And since we cannot prove directly :math:`h\Rightarrow c`, we will assume that :math:`h\Rightarrow\neg c` is true. Given this assumption, :math:`n` is odd and therefore :math:`n=2x`. Squaring both sides of the equation:
+
+.. math::
+
+   n^2&=4x^2 \\
+   &= 2(2x^2) \\
+   &= 2z,\ (\text{where}\ z=2x^2)
+   
+Therefore :math:`n^2` is an even number contrary to the assumed truthfulness of :math:`h\Rightarrow\neg c`. Our assumption :math:`h\Rightarrow\neg c` is false, leading to the conclusion that :math:`h\Rightarrow c` is true. In other words,  if :math:`n^2` is odd then :math:`n` is also odd.
+
+Example: if :math:`a,b \in \mathbb{Z}` then :math:`a^2-4b\neq 2` 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+The hypothesis here is :math:`h:\ a,b \in \mathbb{Z}`. And the conclusion is :math:`c:\ a^2-4b\neq 2`. There is no direct way to show :math:`h\Rightarrow c`, and it would seem that a proof by contradiction is the preferred strategy. We begin by assuming that :math:`h\Rightarrow\neg c` is true, i.e., there are integer numbers :math:`a,b` such that :math:`a^2-4b=2`. Given that, we can write:
+
+.. math::
+
+   a^2-4b&=2 \\
+   a^2&=4b+2 \\
+   &2(2b+1)
+   
+From the above we can tell that :math:`a^2` is even and therefore :math:`a` is also even and thus can be written as a multiple of 2: :math:`a=2x` and substituting this in the original expression:
+
+.. math::
+
+ a^2-4b &= 2 \\
+ (2x)^2-4b &= 2 \\
+ 4x^2-4b &= 2 \\
+ 2x^2-2b &= 1 \\
+ 2(x^2-b) &= 1\\
+ 2z &=1,\ (\text{where}\ z=x^2-b)
+
+We just concluded that :math:`1` is an even number! That's because the assumption that led us to this astonishing conclusion is false. The assumption was that there are integer numbers :math:`a,b` such that :math:`a^2-4b=2`. This assumption is false which means that there are no integers :math:`a,b` such that  :math:`a^2-4b=2`. Therefore, the original statement :math:`a,b \in \mathbb{Z}\Rightarrow a^2-4b\neq 2`, is true.
+
+Example: there is no largest number 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Let's suppose that there is a largest number, :math:`L`, such that :math:`L\geq x,\ \forall x`. Given that :math:`1>0`, we can add :math:`L` to both sides, resulting to :math:`L+1 > L` which cannot be true, because we assumed that :math:`L` is the greatest number, and we just showed that it's less than :math:`L+1`.

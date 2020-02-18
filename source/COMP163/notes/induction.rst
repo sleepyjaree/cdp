@@ -1,6 +1,5 @@
 Mathematical Induction
-++++++++++++++++++++++
-
+======================
  
 Mathematical induction -- often, just induction -- is one of the simplest and yet most challenging concepts to master. It is also one of the most rewarding proof techniques. Induction allows us to prove a property for natural numbers, for which we have a hunch but we need solid proof. For example, we believe that the sum of the first :math:`n` numbers is :math:`n(n+1)/2`. In fact, every time we try for a different :math:`n`, our hunch turns out to be true:
 
@@ -113,17 +112,17 @@ In the example above, :math:`L(n)= 1+2+\ldots+n` and :math:`R(n)=n(n+1)/2`.
 Given a problem in the form :math:`L(n)=R(n)`, the induction proof can be done in three steps.
 
 Step 1
-======
+++++++++
 
 Show that :math:`L(n)=R(n)` holds for :math:`n=1`. (Yes, Peano says to show for :math:`n=0` but :math:`1` is just as good).
 
 Step 2
-======
+++++++++
 
 Assume that :math:`L(n)=R(n)` holds for :math:`n=k`, i.e., :math:`L(k)=R(k)` is true.
 
 Step 3
-======
+++++++++
 
 Start with :math:`L(k+1)` and show that it equals :math:`R(k+1)`. You will notice that the expression	:math:`L(k+1)` always contains :math:`L(k)`. And since you just assumed that :math:`L(k)=R(k)` in Step 2, you can write
 
@@ -140,7 +139,7 @@ Examples
 
 
 The summation formula
-=====================
+++++++++++++++++++++++++
 
 Prove that 
 
@@ -205,7 +204,7 @@ We just proved that given  :math:`L(k)=R(k)` the equation holds for the successo
 is true for every natural number.
 
 The stamps problems
-=====================
+++++++++++++++++++++++++
 
 Show that any postage amount greater than $0.17 can be formed with $0.03 and $0.10 stamps. For example, $0.22 worth of postage comprises one $0.10 stamp and four $0.03 stamps.
 

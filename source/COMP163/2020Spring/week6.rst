@@ -11,3 +11,4 @@ Reading material for proofs:
 * `Adrian Brunyate's notes on proofs by contradiction <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Adrian%20Brunyate%20proofs%20by%20contradiction.pdf>`_. (Published on `his website <http://www.math.stonybrook.edu/~brunyate/>`_).
 
 .. include:: ../notes/proofs.rst
+.. include:: ../notes/induction.rst
