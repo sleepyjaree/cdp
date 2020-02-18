@@ -1,11 +1,6 @@
 .. include:: ../shared/organizationHeader.rst
+
 .. include:: ../shared/courseOutline.rst
-
-
-
-
-
-The course will cover the following topics.
 
 (tbd)
 
@@ -16,7 +11,7 @@ Textbook
 
 Computer Equipment
 ++++++++++++++++++
-You will need access to a desktop or laptop computer with a simple text editor and a Java compiler. `BlueJ <https://www.bluej.org/>`_ is a convenient tool, called an Integrated Development Environment (IDE), that combines text editing and the Java Virtual Machine. As the course progresses we will migrate to IntelliJ, a more sophisticated and comprehensive IDE.
+You will need access to a desktop or laptop computer with a simple text editor and a Java compiler. Integrated Development Environments (IDEs) like `BlueJ <https://www.bluej.org/>`_  and `IntelliJ IDEA <https://www.jetbrains.com/idea/>`_, are fine too, as is any other environment you are proficient with.
 
 .. include:: ../shared/groundRules.rst
 
@@ -31,9 +26,10 @@ Course performance is determined using in-class assignments or weekly homework, 
 
 Exam dates
 ++++++++++
-The final exam will be a take-home assignment. It will become available on Sakai at 4:15 PM on 4/20/20 and due at 4:15 PM on Monday 4/27/20 (subject to change).
+The final exam will be a take-home assignment. It will become available on Sakai at #:## PM on ##/##/## and due at #:## PM on Monday ##/##/## (subject to change).
 
-The midterm exam will be a take-home assignment. It will become available on Sakai at 4:15 PM on 2/21/20 and due at 4:15 PM on Friday 4/28/20 (subject to change).
+The midterm exam will be a take-home assignment. It will become available on Sakai at #:## PM on ##/##/## and due at #:## PM on Monday ##/##/## (subject to change).
+
 
 
 
