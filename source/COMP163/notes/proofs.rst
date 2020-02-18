@@ -1,6 +1,6 @@
 
 Proofs
-++++++
+======
 
 Proofs have been an central element of our civilization for thousands of years. In Odyssey, Homer gives us proof of Ulysses identity when he describes how he is recognized by his aged, faithful dog. In Bible, the resurrected Christ allows Thomas to touch his wounds, leading to the first acclamation of Jesus as God (John 20:24–29). In the Lord of the Rings, Aragorn's rightful claim to the thrones of Arnor and Gondor is established by the Ring of Barahir and his wielding of the Andúril sword. In fiction and scripture, proofs have been used to establish veracity of deeds and royal or divine status. Proofs satisfy our doubts and skepticism and give meaning to faith and theory alike.
 
@@ -37,7 +37,7 @@ where :math:`z=2x^2+2x`. So we showed that :math:`n^2=2z+1` which is an odd numb
 
 
 Sum of two odd numbers is an even number
-========================================
+++++++++++++++++++++++++++++++++++++++++
 
 Another example of a direct proof is to show that if two numbers are odd, their sum is an even number, i.e.,
 
@@ -52,7 +52,7 @@ The proof is quite straight forward: if :math:`m` is odd then :math:`m=2x+1`, i.
 with :math:`k=x+y+1`. Thus we showed that the sum of two odd numbers is a multiple of 2, which by definition is an even number.
 
 The product of odd and even numbers is an even number
-=====================================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Another direct proof is to show that the product of an odd and an even number is an even number. Assuming :math:`m=2x+1` (the odd number) and :math:`n=2y` (the even number), their product :math:`mn` is:
 
@@ -62,7 +62,7 @@ Another direct proof is to show that the product of an odd and an even number is
 In other words, :math:`mn` is a multiple of 2, therefore an even number.
 
 The square of an even number is an even number
-==============================================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Can show that if :math:`n` is even, then :math:`n^2` is also even? An even number is a multiple of 2, so we can write :math:`n=2x`. Squaring both sides gives us :math:`n^2=4x^2=2(2x^2)=2z`, where :math:`z=2x^2`. By showing that :math:`n^2=2z` we have proved that :math:`n^2` is even.
 
@@ -114,6 +114,6 @@ To illustrate this method, let's look at the earlier example:
    &=2(2x^2+2x)+1 \\
    &=2z+1,\ \text{where}\ (z=2x^2+2x)\\
    n^2&:\ \text{odd}\\
-   \text{but}&:\ \text{we assumed}\ h (n^2\ \text{even})\\
+   \text{but}&:\ \text{we assumed}\ h\ (n^2\ \text{even})\\
    
 
