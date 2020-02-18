@@ -7,5 +7,6 @@ Leo's notes
 	
 	Sets <notes/sets>
 	Algorithms <notes/algorithms>
+	Proofs <notes/proofs>
 	Induction <notes/induction>
 	
