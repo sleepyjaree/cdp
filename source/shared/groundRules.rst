@@ -15,7 +15,7 @@ Here's how you can be proactive, so you can succeed in this coure.
 
 * If, for any reason, you need to be absent from class, let me know in advance. I don't need to know the reason, but I need to know about the duration of your absense.
 
-In-class assignments
+In-class assessments
 ++++++++++++++++++++
 
-In some of my courses, I conduct weekly in-class assessment instead of homework assignments. For in-class assignments, students will have 20-30 minutes to complete them at the end of class session. For consistency, **in-class assignments will be held on the first day of the week the class meets.** There will be about 8 in-class assignments. Students will not be penalized for missing up to 2 of these assignments.
+In some of my courses, I conduct weekly in-class assessments instead of homework assignments. For in-class assessments, students will have 20-30 minutes to complete them at the end of class session. For consistency, **in-class assignments will be held on the first day of the week the class meets.** There will be about 8 in-class assignments. Students will not be penalized for missing up to 2 of these assignments.
