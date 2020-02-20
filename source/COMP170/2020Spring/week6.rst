@@ -10,7 +10,7 @@ As we continue our exploration of Classes and Methods, and the fine line between
    
 For this week's example, we act in our capacity as programmers-Developers to design an implement a class for menu items that will be part of a larger application for restaurants; shown to the right. After much deliberations, we settled on naming the class ``MenuItems``. The late Phil Karlton, an iconoclast pioneer in computer programming, once quipped that "there are only two hard things in Computer Science: cache invalidation and `naming things <https://www.njtierney.com/post/2018/06/20/naming-things/>`_." [*]_ 
 
-This design can be readily mapped to code as follows.
+We readily mapped this design to the following code:
 
 .. gist:: https://gist.github.com/lgreco/073e215450af853f42a72604ff53a48f
  
