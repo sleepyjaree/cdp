@@ -17,7 +17,7 @@ public class MenuItem {
     } // method MenuItem, default constructor for class MenuItem
 
     /**
-     * Minimal default constructor, requires at least a name and a price
+     * Minimal constructor, requires at least a name and a price
      * @param name Name of new item to add to the menu
      * @param price Price of the new item
      */
