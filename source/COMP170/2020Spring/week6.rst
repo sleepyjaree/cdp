@@ -4,11 +4,11 @@ Review of Week 6
 
 As we continue our exploration of Classes and Methods, and the fine line between programmers as Users and programmers as Developers, we are practicing the design and implementation of simple but illustrative examples.
 
-.. image:: images/MenuItems.png
+.. image:: images/MenuItem.png
    :align: right
    :width: 44%
    
-For this week's example, we act in our capacity as programmers-Developers to design an implement a class for menu items that will be part of a larger application for restaurants; shown to the right. After much deliberations, we settled on naming the class ``MenuItems``. The late Phil Karlton, an iconoclast pioneer in computer programming, once quipped that "there are only two hard things in Computer Science: cache invalidation and `naming things <https://www.njtierney.com/post/2018/06/20/naming-things/>`_." [*]_ 
+For this week's example, we act in our capacity as programmers-Developers to design an implement a class for menu items that will be part of a larger application for restaurants; shown to the right. After much deliberations, we settled on naming the class ``MenuItems``. The late Phil Karlton, an iconoclast pioneer in computer programming, once quipped that "there are only two hard things in Computer Science: cache invalidation and `naming things <https://www.njtierney.com/post/2018/06/20/naming-things/>`_." [*]_ So in a tribute to Phil, I changed the name of the class to MenuItem (singular)!
 
 We readily mapped this design to the following code:
 
