@@ -24,9 +24,14 @@ public class Student {
     } // constructor Student
 
     /**
-     * Returns grad v. ungrad status with a _properly_
-     * prefixed indefinite article (an v. a).
-     * @return level School lever for student.
+     * Returns grad v. ungrad status with a _properly_ prefixed indefinite
+     * article (an v. a). The method is far from perfect (for example, we
+     * may want to use StringBuilder; or use a parameter instead of using
+     * hard coded values like "Bachelor"). But for now it is sufficient to
+     * demonstrate information hiding and how a programmer-Developer
+     * grants programmer-Users access to a Class.
+     *
+     * @return School level for student.
      */
     public String undergradOrGrad() {
         String level;
@@ -39,7 +44,7 @@ public class Student {
     } // method undergradOrGrad
 
     /**
-     * A method to return the student's first and last names
+     * A method to return the student's first and last names.
      * @return names A concatenation of fields fname and lname
      */
     public String getNames() {

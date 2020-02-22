@@ -20,6 +20,12 @@ We readily mapped this design to the following code:
 
 Programers using the class above cannot modify it. For example they cannot add a ``main`` method to it. Well, they can, if we grant them access to the source code, but they shouldn't because they'd be violating the User-Developer separation. The only way for a programmer acting as a User  to interact with the class ``MenuItem`` is through the **public** methods defined within it. As shown above, the class has three public methods: ``MenuItem`` (in three variations), ``setPrice``, and ``printMenu``. If a User determines that these three classes do not provide the desired functionality and therefore the class design does not meet expectations, a request for additional functionality can be made to the development team.
 
+Yet another example of information hiding
+-----------------------------------------
+
+Developer's perspective
+~~~~~~~~~~~~~~~~~~~~~~~
+
 Another example we worked in class, focused on building a small -- very small -- student information system to be used by the registrar of a tiny college. After discussing whether or not we wish to have separate Classes for undergraduate and graduate students, we decided to use one Class one, and call it ``Student``. The Class will contain a field indicating whether a student is undergraduate or graduate.
 
 .. literalinclude:: ../codeExamples/StudentRecords/src/Student.java
@@ -48,5 +54,16 @@ The parameters ``fname``, ``lname``, and ``degreeObjective`` have the same names
     } // constructor Student
 
 Whether we use ``this.`` to resolve the ambiguity of shadowing or avoid such ambiguity all together by using different names for parameters, is a matter of personal programming style. Remember, however, Phil Karlton's aphorism about the difficulty of naming things!
+
+We completed our ``Student`` Class by adding two methods: ``undergradOrGrad`` and ``getNames``. Method  ``undergradOrGrad`` creates and returns a string to indicate if the student is an undergraduate or graduate one. We took care to use the proper indefinite article ("an" or "a") to avoid a glottal stop. Method ``getNames`` returns a string with the first and last names of a student.  
+
+User's perspective
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The constructor ``Student`` and the two methods above, are sufficient now to hand over our masterpiece Class to programmers-users to build their own masterpiece application. The first application to use our Class ``Student``, is the following.
+
+.. literalinclude:: ../codeExamples/StudentRecords/src/Registrar.java
+   :linenos:
+   :language: java
 
 .. [*] This story is corroborated by Phil Karlton's son, David, in a 2017 `post on Stackexchange <https://skeptics.stackexchange.com/a/39178>`_: "*As his only son, and colleague with him at Netscape from 95-97, I can attest that my dad did indeed throw that quote around, on more than one occasion. I'm fairly confident that he originated it (he was fond of coming up with clever quippets), though I haven't been able to figure out how it disseminated so widely over the past couple of decades. I'll keep looking around in old web archives and mails to see if I can dig something up.*"
