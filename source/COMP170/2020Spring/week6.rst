@@ -80,4 +80,10 @@ The improvements above include the use of an **array** to store several objects 
 Arrays
 ~~~~~~
 
+An array is a collection of items of similar kind, e.g., integer numbers, strings, objects in a class, etc. These items can be referenced not by name but by index. In the first attempt of using the Class ``Student``, new objects are named ``s1``, ``s2``, ``s3``. These are three individually named object variables.
+
+  
+| 
+| 
+
 .. [*] This story is corroborated by Phil Karlton's son, David, in a 2017 `post on Stackexchange <https://skeptics.stackexchange.com/a/39178>`_: "*As his only son, and colleague with him at Netscape from 95-97, I can attest that my dad did indeed throw that quote around, on more than one occasion. I'm fairly confident that he originated it (he was fond of coming up with clever quippets), though I haven't been able to figure out how it disseminated so widely over the past couple of decades. I'll keep looking around in old web archives and mails to see if I can dig something up.*"
