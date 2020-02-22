@@ -35,7 +35,7 @@ The Class above gave us an opportunity to talk a little bit about the use of the
         this.fname = fname;
         this.lname = lname;
         this.degreeObjective = degreeObjective;
-    } // method Student
+    } // constructor Student
 	
 The parameters ``fname``, ``lname``, and ``degreeObjective`` have the same names as the fields of the Class. When the parameters in the signature of a constructor -- and more generally, in the signature of a method -- have the same names as the corresponding fields of the Class that contains the method, we say that the signature *shadows* the fields. In this case we need to differentiate which variables are the fields of the class and which are the parameters passed through a method's signature. We do so by using the prefix ``this.`` to mark the Class fields as shown above. We can avoid shadowing -- and therefore the use of ``this.`` -- if we used different names for the parameters, e.g.
 
@@ -45,7 +45,7 @@ The parameters ``fname``, ``lname``, and ``degreeObjective`` have the same names
         fname = firstName;
         lname = lastName;
         degreeObjective = degreeSought;
-    } // method Student
+    } // constructor Student
 
 Whether we use ``this.`` to resolve the ambiguity of shadowing or avoid such ambiguity all together by using different names for parameters, is a matter of personal programming style. Remember, however, Phil Karlton's aphorism about the difficulty of naming things!
 

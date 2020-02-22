@@ -21,7 +21,7 @@ public class Student {
         this.fname = fname;
         this.lname = lname;
         this.degreeObjective = degreeObjective;
-    } // method Student
+    } // constructor Student
 
     /**
      * Returns grad v. ungrad status with a _properly_
