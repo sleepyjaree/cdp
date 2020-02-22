@@ -17,6 +17,8 @@ public class FancyRegistrar {
                         s[i].undergradOrGrad());
             } // end if
             i++;
-        } while (i<10);
-    }
-}
+        } while (i<10); // end do
+
+    } // method main
+
+} // class FancyRegistrar

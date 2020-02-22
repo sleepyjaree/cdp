@@ -19,6 +19,6 @@ public class Registrar {
                 s3.getNames()+" is " +
                 s3.undergradOrGrad());
 
-    }
+    } // method main
 
 } // class Registrar

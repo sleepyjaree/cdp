@@ -60,10 +60,24 @@ We completed our ``Student`` Class by adding two methods: ``undergradOrGrad`` an
 User's perspective
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The constructor ``Student`` and the two methods above, are sufficient now to hand over our masterpiece Class to programmers-users to build their own masterpiece application. The first application to use our Class ``Student``, is the following.
+The constructor ``Student`` and the two methods above, are sufficient for us to hand over our masterpiece Class to programmers-users to build their own masterpiece application. The first application to use our Class ``Student``, is the following.
 
 .. literalinclude:: ../codeExamples/StudentRecords/src/Registrar.java
    :linenos:
    :language: java
+
+In the application above, the programmer-User creates three instances of the Class ``Student``. In order to get information about each student, the application needs three different ``println`` statements. This is not a very efficient approach, considering that at some point we may be dealing with hundreds of students. 
+
+Realizing the inefficiency of the naive application above, our intrepid programmer-User makes a valiant attempt for improvements. 
+
+
+.. literalinclude:: ../codeExamples/StudentRecords/src/FancyRegistrar.java
+   :linenos:
+   :language: java
+
+The improvements above include the use of an **array** to store several objects of the Class ``Student``. This allows the application to use only a single ``println`` statement, as it traverses the array of objects.
+
+Arrays
+~~~~~~
 
 .. [*] This story is corroborated by Phil Karlton's son, David, in a 2017 `post on Stackexchange <https://skeptics.stackexchange.com/a/39178>`_: "*As his only son, and colleague with him at Netscape from 95-97, I can attest that my dad did indeed throw that quote around, on more than one occasion. I'm fairly confident that he originated it (he was fond of coming up with clever quippets), though I haven't been able to figure out how it disseminated so widely over the past couple of decades. I'll keep looking around in old web archives and mails to see if I can dig something up.*"
