@@ -47,6 +47,6 @@ The parameters ``fname``, ``lname``, and ``degreeObjective`` have the same names
         degreeObjective = degreeSought;
     } // method Student
 
-Whether we use ``this.`` to resolve the ambiguity of shadowing and avoid such ambiguity all together by using different names for parameters, is a matter of personal programming style. Remember, however, Phil Karlton's aphorism about the difficulty of naming things!
+Whether we use ``this.`` to resolve the ambiguity of shadowing or avoid such ambiguity all together by using different names for parameters, is a matter of personal programming style. Remember, however, Phil Karlton's aphorism about the difficulty of naming things!
 
 .. [*] This story is corroborated by Phil Karlton's son, David, in a 2017 `post on Stackexchange <https://skeptics.stackexchange.com/a/39178>`_: "*As his only son, and colleague with him at Netscape from 95-97, I can attest that my dad did indeed throw that quote around, on more than one occasion. I'm fairly confident that he originated it (he was fond of coming up with clever quippets), though I haven't been able to figure out how it disseminated so widely over the past couple of decades. I'll keep looking around in old web archives and mails to see if I can dig something up.*"
