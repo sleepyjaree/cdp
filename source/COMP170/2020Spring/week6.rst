@@ -26,7 +26,7 @@ Yet another example of information hiding
 Developer's perspective
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Another example we worked in class, focused on building a small -- very small -- student information system to be used by the registrar of a tiny college. After discussing whether or not we wish to have separate Classes for undergraduate and graduate students, we decided to use one Class one, and call it ``Student``. The Class will contain a field indicating whether a student is undergraduate or graduate.
+Another example we worked in class focused on building a small -- very small -- student information system to be used by the registrar of a tiny college. After discussing whether or not we wish to have separate Classes for undergraduate and graduate students, we decided to use one Class one, and call it ``Student``. The Class will contain a field indicating whether a student is undergraduate or graduate.
 
 .. literalinclude:: ../codeExamples/StudentRecords/src/Student.java
    :linenos:
