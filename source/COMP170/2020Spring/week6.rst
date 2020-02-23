@@ -113,7 +113,6 @@ Further reading on arrays
 
 * `Java array tutorial <https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html>`_ on the Java official site.
 * `Arrays <https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.6>`_ on the Java Language Specification site (dated back to SE7 but very much revelent).
-.. math::
 
  
   
