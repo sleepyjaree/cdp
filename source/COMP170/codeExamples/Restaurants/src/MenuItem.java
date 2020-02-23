@@ -9,12 +9,12 @@ public class MenuItem {
     private float price;    // we don't need a double here; 2 bytes are plenty
 
     /**
-     * Default contstructor
+     * Default constructor
      */
     public MenuItem() {
         this.name = "A fabulous menu item, coming soon";
         this.price = (float) 3.99;
-    } // method MenuItem, default constructor for class MenuItem
+    } // constructor MenuItem
 
     /**
      * Minimal constructor, requires at least a name and a price
@@ -24,7 +24,7 @@ public class MenuItem {
     public MenuItem(String name, float price) {
         this.name = name;
         this.price = price;
-    } // method MenuItem, minimal constructor for class MenuItem
+    } // constructor MenuItem
 
     /**
      * A full constructor
@@ -34,7 +34,7 @@ public class MenuItem {
         this.description = description;
         this. price = price;
         this.calories = calories;
-    } // method MenuItem, full constructor for class MenuItem
+    } // constructor MenuItem
 
     /**
      * A method to edit/update the price of an item on the menu
