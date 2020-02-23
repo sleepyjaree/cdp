@@ -90,7 +90,7 @@ In the second attempt however our approach was different. Instead of creating an
    
 Here, ``s[]`` tells the compiler that the entity ``s`` will be an array. Furthermore, ``Student s[]`` specifies that this array will be a collection of objects in the ``Student`` Class. And the right side of the assignment instructs the compiler to allocate space for 10 ``Student`` objects in the array.
 
-The first student is assigned to the first element of the array. Array elements in Java are indexed beginning with 0. (Remember the story about IBM and the yacht races?) So in an array with space for 10 elements, the first element will be at position 0 and the last element at position 9.
+The first student is assigned to the first element of the array. Array elements in Java are indexed beginning with 0. (Remember `the story about IBM and the yacht races <https://en.wikipedia.org/wiki/Zero-based_numbering#Origin>`_?) So in an array with space for 10 elements, the first element will be at position 0 and the last element at position 9.
 
 Using an array to collect ``Student`` objects allows us to write efficient code. For example, we can employ a loop to traverse the array and a single ``println`` statement for output. This is accomplished with the following block of code:
 
@@ -107,8 +107,16 @@ Using an array to collect ``Student`` objects allows us to write efficient code.
    } while (i<10); // end do
 
 In the code above, we use an integer variable (``i``) as an index, traversing the array ``s``. For every element of the array (``s[0]``, ``s[1]``, etc) we first check to determine if it is empty or not -- our array can hold 10 elements (i.e., 10 ``Student`` objects), but we have records for only 3 students. If the i-th element is not null, then we proceed with printing out the information shown in the ``println`` statement. Next, we increase the index value, and we repeat until the index finally reaches the end of the array (as specified by the ``while`` condition).
+
+Further reading on arrays
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Java array tutorial <https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html>`_ on the Java official site.
+* `Arrays <https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.6>`_ on the Java Language Specification site (dated back to SE7 but very much revelent).
+.. math::
+
+ 
   
-| 
 | 
 
 .. [*] This story is corroborated by Phil Karlton's son, David, in a 2017 `post on Stackexchange <https://skeptics.stackexchange.com/a/39178>`_: "*As his only son, and colleague with him at Netscape from 95-97, I can attest that my dad did indeed throw that quote around, on more than one occasion. I'm fairly confident that he originated it (he was fond of coming up with clever quippets), though I haven't been able to figure out how it disseminated so widely over the past couple of decades. I'll keep looking around in old web archives and mails to see if I can dig something up.*"
