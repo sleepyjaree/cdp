@@ -34,6 +34,16 @@ extensions = [
     "sphinxcontrib.gist"
 ]
 
+# allows sphinx to ignore errors in parsing ipynb files
+# to be used with nbsphinx extenesion after it is added to 
+# extensions above. Note that this extension will render
+# every ipynb file it encounters, so I have removed it for
+# now because it's not really very useful. All I wanted 
+# was an equivalent to includeliteral for ipynb files.
+# 23 FEB 2020 
+#nbsphinx_allow_errors = True
+#exclude_patterns = ['_build', '**.ipynb_checkpoints']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
