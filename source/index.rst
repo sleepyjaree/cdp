@@ -8,7 +8,10 @@ Leo Irakliotis' Course Documentation Project
 ============================================
 
 This is a comprehensive site with material and information from the courses I teach.
+It contains notes, programs, and case studies spanning over 15 years of teaching activity. 
 
+Current courses
+---------------
 
 .. toctree::
    :maxdepth: 1
@@ -18,6 +21,7 @@ This is a comprehensive site with material and information from the courses I te
    COMP170/introduction
    COMP180/introduction
    COMP271/introduction
+
    DBD/introduction
    
   
