@@ -35,6 +35,19 @@ Another way to achieve the same result, is to use two nested loops as follows:
 .. literalinclude:: ../codeExamples/midterm-sp2020/src/MidtermMultiple.java
    :lines: 33-38
    :language: java
+   
+Allowing the end-user to determine which symbol to print, requires the input of another variable -- let's call it ``symbol``, as follows:
 
+.. literalinclude:: ../codeExamples/midterm-sp2020/src/symbol.txt
+   :language: java
+   
+
+To make the program repeat as long as the number of requested lines is greater than zero (and, of course, less than the maximum number of lines allowed), we need to create a loop that will execute until the termination condition is met. We initiative a boolean variable to ``true`` value, to allow a while-loop to continue, until the boolean variable is set, by the program, to ``false``. This is highlighted in the code below.
+
+.. literalinclude:: ../codeExamples/midterm-sp2020/src/Midterm.java
+   :linenos:
+   :emphasize-lines: 21, 28, 35
+   :language: java
+   
 
 
