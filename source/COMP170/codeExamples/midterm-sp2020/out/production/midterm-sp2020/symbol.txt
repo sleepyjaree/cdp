@@ -1,0 +1,3 @@
+Scanner keyboard = new Scanner(System.in);
+System.out.println("What symbol shall I use?");
+String symbol = keyboard.next();
