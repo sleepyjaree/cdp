@@ -2,6 +2,8 @@
 Review of Week 7: Midterm wrap-up
 =================================
 
+All Java files in this section are `available on Github <https://github.com/lgreco/cdp/tree/master/source/COMP170/codeExamples/midterm-sp2020/src>`_.
+
 We wraped-up week 7 with the midterm exam for the course. In this review we focus on the third question of the test that asked for completing a Class given some specifications. The following code shows a simple and adequate solution to the first part of the third question, highlighting the code that we had to complete.
 
 .. literalinclude:: ../codeExamples/midterm-sp2020/src/SimpleMidterm.java

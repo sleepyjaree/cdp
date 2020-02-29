@@ -1,2 +1,0 @@
-j = howMany - Math.abs(i-howMany);
-System.out.println(symbol.repeat(j));
