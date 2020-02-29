@@ -25,7 +25,7 @@ public class Midterm {
 
         Scanner keyboard = new Scanner(System.in);
 
-        while (keepGoing) {
+        while ( keepGoing ) {
 
             System.out.println("\nHow many lines to print? (0 or negative number will end the program)");
             howMany = keyboard.nextInt();
@@ -45,7 +45,7 @@ public class Midterm {
                     System.out.println("What symbol shall I use?");
                     symbol = keyboard.next();
 
-                    for ( i=1; i <= howMany; i++) {
+                    for ( i = 1; i <= howMany; i++ ) {
 
                         System.out.println(symbol.repeat(i));
 

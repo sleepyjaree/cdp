@@ -13,7 +13,7 @@ public class SimpleMidterm {
         System.out.println("How many lines to print?");
         int howMany = keyboard.nextInt();
         if ( howMany > 0 ) {
-            for (int i = 1; i <= howMany; i++) {
+            for ( int i = 1; i <= howMany; i++ ) {
                 System.out.println("#".repeat(i));
             }
         }

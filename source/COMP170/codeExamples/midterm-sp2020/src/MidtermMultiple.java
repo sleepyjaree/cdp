@@ -15,7 +15,7 @@ public class MidtermMultiple {
         int howMany = keyboard.nextInt();
 
         System.out.println("\nUsing the repeat() method:");
-        if ( (howMany>0) && (howMany <= sillyNumber) ) {
+        if ( (howMany > 0 ) && ( howMany <= sillyNumber ) ) {
             for (int i = 1; i <= howMany; i++) {
                 System.out.println("#".repeat(i));
             }
@@ -23,15 +23,14 @@ public class MidtermMultiple {
 
         System.out.println("\nNot using the repeat() method:");
         String s = "#";
-        for (int i = 1; i <= howMany; i++) {
+        for ( int i = 1; i <= howMany; i++ ) {
             System.out.println(s);
             s = s+"#";
         }
 
-
         System.out.println("\nAnother way without the repeat() method:");
-        for (int i = 1; i <= howMany; i++) {
-            for (int j = 1 ; j <= i; j++) {
+        for ( int i = 1; i <= howMany; i++ ) {
+            for ( int j = 1 ; j <= i; j++ ) {
                 System.out.print("#");
             }
             System.out.print("\n");

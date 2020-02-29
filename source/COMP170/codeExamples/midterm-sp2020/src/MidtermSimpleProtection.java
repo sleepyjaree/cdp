@@ -13,8 +13,8 @@ public class MidtermSimpleProtection {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("How many lines to print?");
         int howMany = keyboard.nextInt();
-        if ( (howMany>0) && (howMany <= sillyNumber) ) {
-            for (int i = 1; i <= howMany; i++) {
+        if ( ( howMany > 0 ) && ( howMany <= sillyNumber ) ) {
+            for (int i = 1; i <= howMany; i++ ) {
                 System.out.println("#".repeat(i));
             }
         }
