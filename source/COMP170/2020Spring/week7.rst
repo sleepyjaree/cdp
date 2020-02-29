@@ -2,7 +2,7 @@
 Review of Week 7: Midterm wrap-up
 =================================
 
-All Java files in this section are `available on Github <https://github.com/lgreco/cdp/tree/master/source/COMP170/codeExamples/midterm-sp2020/src>`_.
+All Java files in this section are `available on Github <https://github.com/lgreco/cdp/tree/master/source/COMP170/codeExamples/midterm-sp2020/src>`_. Of particular interest are the files `ReadingCode.java <https://github.com/lgreco/cdp/blob/master/source/COMP170/codeExamples/midterm-sp2020/src/ReadingCode.java>`_ and `CompletingCode.java  <https://github.com/lgreco/cdp/blob/master/source/COMP170/codeExamples/midterm-sp2020/src/CompletingCode.java>`_ that provide solutions for Questions 2 and 3 in the exam.
 
 We wraped-up week 7 with the midterm exam for the course. In this review we focus on the third question of the test that asked to complete a Class given some specifications. The following code shows a simple and adequate solution to the first part of the third question, highlighting the code that we had to complete.
 
