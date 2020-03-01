@@ -35,7 +35,7 @@ One way to achieve the same output without the ``repeat`` method is shown below.
 Another way to achieve the same result, is to use two nested loops as follows:
 
 .. literalinclude:: ../codeExamples/midterm-sp2020/src/MidtermMultiple.java
-   :lines: 33-38
+   :lines: 32-37
    :language: java
    
 Allowing the end-user to determine which symbol to print, requires the input of another variable -- let's call it ``symbol``, as follows:
