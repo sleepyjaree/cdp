@@ -44,7 +44,7 @@ Allowing the end-user to determine which symbol to print, requires the input of 
    :language: java
    
 
-To make the program repeat as long as the number of requested lines is greater than zero (and, of course, less than the maximum number of lines allowed), we need to create a loop that will execute until the termination condition is met. We initiative a boolean variable to ``true`` value, to allow a while-loop to continue, until the boolean variable is set, by the program, to ``false``. This is highlighted in the code below.
+To make the program repeat as long as the number of requested lines is greater than zero (and, of course, less than the maximum number of lines allowed), we need to create a loop that will execute until the termination condition is met. We initiate a boolean variable to ``true`` value, to allow a while-loop to continue, until the boolean variable is set, by the program, to ``false``. This is highlighted in the code below.
 
 .. literalinclude:: ../codeExamples/midterm-sp2020/src/Midterm.java
    :linenos:
