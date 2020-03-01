@@ -7,11 +7,7 @@
 Leo Irakliotis' Course Documentation Project
 ============================================
 
-This is a comprehensive site with material and information from the courses I teach.
-It contains notes, programs, and case studies spanning over 15 years of teaching activity. 
-
-Current courses
----------------
+This is a comprehensive site with material and information from the courses I teach. The documentation project is based on Restructured Text and `Sphinx <https://www.sphinx-doc.org/>`_. Files are committed to a Github repository with webhooks for `Travis <https://travis-ci.org/>`_, a continuous integration facility.
 
 .. toctree::
    :maxdepth: 1
