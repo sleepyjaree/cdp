@@ -1,7 +1,7 @@
 Student hours - Spring 2020
 +++++++++++++++++++++++++++
 
-Valid from **January 1** through **April 30,** 2020, student hours (also known a "office hours") are as follows:
+Valid from **January 1** through **April 30,** 2020, student hours (also known as "office hours") are as follows:
 
 * Monday, Wednesday: 10:30 AM to 12:30 PM -- in person or online;
 * Tuesday: 12 noon to 2 PM -- online only;
