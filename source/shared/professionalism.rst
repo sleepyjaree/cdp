@@ -16,11 +16,14 @@ In the context of this course, professionalism and essential skills are as follo
 
 * Be respectful of others' time. Here're two examples:
 
- - Come to meetings (class, student (aka office) hours, study groups, tutoring, etc) **prepared.** If the meeting is about reviewing your code, make sure that your laptop is sufficiently charged, the computer is turned on, and the code is already loaded into some editor. Do not spend 5 minutes in the meeting finding a power outlet, turning on and booting the computer, and firing up an editor.
+ - Come to meetings (class, student (aka office) hours, study groups, tutoring, etc) **prepared.** If the meeting is about reviewing your code, make sure that your laptop is sufficiently charged, the computer is turned on, and the code is already loaded into some editor before you even step into the meeting room. Do not spend 5 minutes in the meeting finding a power outlet, turning on and booting the computer, and firing up an editor.
  
  - When in group meeting (e.g., class, study group, etc) keep your questions relevant to the objective of the meeting.
 
  - When making an appointment and you realize that you cannot attend the meeting, notify the other party as soon as possible.
+ 
+ - When discussing a problem, be prepared to offer suggestions for reasonable solutions. 
+ 
  
 * Be respectful of **your own time.**
 
@@ -31,4 +34,6 @@ In the context of this course, professionalism and essential skills are as follo
 
  - When turning in homework or other assignments, make sure that your writing is legible and the overall appearance reflects quality and care. Content is always the most critical aspect of your work; but appearance counts too.
  
- - When submitting code, make sure the files are properly named. For example ``homework.java`` may make sense on your side of the shop, but from the grader's perspective it's not very helpful. Instead, give your file a unique name that identifies it back to you, e.g., ``JaneDoe-homework-2.java``.
+ - When submitting code, make sure the files are properly named. For example ``homework.java`` may make sense on your side of the shop, but from the grader's perspective it's not very helpful. Instead, give your file a unique name that identifies it back to you, e.g., ``JaneDoe-homework-2.java``. When submitting photos of your work, name the files accordingly. Instead of ``IMG_123.JPG`` it should be called ``JohnDoe_problem1a.jpg``.
+ 
+ - Follow instructions. Instructions and directions reflect expectations and requirements for your work. File naming conventions, deadlines, content style, etc, are important aspects of your work both in college and beyond.
