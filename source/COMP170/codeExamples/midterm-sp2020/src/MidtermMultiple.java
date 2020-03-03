@@ -15,7 +15,7 @@ public class MidtermMultiple {
         int howMany = keyboard.nextInt();
 
         System.out.println("\nUsing the repeat() method:");
-        if ( (howMany > 0 ) && ( howMany <= sillyNumber ) ) {
+        if ( ( howMany > 0 ) && ( howMany <= sillyNumber ) ) {
             for (int i = 1; i <= howMany; i++) {
                 System.out.println("#".repeat(i));
             }
