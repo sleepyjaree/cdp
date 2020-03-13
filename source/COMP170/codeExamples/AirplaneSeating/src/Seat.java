@@ -2,7 +2,7 @@
  * Seat uses a linear array to map an airplane's seating arrangement
  */
 public class Seat {
-    
+
     private int row;
     private String position;
     private String passenger;
@@ -13,5 +13,10 @@ public class Seat {
         this.passenger = passenger;
     }
 
+    public Seat(){
+        row = 1;
+        position = "A";
+        passenger = null;
+    }
 
 }
