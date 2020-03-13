@@ -10,3 +10,4 @@ Weekly Reviews - Spring 2020
     week5
     week6
     week7
+    week8
