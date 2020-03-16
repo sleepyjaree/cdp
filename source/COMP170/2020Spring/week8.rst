@@ -66,7 +66,10 @@ Data analysis, shown in the examples above, is one of arrays' many application. 
 Airplane Seating
 ----------------
 
-This example shows how we can use an array to map information. It's a simple, almost naive, example but there are things to learn from it. First, let's frame the problem. We have an one-dimensional array holding the names of passengers for a small airplane. And we'd like to assign these passengers to airplane seats, in a specific order.
+This example shows how we can use an array to map information. It's a simple, almost naive, example but there are things to learn from it. First, let's frame the problem. We have an one-dimensional array holding the names of passengers for a small airplane. And we'd like to assign these passengers to airplane seats, in a specific order. The airplane is a small one, with 12 seats only. The cabin has a single aisle, with two seats on either side. There are 3 rows of seats and 4 seats per row. Rows are numbered 1,2, and 3. Seats are labeled A, B, C, and D, from left to right. We want the first passenger in the passenger list to be seated on seat 1A, the second on 1B, the 5th on 2A, and so on. The figure below shows the placing order.
+ 
+| 
+
  
 .. figure:: images/AirplaneSeating.jpg
    :width: 90%
@@ -74,8 +77,9 @@ This example shows how we can use an array to map information. It's a simple, al
    
    Converting a passenger manifest to seating assignments in a (small) airplane. The manifest is a linear (one-dimensional) entity, while the seating assignment is a two-dimensional construct.
 
+| 
 
-For compactness, the code below has no comments.
+The placing order shown in the figure above is called *row-major*. It fills one row at a time, from left-to-right, beginning with the front row. The implementation of this technique is showin in Class ``NaiveSeating`` below. For compactness, the code for ``NaiveClass`` has no comments. A line-by-line narrative of this Class follows after the code.
 
 
 .. literalinclude:: ../codeExamples/AirplaneSeating/src/NaiveSeating.java
@@ -83,4 +87,5 @@ For compactness, the code below has no comments.
    :emphasize-lines: 3
    :language: java
    
+Let's look, line-by-line, what the code above does.
    

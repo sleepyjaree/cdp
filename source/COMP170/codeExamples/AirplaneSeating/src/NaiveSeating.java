@@ -1,6 +1,6 @@
 public class NaiveSeating {
 
-    String[] passenger = new String[80];
+    String[] passenger = new String[12];
 
     public void populateManifest() {
         for (int i = 0; i<80; i++) {
@@ -9,7 +9,7 @@ public class NaiveSeating {
     }
 
     public void displayPassengerSeating() {
-        for (int i = 0; i<80; i++) {
+        for (int i = 0; i<12; i++) {
             int row = 1+Math.round(i/4);
             String seatPlace = Character.toString ((char) 65+ (i%4));
             System.out.print(row+seatPlace+" ");
