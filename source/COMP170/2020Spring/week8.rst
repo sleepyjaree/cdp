@@ -66,6 +66,7 @@ Data analysis, shown in the examples above, is one of arrays' many application. 
 Airplane Seating
 ----------------
 
+This example shows how we can use an array to map information. It's a simple, almost naive, example but there are things to learn from it. First, let's frame the problem. We have an one-dimensional array holding the names of passengers for a small airplane. And we'd like to assign these passengers to airplane seats, in a specific order.
  
 .. figure:: images/AirplaneSeating.jpg
    :width: 90%
@@ -74,9 +75,12 @@ Airplane Seating
    Converting a passenger manifest to seating assignments in a (small) airplane. The manifest is a linear (one-dimensional) entity, while the seating assignment is a two-dimensional construct.
 
 
+For compactness, the code below has no comments.
+
+
 .. literalinclude:: ../codeExamples/AirplaneSeating/src/NaiveSeating.java
    :linenos:
-   :emphasize-lines: 5
+   :emphasize-lines: 3
    :language: java
    
    

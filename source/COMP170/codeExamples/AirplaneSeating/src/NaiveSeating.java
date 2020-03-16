@@ -1,7 +1,5 @@
 public class NaiveSeating {
 
-    private static final int MAX_PASSENGER = 100;
-
     String[] passenger = new String[80];
 
     public void populateManifest() {
