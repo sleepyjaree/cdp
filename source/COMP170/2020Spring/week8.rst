@@ -1,55 +1,82 @@
 
 Review of Week 8: Arrays
 =================================
+ 
+A good way to introduce arrays is with a concrete example, showing some of the things we can do with them. An array is a collection of similar items. Each item occupies a position within the array and can be referenced by that position. Because each item is stored in the array, it does not require its own individual variable name. For example, the following code snippet computers the average temperature for one week.
 
-All Java files in this section are `available on Github <https://github.com/lgreco/cdp/tree/master/source/COMP170/codeExamples/midterm-sp2020/src>`_. Of particular interest are the files `ReadingCode.java <https://github.com/lgreco/cdp/blob/master/source/COMP170/codeExamples/midterm-sp2020/src/ReadingCode.java>`_ and `CompletingCode.java  <https://github.com/lgreco/cdp/blob/master/source/COMP170/codeExamples/midterm-sp2020/src/CompletingCode.java>`_ that provide solutions for Questions 2 and 3 in the exam.
+.. code-block:: java
+  
+ float montemperatureAtNoon = 70;
+ float tuetemperatureAtNoon = 63;
+ float wedtemperatureAtNoon = 72;
+ float thutemperatureAtNoon = 67;
+ float fritemperatureAtNoon = 68;
+ float sattemperatureAtNoon = 68;
+ float suntemperatureAtNoon = 71;
+ 
+ float weekAverage = ( montemperatureAtNoon + tuetemperatureAtNoon 
+                     + wedtemperatureAtNoon + thutemperatureAtNoon 
+                     + fritemperatureAtNoon + sattemperatureAtNoon
+                     + suntemperatureAtNoon ) / 7.0;
 
-We wraped-up week 7 with the midterm exam for the course. In this review we focus on the third question of the test that asked to complete a Class given some specifications. The following code shows a simple and adequate solution to the first part of the third question, highlighting the code that we had to complete.
+In the code above, we initialize seven variables, one for each day of the week to record the temperature. Then we add these variables together and divide the sum by 7, to obtain the average temperature.
+The code below achieves the same result, with a different approach.
 
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/SimpleMidterm.java
+The difference in the code below begins with the highlighted line. The command initializes an array to hold 7 different float values. The program then proceeds to add the values stored in an array, using a for-loop accessing one element of the array at a time.
+
+
+.. code-block:: java
+ :emphasize-lines: 1
+  
+ float[] temperatureAtNoon = new float(7);
+ 
+ temperatureAtNoon[0] = 70;
+ temperatureAtNoon[1] = 63;
+ temperatureAtNoon[2] = 72;
+ temperatureAtNoon[3] = 67;
+ temperatureAtNoon[4] = 68;
+ temperatureAtNoon[5] = 68;
+ temperatureAtNoon[6] = 71;
+ 
+ float weekAverage = 0;
+ 
+ for (int day = 0; day < 7; day++) {
+   weekAverage = weekAverage + temperatureAtNoon[day];
+ }
+ 
+ weekAverageHigh = weekAverageHigh / 7.0;
+
+As the code above shows, an array is declared by an empty pair of square brakets next to the data type we wish to use; in the example above ``float[]``. The declaration includes the name we wish to give to the array. Next, the array is initialized to a specific size, by the command ``new`` and the size specification; in this example we initialize an array of 7 float variables. 
+
+Values stored in the array can be accessed by the referencing the corresponding element, using an array index. The array index is an integer number enclosed in square brackets. The first element of the array corresponds to index ``[0]``. Often we need to traverse an array, looking at every element. This is accomplished with a loop in which an ``int`` variable is increment by 1 (using the ``++`` operator). In the example above, the variable ``day`` is used in a for-loop to access the 0th, 1st, 2nd, 3rd, 4th, 5th, and 6th place of the array -- in other words, all of its seven elements.
+
+What makes arrays so useful and so interesting in programming is the ability to traverse them so easily. We can store values with a common property -- e.g., daily temperatures -- and then analyze them by traversing the array to find average values, as well as extreme values, and other properties. Using the example above, here's a simple code snippet to find the maximum daily high temperature
+
+.. code-block:: java
+
+ maxTemperature = temperatureAtNoon[0];
+ for (int day = 1; day < 7; day++) {
+   if ( temperatureAtNoon[day] > maxTemperature ) {
+     maxTemperature = temperatureAtNoon[day];
+   }
+ }
+ 
+Data analysis, shown in the examples above, is one of arrays' many application. Arrays, and array-based Classes, can be used to search data, map information, and organize knowledge. The next example shows how a linear (one-dimensional) array can produce two-dimensional information.
+
+Airplane Seating
+----------------
+
+ 
+.. figure:: images/AirplaneSeating.jpg
+   :width: 90%
+   :align: center
+   
+   Converting a passenger manifest to seating assignments in a (small) airplane. The manifest is a linear (one-dimensional) entity, while the seating assignment is a two-dimensional construct.
+
+
+.. literalinclude:: ../codeExamples/AirplaneSeating/src/NaiveSeating.java
    :linenos:
-   :emphasize-lines: 16, 17
+   :emphasize-lines: 5
    :language: java
    
-For the second part of the third question, we had to add some protection to ensure that our program would not print a large number of lines. The changes are highlighted in the code below. ``int`` variable ``sillyNumber`` is initialized to 100 which is the maximum number of lines we allow our program to print.
-
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/MidtermSimpleProtection.java
-   :linenos:
-   :lines: 11-21   
-   :emphasize-lines: 2,6
-   :language: java
    
-From this point on, our discussion focused on how to improve and modify this code -- beyond the scope of the midterm test. Specifically, we wanted to test the following modifications:
-
-* obtain the same output but without the use of the ``repeat`` method;
-* allow the end-user of the program to determine the symbol to print (as to not limit the output to just rows of hashmarks);
-* make the program repeat as long as the number of requested lines is greater than zero (and, of course, less than the maximum number of lines allowed), and;
-* protect the input of the program from accidental of intentional mistakes that may lead to runtime errors.
-
-One way to achieve the same output without the ``repeat`` method is shown below. We initialize a string to ``#`` to print, and we keep adding one more ``#`` for every iteration in the loop.
-
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/MidtermMultiple.java
-   :lines: 25-29
-   :language: java
-
-Another way to achieve the same result, is to use two nested loops as follows:
-
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/MidtermMultiple.java
-   :lines: 32-37
-   :language: java
-   
-Allowing the end-user to determine which symbol to print, requires the input of another variable -- let's call it ``symbol``, as follows:
-
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/symbol.txt
-   :language: java
-   
-
-To make the program repeat as long as the number of requested lines is greater than zero (and, of course, less than the maximum number of lines allowed), we need to create a loop that will execute until the termination condition is met. We initiate a boolean variable to ``true`` value, to allow a while-loop to continue, until the boolean variable is set, by the program, to ``false``. This is highlighted in the code below.
-
-.. # literalinclude:: ../codeExamples/midterm-sp2020/src/Midterm.java
-   :linenos:
-   :emphasize-lines: 21, 28, 35
-   :language: java
-   
-
-

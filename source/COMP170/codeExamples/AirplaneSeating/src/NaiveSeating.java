@@ -2,7 +2,7 @@ public class NaiveSeating {
 
     private static final int MAX_PASSENGER = 100;
 
-    static String[] passenger = new String[80];
+    String[] passenger = new String[80];
 
     public void populateManifest() {
         for (int i = 0; i<80; i++) {
@@ -20,11 +20,9 @@ public class NaiveSeating {
         }
     }
 
-
     public static void main(String[] args) {
         NaiveSeating myFlight = new NaiveSeating();
         myFlight.populateManifest();
         myFlight.displayPassengerSeating();
     }
-
 }
