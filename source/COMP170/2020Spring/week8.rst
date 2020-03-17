@@ -164,5 +164,3 @@ Such grouping can be achieved by the following formula
 
 where the square brackets denote the integer part of the fraction :math:`i/4`. Note that the square brackets in a mathematical equation like the one above have no relation to the square brackets we use in Java for array purposes.
 The equation above is implemented in **line 13.**   
-   
-**Lin
