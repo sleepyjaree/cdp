@@ -1,12 +1,12 @@
 Student hours - Spring 2020
 +++++++++++++++++++++++++++
 
-**Effective 3/16/20 and in compliance with the university's response for the SARS-CoV-2 pandemic, Student Hours will be held online only via Zoom and only `by appointment <https://calendly.com/leo_irakliotis/15min>`__**
+**Effective 3/16/20 and in compliance with the university's response for the SARS-CoV-2 pandemic,** Student Hours will be held online only via Zoom and only `by appointment <https://calendly.com/leo_irakliotis/15min>`__.
 
 Valid from **January 1** through **April 30,** 2020, student hours (also known as "office hours") are as follows:
 
 * Monday, Wednesday: 10:30 AM to 12:30 PM -- online only;
-* Tuesday: 12 noon to 4 PM -- online;
+* Tuesday: 12 noon to 4 PM -- online only;
 * Monday, Wednesday: 2:30 PM to 3:30 PM -- online only;
 * Friday: 10:20 AM to 11:20 AM -- online only.
 
