@@ -79,7 +79,13 @@ This example shows how we can use an array to map information. It's a simple, al
 
 | 
 
-The placing order shown in the figure above is called *row-major*. It fills one row at a time, from left-to-right, beginning with the front row. The implementation of this technique is showin in Class ``NaiveSeating`` below. For compactness, the code for ``NaiveClass`` has no comments. A line-by-line narrative of this Class follows after the code.
+The placing order shown in the figure above is called *row-major*. It fills one row at a time, from left-to-right, beginning with the front row. The implementation of this technique is showin in Class ``NaiveSeating`` below.  The code  prints only the seat labels in the proper arrangement, ie, it does not concern itself with the names of the passengers. All that ``NaiveSeating`` does is to create the following output::
+
+ 1A 1B   1C 1D
+ 2A 2B   2C 2D
+ 3A 3B   3C 3D
+
+For compactness, the code for ``NaiveClass`` has no comments. A line-by-line narrative of this Class follows after the code.
 
 
 .. literalinclude:: ../codeExamples/AirplaneSeating/src/NaiveSeating.java
@@ -87,5 +93,76 @@ The placing order shown in the figure above is called *row-major*. It fills one 
    :emphasize-lines: 3
    :language: java
    
-Let's look, line-by-line, what the code above does.
+Let's look, line-by-line, what the code above does (the narrative below omits blank lines).
+
+**Line 1:** defines the name of the Class.
+
+**Line 3:** creates an array of ``String`` variables, named ``passengers`` and initializes it to hold 12 values.
+
+**Lines 5-9:** define a method that populates the array ``passengers`` with mockup names. The first name is "LName1 FName1", the second "FName2 LName2", and so on. Line 6 initiates a for-loop that assignes the values 1 through 12 to variable ``i``, sequentially. Then, in line 7, the value of ``i`` is concatenated with strings to produce the desired mockup names. Admittedly, this is *pathetic*. We want passenger names to be more realistic than Mr. FName1 LName1. But we'll worry about it later.
+
+.. Note to self: use two arrays for popular fname and lname, 
+   maybe [20] each, and  use a random index to select and compose.
+
+.. things to talk about ... ascii values ...
+
+**Lines 11-19:** define a method that prints out the simple seat layout shown earlier: 1A, 1B, etc. Ultimately we want to print something like::
+
+ +--------+--------+--+--------+--------+
+ | 1A     | 1B     |  | 1C     | 1D     |
+ | Fname1 | Fname2 |  | Fname3 | Fname4 |
+ | LName1 | Lname2 |  | LName3 | Lname4 |
+ +--------+--------+--+--------+--------+
+ | 2A     | 2B     |  | 2C     | 2D     |
+ | Fname5 | Fname6 |  | Fname7 | Fname8 |
+ | LName5 | Lname6 |  | LName7 | Lname8 |
+ +--------+--------+--+--------+--------+
+ | 3A     | 3B     |  | 3C     | 3D     |
+ | Fname9 | Fname10|  | Fname11| Fname12|
+ | LName9 | Lname10|  | LName11| Lname12|
+ +--------+--------+--+--------+--------+
+
+
+For now, however, the simple layout with just the seat numbers and without the names, is sufficient.
+
+The method comprises a for-loop, with its variable ``i`` running from 0 to 11 in increments of 1 (**line 12**). We would like to map these numbers into the row in which the corresponding passenger (``passenger[i]``) seats. The grouping is straightforward:
+
++------------------+-----+
+| ``passenger[i]`` | row |
++==================+=====+
+| ``passenger[0]`` | 1   |
++------------------+-----+
+| ``passenger[1]`` | 1   |
++------------------+-----+
+| ``passenger[2]`` | 1   |
++------------------+-----+
+| ``passenger[3]`` | 1   |
++------------------+-----+
+| ``passenger[4]`` | 2   |
++------------------+-----+
+| ``passenger[5]`` | 2   |
++------------------+-----+
+| ``passenger[6]`` | 2   |
++------------------+-----+
+| ``passenger[7]`` | 2   |
++------------------+-----+
+| ``passenger[8]`` | 3   |
++------------------+-----+
+| ``passenger[9]`` | 3   |
++------------------+-----+
+| ``passenger[10]``| 3   |
++------------------+-----+
+| ``passenger[11]``| 3   |
++------------------+-----+
+
+Such grouping can be achieved by the following formula
+
+
+.. math::
+
+   \text{row} = [i/4]+1
+
+where the square brackets denote the integer part of the fraction :math:`i/4`. Note that the square brackets in a mathematical equation like the one above have no relation to the square brackets we use in Java for array purposes.
+The equation above is implemented in **line 13.**   
    
+**Lin
