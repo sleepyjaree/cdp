@@ -25,22 +25,44 @@ public class NotSoNaiveSeating {
     }
 
     public void displayPassengerSeatingAndName() {
-         int passengerIndex;
-         String seating=null, name=null;
-        for (int row = 1; row <= 3; row++) {
-            for (int seat = 1; seat <=4; seat++) {
-                passengerIndex = (row-1)*4 + seat;
-                seating = seating + "| " + row;
-                name = name + "| " + passenger[passengerIndex];
+        int passengerIndex;
+        String seating, name, lineSeparator;
+        int longestNameLength, thisLength;
+
+        longestNameLength = passenger[0].length();
+        for ( passengerIndex = 1; passengerIndex < 12; passengerIndex++) {
+            thisLength = passenger[passengerIndex].length();
+            if ( thisLength > longestNameLength) {
+                longestNameLength = thisLength;
             }
+        }
+
+        for (int row = 1; row < 4; row++) {
+            seating="| ";
+            name="| ";
+            lineSeparator = "|";
+
+            for (int seat = 1; seat < 5; seat++) {
+                passengerIndex = (row-1)*4 + seat - 1;
+                seating = seating + row + " ".repeat(longestNameLength-0) + "| ";
+                name = name
+                        + passenger[passengerIndex]
+                        + " ".repeat(longestNameLength-passenger[passengerIndex].length())
+                        + " | ";
+                lineSeparator = lineSeparator
+                        + "-".repeat(longestNameLength+2)
+                        + "+";
+            }
+
             System.out.println(seating);
             System.out.println(name);
+            System.out.println(lineSeparator+"|");
         }
     }
     public static void main(String[] args) {
         NotSoNaiveSeating myFlight = new NotSoNaiveSeating();
         myFlight.populateManifest();
-        myFlight.displayPassengerSeating();
+        //myFlight.displayPassengerSeating();
         myFlight.displayPassengerSeatingAndName();
     }
 }

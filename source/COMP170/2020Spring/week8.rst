@@ -163,4 +163,14 @@ Such grouping can be achieved by the following formula
    \text{row} = [i/4]+1
 
 where the square brackets denote the integer part of the fraction :math:`i/4`. Note that the square brackets in a mathematical equation like the one above have no relation to the square brackets we use in Java for array purposes.
-The equation above is implemented in **line 13.**   
+The equation above is implemented in **line 13,** using the method ``round()``. `The method takes a real number and rounds it to its closest integer <https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#round(double)>`__. 
+
+**Line 14** packs a lot of data processing. What we are trying to do here is to assign seat columns. As the passenger index ``i`` assumes its sequential values, we want to assign the corresponding passenger to A, B, C, D, then switch the next row and resume A, B, C, D, and so on. Line 14, gives us the repeating seat letters. Its functionality starts with ``((char) 65 + (i%4))``. This operation takes the number ``65+(i%4)`` and convers it to the character (``char``) corresponding to `ASCII value <https://en.wikipedia.org/wiki/ASCII>`__ :math:`65+i\% 4`. ASCII values are numerical values that correspond to specific characters. 
+
+For example the number 65 in ASCII is the letter A, the number 66 is the letter B, and so on. Thus the expression ``65+(i%4)``, produces the values :math:`(65, 66, 67, 68, 65, 66, 67, 68, 65, 66, 67, 68)` as the index ``i`` moves from 0 to 11. These values, converted to their corresponding ASCII characters yield the sequence of letters (A, B, C, D, A, B, C, D, A, B, C, D). The conversion is using the primitive ``char``, which then is converted to a string using the ``Character.toString`` method. This string value is assigned to variable ``seatPlace``.
+
+**Line 15** prints out the ``row`` number and the ``seatPlace`` letter, producing the seating assignments 1A, 1B, 1C, 1D, 2A, etc.
+
+**Line 16** makes sure that every two seats on a row, we leave some space to indicate the aisle separating them.
+
+**Line 17** starts a new line in the printout, once a row is completed.
