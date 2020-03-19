@@ -37,6 +37,8 @@ Recordings
 
  * `Friday, March 13, 2020  <https://luc.zoom.us/rec/share/2cxeA73q-mdOQonQy2LfZZwTGKXKeaa8hidI8qENyUbqZfXkQhXggSjFP_e7jZPv?startTime=1584117564000>`__
  
+ * `Monday, March 16, 2020 <https://luc.zoom.us/rec/share/5_A2N-H0tTxORKOd73DERqIjQZnbeaa8hyEbr6EPzB5AouitOngs3om-VBCGbfjH?startTime=1584380200000>`__
+ 
  * `Wednesday, March 18, 2020 <https://luc.zoom.us/rec/share/28gsJIGvrFNOQrfuxhzbY-kNHLm0aaa80yAcr_oPzBmxI8svA7oz2v7fWmNTUr1q?startTime=1584552918000>`__
  
 * COMP 180 Data Analysis
