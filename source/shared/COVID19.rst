@@ -29,14 +29,22 @@ Recordings
 
 * COMP 163 Discrete Structures
 
- * ...
+ * `Monday, March 16, 2020 <https://luc.zoom.us/rec/share/6OxOP6P7zltIGLPnzVuYYK45H53Vaaa81Ska_PpczU2Bt9KVIRE-2KwZaYzEHpEa?startTime=1584393291000>`__
+ 
+ * `Wednesday, March 18, 2020 <https://luc.zoom.us/rec/share/5PF7IqrT8V9OY6fC0nDmS5cPRt7paaa81iYeqPtZzkuL4IJi0Jf3u-rHEtVaOljU?startTime=1584566071000>`__
 
 * COMP 170 Introduction to OO Programming / Java
 
  * `Friday, March 13, 2020  <https://luc.zoom.us/rec/share/2cxeA73q-mdOQonQy2LfZZwTGKXKeaa8hidI8qENyUbqZfXkQhXggSjFP_e7jZPv?startTime=1584117564000>`__
  
+ * `Wednesday, March 18, 2020 <https://luc.zoom.us/rec/share/28gsJIGvrFNOQrfuxhzbY-kNHLm0aaa80yAcr_oPzBmxI8svA7oz2v7fWmNTUr1q?startTime=1584552918000>`__
+ 
 * COMP 180 Data Analysis
 
  * `Friday, March 13, 2020  <https://luc.zoom.us/rec/share/1_NJD_bT-ntIfqvB1GaAR6pxAbXUeaa81nAbrqdfmkaFYNsSlO57wi53Og776a5Y>`__
+ 
+ * `Monday, March 16, 2020 <https://luc.zoom.us/rec/share/zOdMPezz0TpJTYnM0FDBZ4p5JtTcT6a823dM8qZfyE1AFXVgfyX56boHNcO_IpN8?startTime=1584368416000>`__
+ 
+ * `Wednesday, March 18, 2020 <https://luc.zoom.us/rec/share/ouUlNauqrHxJboXyyk7FW4gxDIn8X6a8h3dPq_FZnUzfIF8NuAI8i72o7IOHIuDG?startTime=1584541157000>`__
  
   
