@@ -27,6 +27,8 @@ As of 3/13/20, the university has suspended all face-to-face class meetings. **C
 Recordings
 ----------
 
+Notice that at times of high network traffic or high demand, these recordings may be temporarily unavailable. The university is attempting to address this issue.
+
 * COMP 163 Discrete Structures
 
  * `Monday, March 16, 2020 <https://luc.zoom.us/rec/share/6OxOP6P7zltIGLPnzVuYYK45H53Vaaa81Ska_PpczU2Bt9KVIRE-2KwZaYzEHpEa?startTime=1584393291000>`__
