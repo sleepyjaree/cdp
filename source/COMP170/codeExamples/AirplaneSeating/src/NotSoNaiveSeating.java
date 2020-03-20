@@ -8,6 +8,15 @@ public class NotSoNaiveSeating {
         }
     }
 
+    public void populateManifestRealistically() {
+        realisticNameGenerator realNames = new realisticNameGenerator();
+        String[] realName = new String[2];
+        for (int i = 0; i<12; i++) {
+            realName = realNames.realisticName();
+            passenger[i] = realName[0] + " " + realName[1];
+        }
+    }
+
     public void displayPassengerSeating() {
         for (int i = 0; i<12; i++) {
             if ( (i) % 4 == 0 ) {
