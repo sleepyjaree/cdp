@@ -1,4 +1,4 @@
-public class TicTacToe {
+public class ttt {
 
     private static final int SIZE = 3;
     private static final char A = 'x'; // x marks
@@ -75,7 +75,7 @@ public class TicTacToe {
     public void play() {}
 
     public static void main(String[] args) {
-        TicTacToe game = new TicTacToe();
+        ttt game = new ttt();
         game.setUpGame();
         game.displayBoard();
         System.out.println("\n Game won? " + game.gameWon());
