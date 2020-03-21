@@ -1,4 +1,6 @@
-public class ttt {
+import java.util.Scanner;
+
+public class TicTacToe {
 
     private static final int SIZE = 3;
     private static final char A = 'x'; // x marks
@@ -40,44 +42,98 @@ public class ttt {
      * Determines if square (i,j) is available
      */
     public boolean available(int i, int j) {
-        //boolean squareAvailable;
-        //if (gameBoard[i][j] == E) {
-        //    squareAvailable = true;
-        //} else {
-        //    squareAvailable = false;
-        //}
-        //return squareAvailable;}
         return gameBoard[i][j] == E;
+    }
+
+    /**
+     * Method to let a player occupy square
+     */
+    public void occupy(int i, int j, char playerSymbol) {
+        gameBoard[i][j] = playerSymbol;
     }
 
     /**
      * Determines if game won
      */
     public boolean gameWon() {
-        boolean win = false;
+        boolean winRow = false, winCol = false;
+        boolean winDiagonal = true, winAntiDiagonal = true;
         for ( int i = 0; i < SIZE; i++ ) {
             if ( (gameBoard[i][0] == gameBoard[i][1]) && (gameBoard[i][1] == gameBoard[i][2]) &&  (gameBoard[i][0] != E) )  {
-                win=true;
+                winRow=true;
             }
         }
         for ( int j = 0; j < SIZE; j++ ) {
             if ( (gameBoard[0][j] == gameBoard[1][j]) && (gameBoard[1][j] == gameBoard[2][j]) && (gameBoard[0][j] != E) ) {
-                win=true;
+                winCol=true;
             }
         }
 
-        return win;
+        for ( int i = 0; i < SIZE-1; i++) {
+            winDiagonal = winDiagonal && (gameBoard[i][i] == gameBoard[i+1][i+1]) && (gameBoard[i][i] != E);
+        }
+
+        for ( int i = 0; i < SIZE-1; i++) {
+            winAntiDiagonal = winAntiDiagonal && (gameBoard[i][SIZE-1-i] == gameBoard[i+1][SIZE-1-(i+1)]) && (gameBoard[i][SIZE-1-i] != E);
+        }
+
+        return (winRow || winCol || winDiagonal || winAntiDiagonal);
     }
 
     /**
      * Controls the game.
      */
-    public void play() {}
+    public void play() {
+        int x,y;
+        String nameA, nameB;
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Enter name of Player A");
+        nameA = keyboard.next();
+        System.out.println("Enter name of Player B");
+        nameB = keyboard.next();
+        setUpGame();
+        // somewhere here we do a random selection who's on first
+
+        while ( !gameWon() ) {
+
+            if ( !gameWon()) {
+                displayBoard();
+                System.out.println(nameA + " make a move");
+                x = keyboard.nextInt(); // later on we need to check if x,y are
+                y = keyboard.nextInt(); // proper values, i.e., 0...SIZE
+                // is the square at x, y free?
+                if (available(x, y)) {
+                    occupy(x, y, A);
+                }
+                if (gameWon()) {
+                    displayBoard();
+                    System.out.println(nameA + " just won the game.");
+                }
+            }
+
+            if ( !gameWon() ) {
+                displayBoard();
+                System.out.println(nameB + " make a move");
+                x = keyboard.nextInt(); // later on we need to check if x,y are
+                y = keyboard.nextInt(); // proper values, i.e., 0...SIZE
+                // is the square at x, y free?
+                if (available(x, y)) {
+                    occupy(x, y, B);
+                }
+                if (gameWon()) {
+                    displayBoard();
+                    System.out.println(nameB + " just won the game.");
+                }
+            }
+
+
+        }
+
+    }
 
     public static void main(String[] args) {
-        ttt game = new ttt();
-        game.setUpGame();
-        game.displayBoard();
+        TicTacToe game = new TicTacToe();
+        game.play();
         System.out.println("\n Game won? " + game.gameWon());
     }
 
