@@ -59,41 +59,26 @@ public class TicTacToe3 {
      * Determines if game won
      */
     public boolean gameWon() {
-        boolean winRow = true, winCol = true;
+        boolean winRow = false, winCol = false;
         boolean winDiagonal = true, winAntiDiagonal = true;
-        for ( int i = 0; i < SIZE; i++ )
-        {
-            winRow = winRow
-                    && ( gameBoard[i][0] == gameBoard[i][1] )
-                    && ( gameBoard[i][1] == gameBoard[i][2] )
-                    && ( gameBoard[i][0] != E );
-
-            winCol = winCol
-                    && ( gameBoard[0][i] == gameBoard[1][i] )
-                    && ( gameBoard[1][i] == gameBoard[2][i] )
-                    && ( gameBoard[0][i] != E);
+        for ( int i = 0; i < SIZE; i++ ) {
+            if ( (gameBoard[i][0] == gameBoard[i][1]) && (gameBoard[i][1] == gameBoard[i][2]) &&  (gameBoard[i][0] != E) )  {
+                winRow=true;
+            }
+        }
+        for ( int j = 0; j < SIZE; j++ ) {
+            if ( (gameBoard[0][j] == gameBoard[1][j]) && (gameBoard[1][j] == gameBoard[2][j]) && (gameBoard[0][j] != E) ) {
+                winCol=true;
+            }
         }
 
-        for ( int i = 0; i < SIZE-1; i++)
-        {
-
+        for ( int i = 0; i < SIZE-1; i++) {
+            winDiagonal = winDiagonal && (gameBoard[i][i] == gameBoard[i+1][i+1]) && (gameBoard[i][i] != E);
         }
 
-
-
-        for ( int j = 0; j < SIZE-1; j++ )
-        {
-            winDiagonal = winDiagonal
-                    && ( gameBoard[j][j] == gameBoard[j+1][j+1] )
-                    && ( gameBoard[j][j] != E );
-            winAntiDiagonal = winAntiDiagonal
-                    && ( gameBoard[j][SIZE-1-j] == gameBoard[j+1][SIZE-1-(j+1)] )
-                    && ( gameBoard[j][SIZE-1-j] != E );
+        for ( int i = 0; i < SIZE-1; i++) {
+            winAntiDiagonal = winAntiDiagonal && (gameBoard[i][SIZE-1-i] == gameBoard[i+1][SIZE-1-(i+1)]) && (gameBoard[i][SIZE-1-i] != E);
         }
-
-
-
-
 
         return (winRow || winCol || winDiagonal || winAntiDiagonal);
     }

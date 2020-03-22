@@ -27,7 +27,7 @@ As of 3/13/20, the university has suspended all face-to-face class meetings. **C
 Recordings
 ----------
 
-Notice that at times of high network traffic or high demand, these recordings may be temporarily unavailable. The university is attempting to address this issue.
+Notice that at times of high network traffic or high demand, these recordings may be temporarily unavailable. The university is attempting to address this issue. Recordings are made available only to Loyola Students. Authentication (using your LUC login credentials) is required. These recordings will be removed after the semester is over. Downloading of these recordings is not possible.
 
 * COMP 163 Discrete Structures
 
