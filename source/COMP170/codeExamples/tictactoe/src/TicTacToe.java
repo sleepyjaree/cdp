@@ -1,4 +1,7 @@
-public class ttt {
+/**
+ * Early version, for class demo only. Incomplete, needs more work.
+ */
+public class TicTacToe {
 
     private static final int SIZE = 3;
     private static final char A = 'x'; // x marks
@@ -75,7 +78,7 @@ public class ttt {
     public void play() {}
 
     public static void main(String[] args) {
-        ttt game = new ttt();
+        TicTacToe game = new TicTacToe();
         game.setUpGame();
         game.displayBoard();
         System.out.println("\n Game won? " + game.gameWon());

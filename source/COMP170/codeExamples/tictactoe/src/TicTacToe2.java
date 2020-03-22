@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public class TicTacToe {
+public class TicTacToe2 {
 
     private static final int SIZE = 3;
     private static final char A = 'x'; // x marks
     private static final char B = 'o'; // o marks
     private static final char E = ' '; // empty squares
 
+    private int filledSquares;         // helpful for determining a tie
     private char[][] gameBoard = new char[SIZE][SIZE];
 
     /**
@@ -18,6 +19,7 @@ public class TicTacToe {
                 gameBoard[i][j] = E;
             }
         }
+        filledSquares = 0;
     }
 
     /**
@@ -50,6 +52,7 @@ public class TicTacToe {
      */
     public void occupy(int i, int j, char playerSymbol) {
         gameBoard[i][j] = playerSymbol;
+        filledSquares++;
     }
 
     /**
@@ -81,6 +84,11 @@ public class TicTacToe {
     }
 
     /**
+     * Method to check if game is a tie
+     */
+    public boolean gameTie() { return ( filledSquares == SIZE*SIZE ); }
+
+    /**
      * Controls the game.
      */
     public void play() {
@@ -92,11 +100,11 @@ public class TicTacToe {
         System.out.println("Enter name of Player B");
         nameB = keyboard.next();
         setUpGame();
-        // somewhere here we do a random selection who's on first
+        // somewhere here we need a random selection who's on first
 
-        while ( !gameWon() ) {
+        while ( !gameWon() && !gameTie() ) {
 
-            if ( !gameWon()) {
+            if ( !gameWon() && !gameTie() ) {
                 displayBoard();
                 System.out.println(nameA + " make a move");
                 x = keyboard.nextInt(); // later on we need to check if x,y are
@@ -111,7 +119,7 @@ public class TicTacToe {
                 }
             }
 
-            if ( !gameWon() ) {
+            if ( !gameWon() && !gameTie() ) {
                 displayBoard();
                 System.out.println(nameB + " make a move");
                 x = keyboard.nextInt(); // later on we need to check if x,y are
@@ -125,14 +133,12 @@ public class TicTacToe {
                     System.out.println(nameB + " just won the game.");
                 }
             }
-
-
         }
-
+        if ( gameTie() && !gameWon() ) { System.out.println("Game is a tie"); }
     }
 
     public static void main(String[] args) {
-        TicTacToe game = new TicTacToe();
+        TicTacToe2 game = new TicTacToe2();
         game.play();
         System.out.println("\n Game won? " + game.gameWon());
     }
