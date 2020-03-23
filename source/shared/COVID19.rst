@@ -13,9 +13,11 @@ As of 3/13/20, the university has suspended all face-to-face class meetings. **C
 
 * If, at any time, Zoom is unavailable due to high-demand or any other reason, our fall-back method for online meetings will be Google Hangouts. You will need to `sign up for a free Google account <https://accounts.google.com/signup/>`_, if you do not already have one. (If you have a gmail address, you have a Google account). In case we need to switch to Google Hangouts for a class meeting, you will be notified by email. 
 
+
 * If we experience a Zoom disruption during the first half of class meeting, we will switch to Google Hangouts immediately. If the disruption occurs during the second half of the class meeting, we'll cancel the rest of the meeting, and I will provide notes and reading suggestions to make up for the lost time.
 
-* If Zoom and Google Hangouts are not available, I will switch to Reflector 051C on the STAR system for amateur radio. This Reflector is carried out by the NS9RC repeater in the Chicagoland area. My call sign is KC9GLI. And if DSTAR is affected, I will broadcast on 14.25 MHz and 7.22 MHz, Upper Side Band, on the amateur frequencies, same callsign.
+
+*  This is the caption of the figure (a simple paragraph).If Zoom and Google Hangouts are not available, I will switch to Reflector 051C on the STAR system for `amateur radio <https://en.wikipedia.org/wiki/Amateur_radio>`__. This Reflector is carried by the NS9RC repeater in the Chicagoland area. My call sign is KC9GLI. And if DSTAR is affected, I will broadcast on 14.25 MHz and 7.22 MHz, Upper Side Band, on the amateur frequencies, same callsign.
 
 
 * Zoom sessions are recorded and available to watch later if, for some reason you may not be able to attend a class meeting. Notice that the availability of recordings is not a reason to skip class. Zoom provides me with attendance information and I will be monitoring it closely. Remember that some courses include in-class assessments as part of the grading scheme. I am planning to continue conducting these assessments, so your attendance is critical. Links to recordings are provided at the end of this section.
@@ -26,6 +28,8 @@ As of 3/13/20, the university has suspended all face-to-face class meetings. **C
 * **Student hours** (aka, office hours) are **by appointment only**. `Please use the Calendly website to schedule an appointment <https://calendly.com/leo_irakliotis/15min>`__. I was hoping to keep Zoom running on standby during my scheduled Student Hours, but this would be an inconsiderate use of resources (network capacity for example).
 
 * The next few weeks are going to be challenging as we adjust to the new reality. I am committed to making online classes as engaging and productive as possible, but I will need your help. Please reach out to me at any time with suggestions, concerns, and ideas related to the course and to your studies. If you prefer to share your thoughts in a confidential way, you can `use an anonymous feedback form <https://docs.google.com/forms/d/e/1FAIpQLSfbbQkdO0buLZp17udHjphZYgZwkcZBgp3Tx6k0f6iMV_TykQ/viewform?usp=sf_link>`_. Communications are key at a time like this!
+
+
 
 
 Recordings
@@ -51,7 +55,7 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Friday, March 20, 2020 <https://luc.zoom.us/rec/share/wMNQIb2g7WJOH9LX-VjuBa0uGqTvT6a8hCcf8vAPnRnPzJtoGo9BQCoPo2VxpcFE?startTime=1584721639000>`__
  
- * Monday, March 20, 2020
+ * `Monday, March 23, 2020 <https://luc.zoom.us/rec/share/wpBOfuje7CBObbfx8USCAp8aErrBT6a8hylNqPsNzR3jV32GQ5inDtRgfHwB2zg4?startTime=1584985119000>`__
  
 * COMP 180 Data Analysis
 
