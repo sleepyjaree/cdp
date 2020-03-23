@@ -59,25 +59,30 @@ public class TicTacToe3 {
      * Determines if game won
      */
     public boolean gameWon() {
+        boolean wr, wc;
         boolean winRow = false, winCol = false;
         boolean winDiagonal = true, winAntiDiagonal = true;
         for ( int i = 0; i < SIZE; i++ ) {
-            if ( (gameBoard[i][0] == gameBoard[i][1]) && (gameBoard[i][1] == gameBoard[i][2]) &&  (gameBoard[i][0] != E) )  {
-                winRow=true;
+            wr = gameBoard[i][0] != E ;
+            wc = gameBoard[0][i] != E ;
+            for ( int j = 0; j < SIZE - 1; j++ ) {
+                wr = wr && gameBoard[i][j] == gameBoard[i][j+1];
+                wc = wc && gameBoard[j][i] == gameBoard[j+1][i];
             }
-        }
-        for ( int j = 0; j < SIZE; j++ ) {
-            if ( (gameBoard[0][j] == gameBoard[1][j]) && (gameBoard[1][j] == gameBoard[2][j]) && (gameBoard[0][j] != E) ) {
-                winCol=true;
+            if (wr) {
+                winRow = true;
+            }
+            if (wc) {
+                winCol = true;
             }
         }
 
-        for ( int i = 0; i < SIZE-1; i++) {
-            winDiagonal = winDiagonal && (gameBoard[i][i] == gameBoard[i+1][i+1]) && (gameBoard[i][i] != E);
-        }
+        winDiagonal = gameBoard[0][0] != E;
+        winAntiDiagonal = gameBoard[0][SIZE-1] != E;
 
         for ( int i = 0; i < SIZE-1; i++) {
-            winAntiDiagonal = winAntiDiagonal && (gameBoard[i][SIZE-1-i] == gameBoard[i+1][SIZE-1-(i+1)]) && (gameBoard[i][SIZE-1-i] != E);
+            winDiagonal = winDiagonal && (gameBoard[i][i] == gameBoard[i+1][i+1]) ;
+            winAntiDiagonal = winAntiDiagonal && (gameBoard[i][SIZE-1-i] == gameBoard[i+1][SIZE-1-(i+1)]);
         }
 
         return (winRow || winCol || winDiagonal || winAntiDiagonal);
@@ -107,8 +112,8 @@ public class TicTacToe3 {
             if ( !gameWon() && !gameTie() ) {
                 displayBoard();
                 System.out.println(nameA + " make a move");
-                x = keyboard.nextInt(); // later on we need to check if x,y are
-                y = keyboard.nextInt(); // proper values, i.e., 0...SIZE
+                x = keyboard.nextInt() - 1; // later on we need to check if x,y are
+                y = keyboard.nextInt() - 1; // proper values, i.e., 0...SIZE
                 // is the square at x, y free?
                 if (available(x, y)) {
                     occupy(x, y, A);
@@ -122,8 +127,8 @@ public class TicTacToe3 {
             if ( !gameWon() && !gameTie() ) {
                 displayBoard();
                 System.out.println(nameB + " make a move");
-                x = keyboard.nextInt(); // later on we need to check if x,y are
-                y = keyboard.nextInt(); // proper values, i.e., 0...SIZE
+                x = keyboard.nextInt() - 1; // later on we need to check if x,y are
+                y = keyboard.nextInt() - 1; // proper values, i.e., 0...SIZE
                 // is the square at x, y free?
                 if (available(x, y)) {
                     occupy(x, y, B);
