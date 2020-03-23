@@ -70,7 +70,7 @@ public class NotSoNaiveSeating {
     }
     public static void main(String[] args) {
         NotSoNaiveSeating myFlight = new NotSoNaiveSeating();
-        myFlight.populateManifest();
+        myFlight.populateManifestRealistically();
         //myFlight.displayPassengerSeating();
         myFlight.displayPassengerSeatingAndName();
     }

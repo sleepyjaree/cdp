@@ -13,6 +13,10 @@ As of 3/13/20, the university has suspended all face-to-face class meetings. **C
 
 * If, at any time, Zoom is unavailable due to high-demand or any other reason, our fall-back method for online meetings will be Google Hangouts. You will need to `sign up for a free Google account <https://accounts.google.com/signup/>`_, if you do not already have one. (If you have a gmail address, you have a Google account). In case we need to switch to Google Hangouts for a class meeting, you will be notified by email. 
 
+* If we experience a Zoom disruption during the first half of class meeting, we will switch to Google Hangouts immediately. If the disruption occurs during the second half of the class meeting, we'll cancel the rest of the meeting, and I will provide notes and reading suggestions to make up for the lost time.
+
+* If Zoom and Google Hangouts are not available, I will switch to Reflector 051C on the STAR system for amateur radio. This Reflector is carried out by the NS9RC repeater in the Chicagoland area. My call sign is KC9GLI. And if DSTAR is affected, I will broadcast on 14.25 MHz and 7.22 MHz, Upper Side Band, on the amateur frequencies, same callsign.
+
 
 * Zoom sessions are recorded and available to watch later if, for some reason you may not be able to attend a class meeting. Notice that the availability of recordings is not a reason to skip class. Zoom provides me with attendance information and I will be monitoring it closely. Remember that some courses include in-class assessments as part of the grading scheme. I am planning to continue conducting these assessments, so your attendance is critical. Links to recordings are provided at the end of this section.
 
