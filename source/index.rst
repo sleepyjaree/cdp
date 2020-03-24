@@ -21,7 +21,6 @@ This is a comprehensive site with material and information from the courses I te
    DBD/introduction
    
 .. include:: shared/COVID19.rst
-
    
   
    

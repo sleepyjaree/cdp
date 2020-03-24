@@ -1,13 +1,25 @@
 import java.util.Scanner;
+import java.util.Random;
+
+/**
+ * A class that implements Tic Tac Toe in 2-dimensions, on an
+ * arbitrary-sized board.
+ */
 
 public class TicTacToe3 {
 
-    private static final int SIZE = 3;
+    private static final int SIZE = 3; // board size
     private static final char A = 'x'; // x marks
     private static final char B = 'o'; // o marks
     private static final char E = ' '; // empty squares
 
+    Scanner keyboard = new Scanner(System.in);
+
+    private int x,y;
+
     private int filledSquares;         // helpful for determining a tie
+    private String playerA, playerB;
+
     private char[][] gameBoard = new char[SIZE][SIZE];
 
     /**
@@ -19,7 +31,7 @@ public class TicTacToe3 {
                 gameBoard[i][j] = E;
             }
         }
-        filledSquares = 0;
+        filledSquares = 0; // at the beginning all squares are empty
     }
 
     /**
@@ -69,12 +81,8 @@ public class TicTacToe3 {
                 wr = wr && gameBoard[i][j] == gameBoard[i][j+1];
                 wc = wc && gameBoard[j][i] == gameBoard[j+1][i];
             }
-            if (wr) {
-                winRow = true;
-            }
-            if (wc) {
-                winCol = true;
-            }
+            if (wr) { winRow = true; } // otherwise winRow false
+            if (wc) { winCol = true; } // otherwise winCol false
         }
 
         winDiagonal = gameBoard[0][0] != E;
@@ -94,50 +102,50 @@ public class TicTacToe3 {
     public boolean gameTie() { return ( filledSquares == SIZE*SIZE ); }
 
     /**
+     * Obtain player names and determine, randomly, who's on first!
+     */
+    public void players() {
+        System.out.println("Enter name of Player A");
+        playerA = keyboard.next();
+        System.out.println("Enter name of Player B");
+        playerB = keyboard.next();
+        Random rand = new Random();                 // we flip a coin to determine which player
+        int coinFlip = rand.nextInt(10);    // will be first. Coin toss is simulated by
+        if ( coinFlip > 4 ) {                       // a random integer from 0 to 9. If it is
+            String tmp = playerA;                   // greater than 4, then player B is first,
+            playerA = playerB;                      // otherwise, playerA is first.
+            playerB = tmp;                          //
+        }
+        System.out.println("Following a coin flip,\n\tfirst player is "+ playerA + " and second player is "+playerB+"\n");
+    }
+
+    /**
+     * Enables player to make a move
+     */
+    public void makeMove(String player, char playerSymbol) {
+        displayBoard();
+        System.out.println(player + " make a move");
+        x = keyboard.nextInt() - 1; // later on we need to check if x,y are
+        y = keyboard.nextInt() - 1; // proper values, i.e., 0...SIZE
+        // is the square at x, y free?
+        if (available(x, y)) {
+            occupy(x, y, playerSymbol);
+        }
+        if (gameWon()) {
+            displayBoard();
+            System.out.println(player + " just won the game.");
+        }
+    }
+
+    /**
      * Controls the game.
      */
     public void play() {
-        int x,y;
-        String nameA, nameB;
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter name of Player A");
-        nameA = keyboard.next();
-        System.out.println("Enter name of Player B");
-        nameB = keyboard.next();
+        players();
         setUpGame();
-        // somewhere here we need a random selection who's on first
-
         while ( !gameWon() && !gameTie() ) {
-
-            if ( !gameWon() && !gameTie() ) {
-                displayBoard();
-                System.out.println(nameA + " make a move");
-                x = keyboard.nextInt() - 1; // later on we need to check if x,y are
-                y = keyboard.nextInt() - 1; // proper values, i.e., 0...SIZE
-                // is the square at x, y free?
-                if (available(x, y)) {
-                    occupy(x, y, A);
-                }
-                if (gameWon()) {
-                    displayBoard();
-                    System.out.println(nameA + " just won the game.");
-                }
-            }
-
-            if ( !gameWon() && !gameTie() ) {
-                displayBoard();
-                System.out.println(nameB + " make a move");
-                x = keyboard.nextInt() - 1; // later on we need to check if x,y are
-                y = keyboard.nextInt() - 1; // proper values, i.e., 0...SIZE
-                // is the square at x, y free?
-                if (available(x, y)) {
-                    occupy(x, y, B);
-                }
-                if (gameWon()) {
-                    displayBoard();
-                    System.out.println(nameB + " just won the game.");
-                }
-            }
+            if ( !gameWon() && !gameTie() ) { makeMove(playerA,A); }
+            if ( !gameWon() && !gameTie() ) { makeMove(playerB,B); }
         }
         if ( gameTie() && !gameWon() ) { System.out.println("Game is a tie"); }
     }
@@ -145,7 +153,6 @@ public class TicTacToe3 {
     public static void main(String[] args) {
         TicTacToe3 game = new TicTacToe3();
         game.play();
-        System.out.println("\n Game won? " + game.gameWon());
     }
 
 }
