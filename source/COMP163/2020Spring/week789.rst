@@ -1,15 +1,20 @@
 
-Review of Weeks 4 and 5: Algorithms
-===================================
+Review of Weeks 7, 8, and 9: Binary trees; counting
+===================================================
 
-In week 4 we finished reviewing logic, propositions, conditional propositions, and necessary and sufficient conditions. For a change of pace we moved to discussing algorithms. 
+Weeks 7, 8, and 9 spanned over the Spring Break and were interrupted by the COVID-19 outbreak. As we transitioned from face-to-face to online class meetings, we discussed the concept of data structures and, specifically, binary trees, binary search trees, tree traversal algorithms, and decision trees.
 
-Reading material
-----------------
+ **Reading material about trees:**
 
-* From the recommended textbook: Chapter 4.
-* `Introductory chapter  <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Erickson-algorithms.pdf>`_ from `Jeff Erickson's <http://jeffe.cs.illinois.edu/>`_ book on Algorithms.
-* `Asymptotic notation <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Aspnes-asymptotic.pdf>`_ from Aspnes' book. This material is related to the analysis of algorithms.
+* From the recommended textbook: Chapters 9.5, 9.6, and 9.7.
+
+* `L. Lovasz and K. Vesztergombi's have an advanced chapter on trees <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/LovaszVesztergombi-trees.pdf>`_. (Published on L. Lovasz's website).
 
 
-.. include:: ../notes/algorithms.rst
+ **Reading material about counting:**
+
+
+* From the recommended textbook: Chapters 6.1, 6.2, 6.3, and 6.4.
+
+* `O. Levin's section counting <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Levin-counting.pdf>`_. (Made available under a CC BY SA license).
+* `Aspnes' chapter on counting <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Aspnes-counting.pdf>`_. (Made available under a CC BY SA license).

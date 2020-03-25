@@ -3,7 +3,7 @@ Review of Week 6: Proofs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Reading material for proofs:
+**Reading material for proofs:**
 
 * From the recommended textbook: Chapters 2.1, 2.2 (only the section *Proof by Contradiction;* the remaining 2.2 is optional), 2.4.
 * `L. Lovasz and K. Vesztergombi's chapter on induction <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/LovaszVesztergombi-induction.pdf>`_. (Published on L. Lovasz's website).
