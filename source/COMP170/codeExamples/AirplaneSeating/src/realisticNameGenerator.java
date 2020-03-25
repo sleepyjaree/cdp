@@ -95,8 +95,10 @@ public class realisticNameGenerator {
         String[] name = new String[2];
         Random rand = new Random();
 
-        gender = rand.nextInt(2);        // coin toss to determine gender
+        gender = rand.nextInt(2);       // coin toss to determine gender
+
         name[1] = lastNames[rand.nextInt(N)];  // last names common to both genders
+        
         if (gender == 0) {                     // female first name
             name[0] = firstNameFemale[rand.nextInt(N)];
         } else {                               // male first name
