@@ -42,7 +42,9 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Wednesday, March 18, 2020 <https://luc.zoom.us/rec/share/5PF7IqrT8V9OY6fC0nDmS5cPRt7paaa81iYeqPtZzkuL4IJi0Jf3u-rHEtVaOljU?startTime=1584566071000>`__
  
- * Monday, March 20, 2020
+ * Monday, March 23, 2020: not available due to Zoom issues.
+ 
+ * `Wednesday, March 25, 2020 <https://luc.zoom.us/rec/share/6-YtdKDhrG1LWtbX5kGYer4vHZ79X6a8gXRLrKJbmUY2n1d5EECiyrtTrSAYr3jr?startTime=1585170835000>`__
 
 * COMP 170 Introduction to OO Programming / Java
 
