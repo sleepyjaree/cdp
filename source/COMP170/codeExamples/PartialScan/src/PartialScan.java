@@ -28,7 +28,7 @@ class PartialScan {
          */
         char[][] alvin = new char[N][N];
 
-        int i, j, r, c, nextJ, nextI;
+        int i, j, r, c, nextJ, nextI; // Misc indices used throughout
 
         System.out.println("\nThis is the full array:");
         for (i = 0; i < N; i++) {
@@ -50,7 +50,7 @@ class PartialScan {
         if (j == N - 1) {    //
             nextJ = 0;       //
             nextI = i + 1;   // HINT ... HINT ... HINT ...
-        } else {             // The bug may he hidding somewhere around here!
+        } else {             // The bug may he hiding somewhere around here!
             nextJ = j + 1;   //
             nextI = i;       //
         }
