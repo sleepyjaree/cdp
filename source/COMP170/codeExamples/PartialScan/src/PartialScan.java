@@ -43,12 +43,12 @@ class PartialScan {
         System.out.println("\n\nAttempting a partial forward of row ["+i+"], column ["+j+"] (element value: "+alvin[i][j]+")");
 
 
-        if (j == N - 1) {
-            nextJ = 0;
-            nextI = i + 1;
-        } else {
-            nextJ = j + 1;
-            nextI = i;
+        if (j == N - 1) {    //
+            nextJ = 0;       //
+            nextI = i + 1;   // HINT ... HINT ... HINT ...
+        } else {             // The bug may he hidding somewhere around here!
+            nextJ = j + 1;   //
+            nextI = i;       //
         }
 
         System.out.print("\t");
