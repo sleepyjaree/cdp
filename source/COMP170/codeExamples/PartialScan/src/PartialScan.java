@@ -25,6 +25,7 @@ class PartialScan {
         char[][] alvin = new char[N][N];
 
         int i, j, r, c, nextJ, nextI;
+
         System.out.println("\nThis is the full array:");
         for (i = 0; i < N; i++) {
             System.out.print("\n\t");
@@ -35,7 +36,9 @@ class PartialScan {
         }
 
         i = 0; // Position in array from which we'll attempt
-        j = 2; // a partial scan forward
+        j = 2; // a partial scan forward. You can change these
+               // values and experiment with the behavior
+               // of the bug you are asked to fix.
 
         System.out.println("\n\nAttempting a partial forward of row ["+i+"], column ["+j+"] (element value: "+alvin[i][j]+")");
 
