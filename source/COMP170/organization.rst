@@ -63,6 +63,7 @@ The midterm exam will be  an in-class, open book, open notes, open web test. It 
 The final exam will be an in-class, open book, open notes, open web test. It will be conducted 9 AM - 11 AM on Friday, May 1, 2020.
 
 
+.. include:: ../COMP170/TA.rst
 .. include:: ../shared/studentHours.rst
 .. include:: ../shared/academicIntegrity.rst
 .. include:: ../shared/professionalism.rst
