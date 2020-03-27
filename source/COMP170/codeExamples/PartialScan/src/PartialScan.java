@@ -22,6 +22,10 @@ class PartialScan {
     public static void main(String args[]) {
 
         int N=4; // size for NxN array
+
+        /** We name the main array of this Class after the person
+         * who suggested that we work on this problem.
+         */
         char[][] alvin = new char[N][N];
 
         int i, j, r, c, nextJ, nextI;
