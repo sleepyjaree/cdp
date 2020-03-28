@@ -52,11 +52,11 @@ class PartialScan {
             nextI = i + 1;   // HINT ... HINT ... HINT ...                      //
         } else {             // The bug may he hiding somewhere around here!    //
             nextJ = j + 1;   //                                                 //
-            nextI = i;       //                        ----------               //
-        }                    //////////////////////////         |               //
-                                                     //         |               //
-        System.out.print("\t");                      //         |               //
-        for (r = nextI; r < N; r++) {                //    <-----               //
+            nextI = i;       //                                                 //
+        }                    //////////////////////////       *       *         //
+                                                     //           |             //
+        System.out.print("\t");                      //           |             //
+        for (r = nextI; r < N; r++) {                //       \_______/         //
             for (c = nextJ; c < N; c++) {            //                         //
                 System.out.print(alvin[r][c] + " "); /////////////////////////////
             }
