@@ -78,4 +78,6 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Friday, March 27, 2020 <https://luc.zoom.us/rec/share/_MpnKZTd7XpOeI3p7xzUR6QoL4LYX6a80CMWr6AOxUoX0w6AkxA1ubTZQqwREPad?startTime=1585318848000>`__
  
+ * `Monday, March 30, 2020 <https://luc.zoom.us/rec/share/_MtLBOqqr09OSY2Kzm-FRKsdPLr_eaa81CYfqaEJzlkIRQIXmItdiJgVUHz2yj0?startTime=1585577981000>`__
+ 
   
