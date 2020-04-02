@@ -87,7 +87,7 @@ public class Time {
     public String getTime24() {
         String time24 = String.format("%02d",hour) + String.format("%02d",minute);
         return  time24;
-    }
+    } // method getTime24, 24-hr format string
 
     /**
      * A accessor method to return a string with the time shown in AM/PM format
@@ -98,7 +98,7 @@ public class Time {
         if (hour < 12) { time12 = " AM"; }
         time12 = String.format("%1d",hour) +":"+ String.format("%02d",minute) + time12;
         return time12;
-    }
+    } // method getTime12, 12-hr format string
 
     /**
      * Main method, mainly for quick testing and verification purposes
