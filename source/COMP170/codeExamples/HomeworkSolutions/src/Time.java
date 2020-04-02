@@ -42,11 +42,11 @@ public class Time {
      * @param isAM flag for ante/post meridiem time
      */
     public void setTime(int h, int m, boolean isAM) {
-        if (h>-1 && h<13) {
-            if (!isAM) { h=h+12; }
-            if (isValid(h, m)) {
-                hour = h;
-                minute = m;
+        if (h>-1 && h<13) {         // Time in AM/PM is expected to be 0<hour<13
+            if (!isAM) { h=h+12; }  // If not AM, then add 12h, for internal representation
+            if (isValid(h, m)) {    // make sure that h,m now comply
+                hour = h;           // to internal representation
+                minute = m;         //
             }
         }
     } // method setTime AM/PM conversion
