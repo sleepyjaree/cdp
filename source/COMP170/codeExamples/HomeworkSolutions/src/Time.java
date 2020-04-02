@@ -58,14 +58,18 @@ public class Time {
      * @param daylightSaving is set to "on" to switch to DST, "off" to return to ST
      */
     public void setTime(String daylightSaving) {
+        int h=0;
         if (daylightSaving.equals("on")) {
-            hour = (hour+1) % 24;
+            h = (hour+1) % 24;
         } else if (daylightSaving.equals("off")) {
             if (hour==0) {
-                hour = 23;
+                h = 23;
             } else {
-                hour = hour-1;
+                h = hour-1;
             }
+        }
+        if (isValid(h,minute)) {
+            hour = h;
         }
     } // method setTime for DST on/off
 
@@ -76,8 +80,10 @@ public class Time {
      * @param h value of hour in 24-hour format
      */
     public void setTime(int h) {
-        hour = h;
-        minute = 0;
+        if (isValid(h,0)) {
+            hour = h;
+            minute = 0;
+        };
     } // method setTime, set to the hour
 
     /**
