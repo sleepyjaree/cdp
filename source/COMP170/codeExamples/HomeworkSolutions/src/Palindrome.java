@@ -76,6 +76,11 @@ public class Palindrome {
             if (candidatePalindrome.equals("stop")) {
                 runProgram = false;
             } else {
+                // isPalindrome requires a char array and its used count as arguments. In the call
+                // below, the char array is given as convertToArray(candidatePalindrome), and its
+                // used count is lengthInputString.
+                //                                                char[]                           int
+                //                               ___________________/\__________________  __________/\__________
                 boolean isIt = demo.isPalindrome(demo.convertToArray(candidatePalindrome),demo.lengthInputString);
                 if (isIt) {
                     System.out.println("\t You got yourself a palindrome");
