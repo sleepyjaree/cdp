@@ -12,7 +12,7 @@ public class Palindrome {
     private int lengthInputString;
 
     /**
-     * Obtains an input, checks length, converts to lower case, splits into char[]
+     * Obtains an input, checks length, converts to lower case
      */
     public String obtainInput(int maxLength) {
         boolean keepAsking = true;
