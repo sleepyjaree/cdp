@@ -10,6 +10,8 @@ Valid from **January 1** through **April 30,** 2020, student hours (also known a
 * Monday, Wednesday: 2:30 PM to 3:30 PM -- online only;
 * Friday: 10:20 AM to 11:20 AM -- online only.
 
+It is always better to go to the scheduling site above and make an appointment than emailing the instructor if he has time available for an appointment. The scheduling website shows all available times and allows you to make an appointment easily, quickly, and reliably.
+
 .. Walk-ins are welcome but `appointments are highly recommended <https://calendly.com/leo_irakliotis/15min>`_. Students with an appointment take precedence . My office is in **Doyle 207**. For online meetings, I use audio/video conferencing on Zoom and Google Hangouts.
 
 Student hours - Summer 2020
