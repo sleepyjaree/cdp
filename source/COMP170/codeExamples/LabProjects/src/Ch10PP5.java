@@ -34,7 +34,7 @@ public class Ch10PP5 {
         }
         while (s.hasNextLine() && used<MAX_ABBREVIATIONS) {
             abbreviations[used] = s.nextLine();
-            System.out.println("Loaded: ["+abbreviations[used]+"] at position: "+used);
+            // System.out.println("Loaded: ["+abbreviations[used]+"] at position: "+used);
             used++;
         }
     }
@@ -78,15 +78,14 @@ public class Ch10PP5 {
             replaceThis = " "+abbreviations[i] ;
             withThis = " <" + abbreviations[i] + ">";
             markedUpText = markedUpText.replace(replaceThis, withThis);
-
         }
-
     }
 
     public static void main(String args[]) {
         Ch10PP5 demo = new Ch10PP5();
         demo.loadAbbreviations();
         demo.readTextMessage();
+        System.out.println();
         System.out.println(demo.readText);
         demo.markUp();
         System.out.println(demo.markedUpText);
