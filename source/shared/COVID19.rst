@@ -45,6 +45,10 @@ Notice that at times of high network traffic or high demand, these recordings ma
  * Monday, March 23, 2020: not available due to Zoom issues.
  
  * `Wednesday, March 25, 2020 <https://luc.zoom.us/rec/share/6-YtdKDhrG1LWtbX5kGYer4vHZ79X6a8gXRLrKJbmUY2n1d5EECiyrtTrSAYr3jr?startTime=1585170835000>`__
+ 
+ * `Monday, March 30, 2020 <https://luc.zoom.us/rec/share/upxwd4n6zFFJBYXB7VrnS_E6JN7veaa8g3dNrKcNyRuVOIGTsrRsuHZpwMnzeIhF?startTime=1585602886000>`__
+ 
+ * `Wednesday, April 1, 2020 <https://luc.zoom.us/rec/share/2Nx-cevI6VxJa6Phs17bXoJwOJW_aaa8hCMZqaYLngWcNgYQP5IWjZHQCfrvyyg?startTime=1585775693000>`__
 
 * COMP 170 Introduction to OO Programming / Java
 
@@ -61,6 +65,12 @@ Notice that at times of high network traffic or high demand, these recordings ma
  * `Wednesday, March 25, 2020 <https://luc.zoom.us/rec/share/wZ1TFur060xLaJXz2U-CA_UCRpjuaaa81SMb-fRexRx5-669gVI3qPx2fdwCx9qD?startTime=1585157709000>`__
  
  * `Friday, March 27, 2020 <https://luc.zoom.us/rec/share/6PIyF6CgzzxJSM_Es0b4HZYYAafVT6a82ikcq6dfmExixLt2WtaDRHP5cGDlnoYr?startTime=1585326294000>`__
+ 
+ * `Monday, March 30, 2020 <https://luc.zoom.us/rec/share/xZxPfuvt3FxLY9aOuHz7YvYsLqu8aaa82ilI_qZbzk3MUPy5Jkvj_y7deguWApGS?startTime=1585589685000>`__
+ 
+ * `Wednesday, April 1, 2020 <https://luc.zoom.us/rec/share/5vVvP4irxjNJbZX12hzwe5IBOY_9eaa80yhP_PoEmFxJH5hcIRyNet_JqlaxFXI?startTime=1585762493000>`__
+ 
+ * `Friday, April 3, 2020 <https://luc.zoom.us/rec/share/pvF0cbH160pOZJ306BDvfaVmNJznX6a80CBI_KEPmE_vlJz7gpDm2jXs-7RV4wwn?startTime=1585931101000>`__
  
 * COMP 180 Data Analysis
 
@@ -80,4 +90,7 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Monday, March 30, 2020 <https://luc.zoom.us/rec/share/_MtLBOqqr09OSY2Kzm-FRKsdPLr_eaa81CYfqaEJzlkIRQIXmItdiJgVUHz2yj0?startTime=1585577981000>`__
  
+ * `Wednesday, April 1, 2020 <https://luc.zoom.us/rec/share/xJ1Mcfb002JJaaPLtU3yQfIAFYnueaa8gSlKq6JfnUwyJBgL4O8wj7VGFqVaYzwM?startTime=1585750829000>`__
+ 
+ * Friday, April 3, 2020 -- recording not available -- informal session.
   
