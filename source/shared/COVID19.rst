@@ -93,4 +93,6 @@ Notice that at times of high network traffic or high demand, these recordings ma
  * `Wednesday, April 1, 2020 <https://luc.zoom.us/rec/share/xJ1Mcfb002JJaaPLtU3yQfIAFYnueaa8gSlKq6JfnUwyJBgL4O8wj7VGFqVaYzwM?startTime=1585750829000>`__
  
  * Friday, April 3, 2020 -- recording not available -- informal session.
+ 
+ * `Monday, April 6, 2020 <https://luc.zoom.us/rec/share/1etvdqnJ92RJZqP98ErjdqIvJp75aaa81iMb-aFeyEvpU8U9tJB8wbnmDf7V1YhG?startTime=1586182790000>`__
   
