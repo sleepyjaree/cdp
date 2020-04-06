@@ -5,6 +5,6 @@ Review of Weeks 10, 11: counting and probabilities
 Weeks 10 and 11 focus on discrete probabilities.
 
 
-* From the recommended textbook: Chapters 6.6.
+* From the recommended textbook: Chapters 6.7.
 
 * `Aspnes' chapter on probability <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Aspnes-probability.pdf>`_. (Made available under a CC BY SA license).
