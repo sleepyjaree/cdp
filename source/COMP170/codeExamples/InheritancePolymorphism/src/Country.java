@@ -16,7 +16,7 @@ public class Country extends GeographicEntity {
         setName(newCountryName);
         capital = newCapitalCity;
     }
-    
+
     public void setCapital(String newCapitalCity) {
         capital = newCapitalCity;
     }
@@ -26,7 +26,11 @@ public class Country extends GeographicEntity {
     }
 
     public void displayInfo() {
-        System.out.println("Country: " + getName());
-        System.out.println("Capital: " + capital);
+        System.out.println("You visited " + getName() + ", a country whose capital is " + capital);
+    }
+
+    public boolean isSame(Country otherCountry) {
+        return this.getName().equalsIgnoreCase(otherCountry.getName()) &&
+                this.capital.equalsIgnoreCase(otherCountry.capital);
     }
 }
