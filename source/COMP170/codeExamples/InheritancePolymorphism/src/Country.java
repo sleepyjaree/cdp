@@ -1,4 +1,5 @@
 public class Country extends GeographicEntity {
+
     private String capital;
 
     public Country() {
@@ -11,11 +12,11 @@ public class Country extends GeographicEntity {
         capital = capitalCity;
     }
 
-    public void setCapital(String newCountryName, String newCapitalCity) {
+    public void setCountry(String newCountryName, String newCapitalCity) {
         setName(newCountryName);
         capital = newCapitalCity;
     }
-
+    
     public void setCapital(String newCapitalCity) {
         capital = newCapitalCity;
     }
