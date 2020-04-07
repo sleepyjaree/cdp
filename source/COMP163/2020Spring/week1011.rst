@@ -8,3 +8,12 @@ Weeks 10 and 11 focus on discrete probabilities.
 * From the recommended textbook: Chapters 6.7.
 
 * `Aspnes' chapter on probability <https://github.com/lgreco/cdp/blob/master/source/COMP163/OER/Aspnes-probability.pdf>`_. (Made available under a CC BY SA license).
+
+Solutions to in-class assignment 7 (conducted 4/1/20)
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+**Problem 1**. There are :math:`6^3` possible outcomes when rolling three dice.
+
+**Problem 2**. The most likely sum to roll two fair dice to is 7. Because this sum can be achieved by the largest possible combinations between the two dice, i.e., 1+6, 2+5, 3+4, 4+3, 5+2, and 6+1. (Grading notes: solutions that do not answer the "why" part of this problem, are incomplete).
+
+**Problem 3**. The planes with heavy damage in the outer wings and the rear fuselage, made it safely to their base. It means that such heavy damage did not affect the plane's ability to fly. Therefore these areas are the least likely candidates for armor plating. (This problem is a simplified rendering of a `true story <https://www.motherjones.com/kevin-drum/2010/09/counterintuitive-world/>`__).
