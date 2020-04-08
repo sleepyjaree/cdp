@@ -52,7 +52,7 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Monday, April 6, 2020 <https://luc.zoom.us/rec/share/uelLKpHorjtLW6fP5nuERbI5IqbKT6a8g3Uc_KYNzEpve6HS3FR03RT4zSBgn90J?startTime=1586207703000>`__
  
- * `Friday, April 8, 2020 <x>`__
+ * `Friday, April 8, 2020 <https://luc.zoom.us/rec/share/wI9lbL3MyGVOe5HJyliPVaERWar5T6a82yJN8_UMyUlkKaWLBSNricESzK6KH8o?startTime=1586380493000>`__
 
 * COMP 170 Introduction to OO Programming / Java
 
