@@ -3,7 +3,7 @@ public class Country extends GeographicEntity {
     private String capital;
 
     public Country() {
-        super();
+        super(); // calls the default constructor of the parent class
         capital = "What's the capital city for this country?";
     }
 
