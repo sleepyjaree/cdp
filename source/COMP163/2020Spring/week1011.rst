@@ -17,3 +17,15 @@ Solutions to in-class assignment 7 (conducted 4/1/20)
 **Problem 2**. The most likely sum to roll two fair dice to is 7. Because this sum can be achieved by the largest possible combinations between the two dice, i.e., 1+6, 2+5, 3+4, 4+3, 5+2, and 6+1. (Grading notes: solutions that do not answer the "why" part of this problem, are incomplete).
 
 **Problem 3**. The planes with heavy damage in the outer wings and the rear fuselage, made it safely to their base. It means that such heavy damage did not affect the plane's ability to fly. Therefore these areas are the least likely candidates for armor plating. (This problem is a simplified rendering of a `true story <https://www.motherjones.com/kevin-drum/2010/09/counterintuitive-world/>`__).
+
+Solutions to in-class assigment 8 (conducted 4/8/20)
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+**Problem 1**. Assuming that the coins as properly glued, i.e., the head side of one coin is glued to the tail side of the other, the odds of tossing a head is the same as a single coin: 1/2. If the coins are glued tail-to-tail, the odds of tossing a head is 1. And if they are glued head-to-head, the odds are 0.
+
+**Problem 2**. If the coins as properly glued, i.e., the head side of one coin is glued to the tail side of the other, the odds of tossing two heads back-to-back is the same as with a single coin: 1/4. If the coins are glued tail-to-tail, the odds of tossing back-to-back heads is 1. And if they are glued head-to-head, the odds are 0.
+
+**Problem 3**. There are two correct answers to this problem, depending on how you interpret it: either 1/2 or 1/4.
+
+Bayes Theorem Example
++++++++++++++++++++++
