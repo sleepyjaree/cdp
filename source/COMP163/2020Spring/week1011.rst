@@ -78,7 +78,7 @@ And so
 
 .. math::
 
- P(D|+) = \frac{(0.9)(0.13)}{P(+)} = \frac{(0.117)}{0.1605} = 0.7289
+ P(D|+) = \frac{(0.9)(0.13)}{P(+)} = \frac{0.117}{0.1605} = 0.7289
 
 In other words, someone who tests positive for a disease with a 13% prevalence, using a test with 90% sensitivity and 95% specificity, has a 73% chance that actually has the disease.
 
