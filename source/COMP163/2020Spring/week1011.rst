@@ -89,7 +89,7 @@ Various countries across the world contemplate the manner in which they will "re
 
 Many people seem to have been infected by the virus but remained asymptomatic, or dismissed their light symptoms. Determining if someone was infected and, presuma]bly, is now immune to the disease requires a test that detects the presence of virus-specific antibodies. 
 
-In terms of conditional probabilities we are interested in:
+In terms of conditional probabilities, we are interested in:
 
 .. math::
 
