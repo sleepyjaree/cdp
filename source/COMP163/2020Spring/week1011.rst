@@ -82,3 +82,70 @@ And so
 
 In other words, someone who tests positive for a disease with a 13% prevalence, using a test with 90% sensitivity and 95% specificity, has a 73% chance that actually has the disease.
 
+Bayes Theorem in context with the COVID-19 pandemic
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Various countries across the world contemplate the manner in which they will "reopen" after lockdown measures taken in response to the SARS-CoV-2 virus. This is the virus that causes the COVID-19 disease. One of the candidate criteria for allowing individuals to return to their offices and other public work spaces, is whether or not they were infected by the virus. Those infected are *presumed* to be immune to new infections; if not permanently, at least for a while. And therefore safe to be in public, without infecting other people around them. 
+
+Many people seem to have been infected by the virus but remained asymptomatic, or dismissed their light symptoms. Determining if someone was infected and, presuma]bly, is now immune to the disease requires a test that detects the presence of virus-specific antibodies. 
+
+In terms of conditional probabilities we are interested in:
+
+.. math::
+
+ P\ (\ \text{was infected}\ |\ \text{antibody test positive}\ )
+ 
+and for simplicity we write it as :math:`P(I|+)`. In other words, if you take the antibody test and it comes positive, how likely is it that you were actually infected by the SAS-CoV-2 virus? Using Bayes' theorem, the conditional probability is expressed as:
+
+.. math::
+
+ P(I|+) = \frac{P(+|I)P(I)}{P(+)}
+ 
+As we saw earlier, :math:`P(+|I)` is the *sensitivity* of the test and :math:`P(I)` the prevalence of the infection. The denominator itself is the expected value of positive tests and can be evaluated directly as:
+
+.. math::
+
+ P(+) = P(+|I)P(I) + P(+|\overline{I})P(\overline{I})
+ 
+The conditional probability  :math:`P(I|+)` can be expressed now as a simple fraction:
+
+.. math::
+
+ P(I|+) &= \frac{\alpha}{\alpha+\beta}, \\ \\
+ \alpha &= P(+|I)P(I) \\
+ \beta &= P(+|\overline{I})P(\overline{I})
+
+Quantity :math:`\alpha` is known: it is the product of the test's sensitivity and the disease's prevalence. And quantity :math:`\beta` can be computed from its complements:
+
+.. math::
+
+ \beta &= P(+|\overline{I})P(\overline{I}) \\
+       &= (1-P(-|\overline{I}))\ (1-P(I))
+
+The quantity :math:`P(-|\overline{I})` is the test's *specificity,* i,e., the likelihood that someone without the disease will test negative to it.
+
+If :math:`p` is the prevalence of the disease, :math:`s` the sensitivity of the antibody test, and :math:`\sigma` the test's specificity, our conditional probability becomes:
+
+.. math::
+
+ P(I|+) &= \frac{\alpha}{\alpha+\beta}, \\ \\
+ \alpha &= sp \\
+ \beta &= (1-\sigma)(1-p) 
+
+A good antibody test is expected to have high sensitivity and high selectivity. Let's assume :math:`s=0.95` and :math:`\sigma=0.95`, and so :math:`P(I|+)=\frac{0.95p}{0.95p+0.05(1-p)}`.
+
+The only unknown now is the prevalence of the disease. For a relatively rare disease affecting 500 out of 100,000 people, the prevalence :math:`p=0.005` or 0.5%. If someone tests positive to an antibody test with 95% sensitivity and 95% selectivity, there is only a 8.7% chance they actually had the disease.
+
+If the prevalence is higher, let's say 5,000 out of 100,000 people, and :math:`p=0.05` or 5%, and someone tested positive, there is a 50% chance that they had the disease.
+
+And if the disease is rampant, i.e., half the population had it, and therefore :math:`p=0.5` or 50%, those testing positive have a 95% chance that they actually had the disease.
+
+We don't know yet what the actual prevalence of COVID-19 is. The `CDC reports incidence rates from 20.6 to 915.3 cases per 100,000 <https://www.cdc.gov/mmwr/volumes/69/wr/mm6915e4.htm>`__. Assuming, arbitrarily, a 100X factor between incidence and prevalence, we can guesstimate prevalence rate as: :math:`0.0206\leq p\leq 0.9153`. For the low-end :math:`p`, the conditional probability :math:`P(I|+)`, given an antibody test with 95% sensitivity and specificity, is :math:`P_{\text{low}}(I|+)\approx 31\%`. For the high-end prevalence indicating that 91.53% of the population gets infected, the conditional probability becomes: :math:`P_{\text{high}}(I|+)\approx 99\%`.
+
+The truth is somewhere in the middle. But if the disease prevalence is in the low-end, e.g., below 25%, then the antibody tests will miss more than 13% of those tested. Meaning that individuals not immune to the virus will be thought to be immune and will be allowed to mingle with the general population. This may lead to subsequent flare ups of the infection.
+
+On the other hand, if the disease is very prevalent, e.g. :math:`p\geq 0.5`, then the tests will miss less than 4% of the cases, and this may be a manageable load.
+
+
+ 
+
