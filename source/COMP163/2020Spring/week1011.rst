@@ -142,7 +142,7 @@ And if the disease is rampant, i.e., half the population had it, and therefore :
 
 We don't know yet what the actual prevalence of COVID-19 is. The `CDC reports incidence rates from 20.6 to 915.3 cases per 100,000 <https://www.cdc.gov/mmwr/volumes/69/wr/mm6915e4.htm>`__. Assuming, arbitrarily, a 100X factor between incidence and prevalence, we can guesstimate prevalence rate as: :math:`0.0206\leq p\leq 0.9153`. For the low-end :math:`p`, the conditional probability :math:`P(I|+)`, given an antibody test with 95% sensitivity and specificity, is :math:`P_{\text{low}}(I|+)\approx 31\%`. For the high-end prevalence indicating that 91.53% of the population gets infected, the conditional probability becomes: :math:`P_{\text{high}}(I|+)\approx 99\%`.
 
-The truth is somewhere in the middle. But if the disease prevalence is in the low-end, e.g., below 25%, then the antibody tests will miss more than 13% of those tested. Meaning that individuals not immune to the virus will be thought to be immune and will be allowed to mingle with the general population. This may lead to subsequent flare ups of the infection.
+The truth is somewhere in-between. But if the disease prevalence is in the low-end, e.g., below 25%, then the antibody tests will miss more than 13% of those tested. Meaning that individuals not immune to the virus will be thought to be immune and will be allowed to mingle with the general population. This may lead to subsequent flare ups of the infection.
 
 On the other hand, if the disease is very prevalent, e.g. :math:`p\geq 0.5`, then the tests will miss less than 4% of the cases, and this may be a manageable load.
 
