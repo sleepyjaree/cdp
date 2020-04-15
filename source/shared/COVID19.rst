@@ -55,6 +55,8 @@ Notice that at times of high network traffic or high demand, these recordings ma
  * `Friday, April 8, 2020 <https://luc.zoom.us/rec/share/wI9lbL3MyGVOe5HJyliPVaERWar5T6a82yJN8_UMyUlkKaWLBSNricESzK6KH8o?startTime=1586380493000>`__
  
  * `Monday, April 13, 2020 <https://luc.zoom.us/rec/share/4PVJFZLW8X9LX43WzGLnfo57Ob78aaa823Ie8_EKmk4VMYDC9ymD-UGi-jDAIJNL?startTime=1586812497000>`__
+ 
+ * `Wednesday, April 15, 2020 <https://luc.zoom.us/rec/share/4v0qPa3s-ntIe9KVq2b7XIgqPtXGaaa8gSUc-KAJzUsoHeeDz3_q3hMQpt0Bavql?startTime=1586985308000>`__
 
 * COMP 170 Introduction to OO Programming / Java
 
@@ -82,6 +84,8 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Friday, April 8, 2020 <https://luc.zoom.us/rec/share/_ZVYHa-u2khJYdaOyGHNWq48R4e6T6a80CcWrKAKn0-seK8afrj_aFKfQOxb64OT?startTime=1586367298000>`__
  
+ * `Wednesday, April 15, 2020 <https://luc.zoom.us/rec/share/9_JRdY70-2lJHYnmsxGABpcbQJa8T6a80SUc-PJfmU09PjwXm1zE_aGBlI3sAorZ?startTime=1586972121000>`__
+ 
 * COMP 180 Data Analysis
 
  * `Friday, March 13, 2020  <https://luc.zoom.us/rec/share/1_NJD_bT-ntIfqvB1GaAR6pxAbXUeaa81nAbrqdfmkaFYNsSlO57wi53Og776a5Y>`__
@@ -107,4 +111,6 @@ Notice that at times of high network traffic or high demand, these recordings ma
  * `Monday, April 6, 2020 <https://luc.zoom.us/rec/share/1etvdqnJ92RJZqP98ErjdqIvJp75aaa81iMb-aFeyEvpU8U9tJB8wbnmDf7V1YhG?startTime=1586182790000>`__
  
  * `Friday, April 8, 2020 <https://luc.zoom.us/rec/share/yeFMFanMqTxLba_08XrTVfEdJ9nhaaa80yga-_VbmUrOpBFPFt92nY66l9ROw1u-?startTime=1586355651000>`__
+ 
+ * `Wednesday, April 15, 2020 <https://luc.zoom.us/rec/share/-M9aI5vi61xJUoXU6ELyV6wqMqX1T6a81ykbrKFbnxuRxqgFgGx8CAVpGM1avPBB?startTime=1586960453000>`__
   
