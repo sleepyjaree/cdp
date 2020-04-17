@@ -86,7 +86,7 @@ Notice that at times of high network traffic or high demand, these recordings ma
  
  * `Wednesday, April 15, 2020 <https://luc.zoom.us/rec/share/9_JRdY70-2lJHYnmsxGABpcbQJa8T6a80SUc-PJfmU09PjwXm1zE_aGBlI3sAorZ?startTime=1586972121000>`__
 
- * `Friday, April 17, 2020 <null>`__
+ * `Friday, April 17, 2020 <https://luc.zoom.us/rec/share/y_ZfJLjtx2pIWJXG1WGCS6kmDID8X6a82ygW8qUJyRpQdcphy0UUdTGbeHPnrD79?startTime=1587141138000>`__
  
 * COMP 180 Data Analysis
 
