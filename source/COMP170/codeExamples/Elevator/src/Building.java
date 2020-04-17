@@ -3,11 +3,18 @@ public class Building {
 
     Floor ground = null;
 
-    public void addFloor(Building building) {}
+    public void addFloor(Building building) {
+        if (ground==null) {
+            // complete ground floor
+        } else {
+            // put a floor on top of the highest floor in the building
+            // ... ok, but HOW do you find the highest floor
+        }
+    }
 
     public int countFloors() { return 1;}
 
-    
+
 
     private class Floor {
 
