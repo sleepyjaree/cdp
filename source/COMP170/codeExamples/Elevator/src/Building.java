@@ -25,18 +25,21 @@ public class Building {
      */
 
     static class Floor {
+
         int floorNumber;
         Floor above, below;
+
         Floor() {
             floorNumber = 0;
             above = null;
             below = null;
         } // default constructor Floor
+
         String floorString() {
             return  "+" + "-".repeat(10) + "+\n" +
                     "| " + floorNumber + "        |\n" +
                     "+" + "-".repeat(10) + "+";
-        }
+        } // method floorString
     }
 
     /**
