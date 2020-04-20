@@ -1,0 +1,437 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Review of Week 8: Arrays &mdash; Leo Irakliotis&#39; courses  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Review of Week 9: Arrays, TicTacToe" href="week9.html" />
+    <link rel="prev" title="Review of Week 7: Midterm wrap-up" href="week7.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Leo Irakliotis' courses
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Courses</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../COMP163/introduction.html">COMP 163 Discrete Structures</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../introduction.html">COMP 170 Introduction to Java Programming</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../organization.html">Course organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../reading.html">Reading material</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../notes.html">Leo's notes</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="weeklyReviews.html">Weekly Reviews - Spring 2020</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="week2.html">Review of Week 1 and Week 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week3.html">Review of Week 3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week4.html">Review of Week 4</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week5.html">Review of Week 5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week6.html">Review of Week 6</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week7.html">Review of Week 7: Midterm wrap-up</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Review of Week 8: Arrays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week9.html">Review of Week 9: Arrays, TicTacToe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="week1011.html">Review of Week 10 and Week 11</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../COMP180/introduction.html">COMP 180 Data Analysis for the Sciences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../COMP271/introduction.html">COMP 271 Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DBD/introduction.html">(Relational) Databases and their Design</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Leo Irakliotis' courses</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../introduction.html">COMP 170 Introduction to Java Programming</a> &raquo;</li>
+        
+          <li><a href="../notes.html">Leo’s notes</a> &raquo;</li>
+        
+          <li><a href="weeklyReviews.html">Weekly Reviews - Spring 2020</a> &raquo;</li>
+        
+      <li>Review of Week 8: Arrays</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/COMP170/2020Spring/week8.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="review-of-week-8-arrays">
+<h1>Review of Week 8: Arrays<a class="headerlink" href="#review-of-week-8-arrays" title="Permalink to this headline">¶</a></h1>
+<p>A good way to introduce arrays is with a concrete example, showing some of the things we can do with them. An array is a collection of similar items. Each item occupies a position within the array and can be referenced by that position. Because each item is stored in the array, it does not require its own individual variable name. For example, the following code snippet computers the average temperature for one week.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">float</span> <span class="n">montemperatureAtNoon</span> <span class="o">=</span> <span class="mi">70</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">tuetemperatureAtNoon</span> <span class="o">=</span> <span class="mi">63</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">wedtemperatureAtNoon</span> <span class="o">=</span> <span class="mi">72</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">thutemperatureAtNoon</span> <span class="o">=</span> <span class="mi">67</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">fritemperatureAtNoon</span> <span class="o">=</span> <span class="mi">68</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">sattemperatureAtNoon</span> <span class="o">=</span> <span class="mi">68</span><span class="o">;</span>
+<span class="kt">float</span> <span class="n">suntemperatureAtNoon</span> <span class="o">=</span> <span class="mi">71</span><span class="o">;</span>
+
+<span class="kt">float</span> <span class="n">weekAverage</span> <span class="o">=</span> <span class="o">(</span> <span class="n">montemperatureAtNoon</span> <span class="o">+</span> <span class="n">tuetemperatureAtNoon</span>
+                    <span class="o">+</span> <span class="n">wedtemperatureAtNoon</span> <span class="o">+</span> <span class="n">thutemperatureAtNoon</span>
+                    <span class="o">+</span> <span class="n">fritemperatureAtNoon</span> <span class="o">+</span> <span class="n">sattemperatureAtNoon</span>
+                    <span class="o">+</span> <span class="n">suntemperatureAtNoon</span> <span class="o">)</span> <span class="o">/</span> <span class="mf">7.0</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>In the code above, we initialize seven variables, one for each day of the week to record the temperature. Then we add these variables together and divide the sum by 7, to obtain the average temperature.
+The code below achieves the same result, with a different approach.</p>
+<p>The difference in the code below begins with the highlighted line. The command initializes an array to hold 7 different float values. The program then proceeds to add the values stored in an array, using a for-loop accessing one element of the array at a time.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="kt">float</span><span class="o">[]</span> <span class="n">temperatureAtNoon</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">float</span><span class="o">(</span><span class="mi">7</span><span class="o">);</span>
+</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">70</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">63</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">72</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">3</span><span class="o">]</span> <span class="o">=</span> <span class="mi">67</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="mi">68</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">5</span><span class="o">]</span> <span class="o">=</span> <span class="mi">68</span><span class="o">;</span>
+<span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">6</span><span class="o">]</span> <span class="o">=</span> <span class="mi">71</span><span class="o">;</span>
+
+<span class="kt">float</span> <span class="n">weekAverage</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">day</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="o">;</span> <span class="n">day</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="n">weekAverage</span> <span class="o">=</span> <span class="n">weekAverage</span> <span class="o">+</span> <span class="n">temperatureAtNoon</span><span class="o">[</span><span class="n">day</span><span class="o">];</span>
+<span class="o">}</span>
+
+<span class="n">weekAverageHigh</span> <span class="o">=</span> <span class="n">weekAverageHigh</span> <span class="o">/</span> <span class="mf">7.0</span><span class="o">;</span>
+</pre></div>
+</div>
+<p>As the code above shows, an array is declared by an empty pair of square brakets next to the data type we wish to use; in the example above <code class="docutils literal notranslate"><span class="pre">float[]</span></code>. The declaration includes the name we wish to give to the array. Next, the array is initialized to a specific size, by the command <code class="docutils literal notranslate"><span class="pre">new</span></code> and the size specification; in this example we initialize an array of 7 float variables.</p>
+<p>Values stored in the array can be accessed by the referencing the corresponding element, using an array index. The array index is an integer number enclosed in square brackets. The first element of the array corresponds to index <code class="docutils literal notranslate"><span class="pre">[0]</span></code>. Often we need to traverse an array, looking at every element. This is accomplished with a loop in which an <code class="docutils literal notranslate"><span class="pre">int</span></code> variable is increment by 1 (using the <code class="docutils literal notranslate"><span class="pre">++</span></code> operator). In the example above, the variable <code class="docutils literal notranslate"><span class="pre">day</span></code> is used in a for-loop to access the 0th, 1st, 2nd, 3rd, 4th, 5th, and 6th place of the array – in other words, all of its seven elements.</p>
+<p>What makes arrays so useful and so interesting in programming is the ability to traverse them so easily. We can store values with a common property – e.g., daily temperatures – and then analyze them by traversing the array to find average values, as well as extreme values, and other properties. Using the example above, here’s a simple code snippet to find the maximum daily high temperature</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">maxTemperature</span> <span class="o">=</span> <span class="n">temperatureAtNoon</span><span class="o">[</span><span class="mi">0</span><span class="o">];</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">day</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">day</span> <span class="o">&lt;</span> <span class="mi">7</span><span class="o">;</span> <span class="n">day</span><span class="o">++)</span> <span class="o">{</span>
+  <span class="k">if</span> <span class="o">(</span> <span class="n">temperatureAtNoon</span><span class="o">[</span><span class="n">day</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">maxTemperature</span> <span class="o">)</span> <span class="o">{</span>
+    <span class="n">maxTemperature</span> <span class="o">=</span> <span class="n">temperatureAtNoon</span><span class="o">[</span><span class="n">day</span><span class="o">];</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Data analysis, shown in the examples above, is one of arrays’ many application. Arrays, and array-based Classes, can be used to search data, map information, and organize knowledge. The next example shows how a linear (one-dimensional) array can produce two-dimensional information.</p>
+<div class="section" id="airplane-seating">
+<h2>Airplane Seating<a class="headerlink" href="#airplane-seating" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how we can use an array to map information. It’s a simple, almost naive, example but there are things to learn from it. First, let’s frame the problem. We have an one-dimensional array holding the names of passengers for a small airplane. And we’d like to assign these passengers to airplane seats, in a specific order. The airplane is a small one, with 12 seats only. The cabin has a single aisle, with two seats on either side. There are 3 rows of seats and 4 seats per row. Rows are numbered 1,2, and 3. Seats are labeled A, B, C, and D, from left to right. We want the first passenger in the passenger list to be seated on seat 1A, the second on 1B, the 5th on 2A, and so on. The figure below shows the placing order.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/AirplaneSeating.jpg"><img alt="../../_images/AirplaneSeating.jpg" src="../../_images/AirplaneSeating.jpg" style="width: 90%;" /></a>
+<p class="caption"><span class="caption-text">Converting a passenger manifest to seating assignments in a (small) airplane. The manifest is a linear (one-dimensional) entity, while the seating assignment is a two-dimensional construct.</span></p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The placing order shown in the figure above is called <em>row-major</em>. It fills one row at a time, from left-to-right, beginning with the front row. The implementation of this technique is showin in Class <code class="docutils literal notranslate"><span class="pre">NaiveSeating</span></code> below.  The code  prints only the seat labels in the proper arrangement, ie, it does not concern itself with the names of the passengers. All that <code class="docutils literal notranslate"><span class="pre">NaiveSeating</span></code> does is to create the following output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span><span class="n">A</span> <span class="mi">1</span><span class="n">B</span>   <span class="mi">1</span><span class="n">C</span> <span class="mi">1</span><span class="n">D</span>
+<span class="mi">2</span><span class="n">A</span> <span class="mi">2</span><span class="n">B</span>   <span class="mi">2</span><span class="n">C</span> <span class="mi">2</span><span class="n">D</span>
+<span class="mi">3</span><span class="n">A</span> <span class="mi">3</span><span class="n">B</span>   <span class="mi">3</span><span class="n">C</span> <span class="mi">3</span><span class="n">D</span>
+</pre></div>
+</div>
+<p>For compactness, the code for <code class="docutils literal notranslate"><span class="pre">NaiveClass</span></code> has no comments. A line-by-line narrative of this Class follows after the code.</p>
+<div class="highlight-java notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NaiveSeating</span> <span class="o">{</span>
+
+<span class="hll">    <span class="n">String</span><span class="o">[]</span> <span class="n">passenger</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="mi">12</span><span class="o">];</span>
+</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">populateManifest</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">12</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="n">passenger</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="s">&quot;Pfname&quot;</span><span class="o">+</span><span class="n">i</span><span class="o">+</span><span class="s">&quot; Plname&quot;</span><span class="o">+</span><span class="n">i</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayPassengerSeating</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">12</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">1</span><span class="o">+</span><span class="n">Math</span><span class="o">.</span><span class="na">round</span><span class="o">(</span><span class="n">i</span><span class="o">/</span><span class="mi">4</span><span class="o">);</span>
+            <span class="n">String</span> <span class="n">seatPlace</span> <span class="o">=</span> <span class="n">Character</span><span class="o">.</span><span class="na">toString</span><span class="o">(((</span><span class="kt">char</span><span class="o">)</span> <span class="mi">65</span> <span class="o">+</span> <span class="o">(</span><span class="n">i</span><span class="o">%</span><span class="mi">4</span><span class="o">)));</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">row</span><span class="o">+</span><span class="n">seatPlace</span><span class="o">+</span><span class="s">&quot; &quot;</span><span class="o">);</span>
+            <span class="k">if</span> <span class="o">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&quot;  &quot;</span><span class="o">);</span> <span class="o">}</span>
+            <span class="k">if</span> <span class="o">((</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">)%</span><span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span> <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="s">&quot;\n&quot;</span><span class="o">);</span> <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">NaiveSeating</span> <span class="n">myFlight</span> <span class="o">=</span> <span class="k">new</span> <span class="n">NaiveSeating</span><span class="o">();</span>
+        <span class="n">myFlight</span><span class="o">.</span><span class="na">populateManifest</span><span class="o">();</span>
+        <span class="n">myFlight</span><span class="o">.</span><span class="na">displayPassengerSeating</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>Let’s look, line-by-line, what the code above does (the narrative below omits blank lines).</p>
+<p><strong>Line 1:</strong> defines the name of the Class.</p>
+<p><strong>Line 3:</strong> creates an array of <code class="docutils literal notranslate"><span class="pre">String</span></code> variables, named <code class="docutils literal notranslate"><span class="pre">passengers</span></code> and initializes it to hold 12 values.</p>
+<p><strong>Lines 5-9:</strong> define a method that populates the array <code class="docutils literal notranslate"><span class="pre">passengers</span></code> with mockup names. The first name is “LName1 FName1”, the second “FName2 LName2”, and so on. Line 6 initiates a for-loop that assignes the values 1 through 12 to variable <code class="docutils literal notranslate"><span class="pre">i</span></code>, sequentially. Then, in line 7, the value of <code class="docutils literal notranslate"><span class="pre">i</span></code> is concatenated with strings to produce the desired mockup names. Admittedly, this is <em>pathetic</em>. We want passenger names to be more realistic than Mr. FName1 LName1. But we’ll worry about it later.</p>
+<p><strong>Lines 11-19:</strong> define a method that prints out the simple seat layout shown earlier: 1A, 1B, etc. Ultimately we want to print something like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+--------+--------+--+--------+--------+</span>
+<span class="o">|</span> <span class="mi">1</span><span class="n">A</span>     <span class="o">|</span> <span class="mi">1</span><span class="n">B</span>     <span class="o">|</span>  <span class="o">|</span> <span class="mi">1</span><span class="n">C</span>     <span class="o">|</span> <span class="mi">1</span><span class="n">D</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="n">Fname1</span> <span class="o">|</span> <span class="n">Fname2</span> <span class="o">|</span>  <span class="o">|</span> <span class="n">Fname3</span> <span class="o">|</span> <span class="n">Fname4</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">LName1</span> <span class="o">|</span> <span class="n">Lname2</span> <span class="o">|</span>  <span class="o">|</span> <span class="n">LName3</span> <span class="o">|</span> <span class="n">Lname4</span> <span class="o">|</span>
+<span class="o">+--------+--------+--+--------+--------+</span>
+<span class="o">|</span> <span class="mi">2</span><span class="n">A</span>     <span class="o">|</span> <span class="mi">2</span><span class="n">B</span>     <span class="o">|</span>  <span class="o">|</span> <span class="mi">2</span><span class="n">C</span>     <span class="o">|</span> <span class="mi">2</span><span class="n">D</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="n">Fname5</span> <span class="o">|</span> <span class="n">Fname6</span> <span class="o">|</span>  <span class="o">|</span> <span class="n">Fname7</span> <span class="o">|</span> <span class="n">Fname8</span> <span class="o">|</span>
+<span class="o">|</span> <span class="n">LName5</span> <span class="o">|</span> <span class="n">Lname6</span> <span class="o">|</span>  <span class="o">|</span> <span class="n">LName7</span> <span class="o">|</span> <span class="n">Lname8</span> <span class="o">|</span>
+<span class="o">+--------+--------+--+--------+--------+</span>
+<span class="o">|</span> <span class="mi">3</span><span class="n">A</span>     <span class="o">|</span> <span class="mi">3</span><span class="n">B</span>     <span class="o">|</span>  <span class="o">|</span> <span class="mi">3</span><span class="n">C</span>     <span class="o">|</span> <span class="mi">3</span><span class="n">D</span>     <span class="o">|</span>
+<span class="o">|</span> <span class="n">Fname9</span> <span class="o">|</span> <span class="n">Fname10</span><span class="o">|</span>  <span class="o">|</span> <span class="n">Fname11</span><span class="o">|</span> <span class="n">Fname12</span><span class="o">|</span>
+<span class="o">|</span> <span class="n">LName9</span> <span class="o">|</span> <span class="n">Lname10</span><span class="o">|</span>  <span class="o">|</span> <span class="n">LName11</span><span class="o">|</span> <span class="n">Lname12</span><span class="o">|</span>
+<span class="o">+--------+--------+--+--------+--------+</span>
+</pre></div>
+</div>
+<p>For now, however, the simple layout with just the seat numbers and without the names, is sufficient.</p>
+<p>The method comprises a for-loop, with its variable <code class="docutils literal notranslate"><span class="pre">i</span></code> running from 0 to 11 in increments of 1 (<strong>line 12</strong>). We would like to map these numbers into the row in which the corresponding passenger (<code class="docutils literal notranslate"><span class="pre">passenger[i]</span></code>) seats. The grouping is straightforward:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="78%" />
+<col width="22%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><code class="docutils literal notranslate"><span class="pre">passenger[i]</span></code></th>
+<th class="head">row</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[0]</span></code></td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[1]</span></code></td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[2]</span></code></td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[3]</span></code></td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[4]</span></code></td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[5]</span></code></td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[6]</span></code></td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[7]</span></code></td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[8]</span></code></td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[9]</span></code></td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">passenger[10]</span></code></td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">passenger[11]</span></code></td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>Such grouping can be achieved by the following formula</p>
+<div class="math notranslate nohighlight">
+\[\text{row} = [i/4]+1\]</div>
+<p>where the square brackets denote the integer part of the fraction <span class="math notranslate nohighlight">\(i/4\)</span>. Note that the square brackets in a mathematical equation like the one above have no relation to the square brackets we use in Java for array purposes.
+The equation above is implemented in <strong>line 13,</strong> using the method <code class="docutils literal notranslate"><span class="pre">round()</span></code>. <a class="reference external" href="https://docs.oracle.com/javase/7/docs/api/java/lang/Math.html#round(double)">The method takes a real number and rounds it to its closest integer</a>.</p>
+<p><strong>Line 14</strong> packs a lot of data processing. What we are trying to do here is to assign seat columns. As the passenger index <code class="docutils literal notranslate"><span class="pre">i</span></code> assumes its sequential values, we want to assign the corresponding passenger to A, B, C, D, then switch the next row and resume A, B, C, D, and so on. Line 14, gives us the repeating seat letters. Its functionality starts with <code class="docutils literal notranslate"><span class="pre">((char)</span> <span class="pre">65</span> <span class="pre">+</span> <span class="pre">(i%4))</span></code>. This operation takes the number <code class="docutils literal notranslate"><span class="pre">65+(i%4)</span></code> and convers it to the character (<code class="docutils literal notranslate"><span class="pre">char</span></code>) corresponding to <a class="reference external" href="https://en.wikipedia.org/wiki/ASCII">ASCII value</a> <span class="math notranslate nohighlight">\(65+i\% 4\)</span>. ASCII values are numerical values that correspond to specific characters.</p>
+<p>For example the number 65 in ASCII is the letter A, the number 66 is the letter B, and so on. Thus the expression <code class="docutils literal notranslate"><span class="pre">65+(i%4)</span></code>, produces the values <span class="math notranslate nohighlight">\((65, 66, 67, 68, 65, 66, 67, 68, 65, 66, 67, 68)\)</span> as the index <code class="docutils literal notranslate"><span class="pre">i</span></code> moves from 0 to 11. These values, converted to their corresponding ASCII characters yield the sequence of letters (A, B, C, D, A, B, C, D, A, B, C, D). The conversion is using the primitive <code class="docutils literal notranslate"><span class="pre">char</span></code>, which then is converted to a string using the <code class="docutils literal notranslate"><span class="pre">Character.toString</span></code> method. This string value is assigned to variable <code class="docutils literal notranslate"><span class="pre">seatPlace</span></code>.</p>
+<p><strong>Line 15</strong> prints out the <code class="docutils literal notranslate"><span class="pre">row</span></code> number and the <code class="docutils literal notranslate"><span class="pre">seatPlace</span></code> letter, producing the seating assignments 1A, 1B, 1C, 1D, 2A, etc.</p>
+<p><strong>Line 16</strong> makes sure that every two seats on a row, we leave some space to indicate the aisle separating them.</p>
+<p><strong>Line 17</strong> starts a new line in the printout, once a row is completed.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="week9.html" class="btn btn-neutral float-right" title="Review of Week 9: Arrays, TicTacToe" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="week7.html" class="btn btn-neutral float-left" title="Review of Week 7: Midterm wrap-up" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Leo Irakliotis
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
