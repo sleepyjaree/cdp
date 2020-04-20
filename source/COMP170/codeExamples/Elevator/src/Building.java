@@ -17,7 +17,7 @@ public class Building {
     private Floor ground;
 
     /**
-     * Class Floor is made static to keep the code need; i.e., to eliminate the
+     * Class Floor is made static to keep the code neat; i.e., to eliminate the
      * need for a separate file Floor.java. (That's not the only usefulness of
      * nested static classes). A simple default constructor is provided, and the
      * rest is done with direct access to the Floor's fields from outside the class.
