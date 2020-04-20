@@ -143,7 +143,7 @@ What happens when we add a floor to the top of the building is described in the 
    :figwidth: 80%
    :align: center
    
-Before the addition of a new floor, the floor of the top of the building has three pointers associated with it, as shown in subfigure (a). A null pointer (indicated by a fainter color) to the floor above tells us that there is no floor above the top floor. That's how we can tell the top floor: it's the floor whose ``above`` pointer is null. The top floor has a ``below`` pointer indicating the floor beneath it. And it is also at the arriving end of the ``above`` pointer from the floor below it.
+Before the addition of a new floor, the floor on the top of the building has three pointers associated with it, as shown in subfigure (a). A null pointer (indicated by a fainter color) to the floor above tells us that there is no floor above the top floor. That's how we can tell the top floor: it's the floor whose ``above`` pointer is null. The top floor has a ``below`` pointer indicating the floor beneath it. And it is also at the arriving end of the ``above`` pointer from the floor below it.
 
 Subfigure (b) shows the introduction of a new floor. Method ``addFloor`` creates a new floor object. This object is yet to be 
 related to our building. The new floor's ``above`` and ``below`` pointers are, at this time, null. No pointer from an existing floor in the building terminates on this new floor.
